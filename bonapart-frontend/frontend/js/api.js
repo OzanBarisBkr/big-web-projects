@@ -74,7 +74,7 @@ $(document).ready(function(){
             }
         ];
 
-        objectItems
+        //objectItems
         var bannerProduct = Object.keys(objectItems).map(function(key) {
         return [objectItems[key]];
     });
@@ -89,47 +89,19 @@ $(document).ready(function(){
             var sis = document.getElementById("sis");
             var sisImage = document.getElementById("sis-image");
             var sisTitle = document.getElementById("sis-title");
-            var sisContent = document.getElementById("sis-coentet");
+            var sisContent = document.getElementById("sis-content");
             var sisCheckbox = document.getElementById("sis-checkbox");
 
             $(".product-class").click(function(){
-                $("#sis-image").empty();
+                $("#sis").empty();
                 
-                for(i=0; i< productC.length; i++){
-                        console.log(bannerProduct[i]);
-                        console.log(productC[i]);
-                        bannerProduct[i].forEach((product) =>{
-                            sisImage.append(
-                                "<figure class='text-center mx-auto mt-1'><img src='"+ product.image +"' alt=''></figure>"
-                                );
-                        });
+                var index = $(this).attr("data-slick-index");
+                $("#sis").append("<div class='container product-search-area mx-auto bor-15'> <div class='row mb-3 ' > <div class='col-1 pe-0' id='sis-image'> <figure class='text-center mx-auto mt-1'><img src='"+ objectItems[index].image +"' alt=''></figure> </div><div class='col-11 ps-0'> <h3 class='b-red-1' id='sis-title'>TÜM ÜRÜNLERDE ARA</h3> <span id='sis-content'>"+ objectItems[index].content +"</span> <a class='float-end' href='#'>TÜMÜ</a> </div></div><div class='bordered'></div><div class='row check-product-item-area'> <div class='col-12 d-flex align-items-center flex-wrap justify-content-center ' id='sis-checkbox'> <input type='checkbox' class='check-product-item' id='check-product-1'> <label for='check-product-1'>"+ objectItems[index].check1 +"</label> <input type='checkbox' class='check-product-item' id='check-product-2'> <label for='check-product-2'>"+ objectItems[index].check2 +"</label> <input type='checkbox' class='check-product-item' id='check-product-3'> <label for='check-product-3'>"+ objectItems[index].check3 +"</label> <input type='checkbox' class='check-product-item' id='check-product-4'> <label for='check-product-4'>"+ objectItems[index].check4 +"</label> <input type='checkbox' class='check-product-item' id='check-product-5'> <label for='check-product-5'>"+ objectItems[index].check5 +"</label> <input type='checkbox' class='check-product-item' id='check-product-6'> <label for='check-product-6'>"+ objectItems[index].check6 +"</label> <input type='checkbox' class='check-product-item' id='check-product-7'> <label for='check-product-7'>"+ objectItems[index].check7 +"</label> <input type='checkbox' class='check-product-item' id='check-product-8'> <label for='check-product-8'>"+ objectItems[index].check8 +"</label> <input type='checkbox' class='check-product-item' id='check-product-9'> <label for='check-product-9'>"+ objectItems[index].check9 +"</label> <input type='checkbox' class='check-product-item' id='check-product-10'> <label for='check-product-10'>"+ objectItems[index].check10 +"</label> <input type='checkbox' class='check-product-item' id='check-product-11'> <label for='check-product-11'>"+ objectItems[index].check11 +"</label> <input type='checkbox' class='check-product-item' id='check-product-12'> <label for='check-product-12'>"+ objectItems[index].check12 +"</label> </div></div><div class='row '> <div class='col-md-10 offset-md-1'> <div class='row'> <div class='col-md-4 order-2 order-md-1 select-box p-0'> <select class='form-select' aria-label='Default select example'> <option selected>Araç Markası seçiniz</option> <option value='1'>Maserati</option> <option value='2'>Porche</option> <option value='3'>Murat 131</option> </select> </div><div class='col-md-5 order-1 order-md-2 select-box'> <input type='text' placeholder='OEM No, Ürün Adını, Stok kodu ' name='car-search' id='car-search'> </div><div class='col-md-2 order-3 select-box p-0 mx-0'> <a href='#' >HEMEN ARA</a> </div></div></div></div></div>");
                    
-                };
-                
             }); 
         };
 
-    // function selectBox(){
-    //     var productC = document.getElementsByClassName("product-class");
-    //     var sis = document.getElementById("sis");
-    //     var sisImage = document.getElementById("sis-image");
-    //     var sisTitle = document.getElementById("sis-title");
-    //     var sisContent = document.getElementById("sis-coentet");
-    //     var sisCheckbox = document.getElementById("sis-checkbox");
-    //     for(i=0; i< productC.length; i++){
-    //     productC[i].addEventListener("click", function(){
-    //         $("#sis-image").empty();
-    //             bannerProduct[i].forEach((item) => {
-    //                     sisImage.append(
-    //                         "<figure class='text-center mx-auto mt-1'><img src='"+ item.image +"' alt=''></figure>"
-    //                     );
-                    
-    //             });
-    //         });
-            
-    //     };
-    // };
-    // selectBox(); 
+    
 
     
 

@@ -191,6 +191,8 @@ $(document).ready(function(){
           productClass[index].classList.add('active');
           productimage[index].classList.remove('border-div');
           productName[index].classList.remove('product-name-border');
+
+          productClass[index].click();
         };
         
         
