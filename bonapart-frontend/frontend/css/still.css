@@ -131,7 +131,7 @@ h5{
 /* body */
 
 .main .banner{
-    background-image: url(/frontend/images/banner.png);
+    background-image: url(../../frontend/images/banner.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 650px;
@@ -152,7 +152,7 @@ h5{
 
 }
 header .logo-banner{
-    background: url(/frontend/images/logo-bonapart.png);
+    background: url(../../frontend/images/logo-bonapart.png);
     background-size: cover;
     background-repeat: no-repeat;
     width: 166px;
@@ -160,7 +160,7 @@ header .logo-banner{
     margin-right: 30px;
 }
 header .hamburger-menu{
-    background: url(/frontend/icons/burger-menu.png);
+    background: url(../../frontend/icons/burger-menu.png);
     background-size: cover;
     background-repeat: no-repeat;
     width: 61px;
@@ -361,10 +361,10 @@ header .navigation ul li a{
     cursor: pointer;
 }
 .arrowLeft{
-    background: url(/frontend/icons/double-l.png);
+    background: url(../../frontend/icons/double-l.png);
 }
 .arrowRight{
-    background: url(/frontend/icons/double-r.png);
+    background: url(../../frontend/icons/double-r.png);
     right: 5%;
 }
 @media screen and (max-width:1200px) {
@@ -420,10 +420,10 @@ header .navigation ul li a{
     transform: translateX(-23px);
 }
 .banner .slick-prev:before{
-    background-image: url(/frontend/icons/double-l.png)!important;
+    background-image: url(../../frontend/icons/double-l.png)!important;
 }
 .banner .slick-next:before{
-    background-image: url(/frontend/icons/double-r.png)!important;
+    background-image: url(../../frontend/icons/double-r.png)!important;
 }
 
 
@@ -532,7 +532,7 @@ header .navigation ul li a{
     border-radius: 10px;
     cursor: pointer;
     position: relative;
-    background-image: url(/frontend/icons/arrow-down.png);
+    background-image: url(../../frontend/icons/arrow-down.png);
     background-size: 27px;
 }
 .product-search-area .select-box .form-select,
@@ -552,6 +552,10 @@ header .navigation ul li a{
 
 .most-search-items{
     padding: 100px;
+}
+
+.most-search-items p{
+    margin-bottom: 30px;
 }
 
 .most-s-slider {
@@ -640,7 +644,7 @@ header .navigation ul li a{
 .most-search-items .most-card .add-to-card::before{
     content: "";
     position: absolute;
-    background-image: url(/frontend/icons/basket-r.png);
+    background-image: url(../../frontend/icons/basket-r.png);
     width: 17px;
     height: 16px;
     margin-left: -25px;
@@ -651,7 +655,7 @@ header .navigation ul li a{
 
 }
 .most-search-items .most-card .add-to-card:hover::before{
-    background-image: url(/frontend/icons/basket.png)!important;
+    background-image: url(../../frontend/icons/basket.png)!important;
 }
 
 
@@ -741,7 +745,7 @@ scrollbar-width: none; /* Firefox */
 .most-search-cat .cat-pic img{
     width: 100%;
     height: 222px;
-    object-fit: contain;
+    object-fit: cover;
 
 }
 .most-search-cat button{
@@ -767,10 +771,10 @@ scrollbar-width: none; /* Firefox */
 
 }
 .most-search-cat .slick-prev:before{
-    background-image: url(/frontend/icons/double-l.png)!important;
+    background-image: url(../../frontend/icons/double-l.png)!important;
 }
 .most-search-cat .slick-next:before{
-    background-image: url(/frontend/icons/double-r.png)!important;
+    background-image: url(../../frontend/icons/double-r.png)!important;
     margin-left: -25px;
 }
 
@@ -889,7 +893,7 @@ scrollbar-width: none; /* Firefox */
 
 .contact-form-section{
     background-color: var(--main-b);
-    background-image: url(/frontend/images/truck.png);
+    background-image: url(../../frontend/images/truck.png);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 100px 0px 90px 0px;
@@ -900,4 +904,30 @@ scrollbar-width: none; /* Firefox */
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: -2px;
+}
+#contact-form .contact-input{
+    background: transparent;
+    margin-bottom: 40px;
+}
+#contact-form .contact-input input{
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    transition: all .3s;
+    height: 50px;
+}
+#contact-form .contact-input input::marker{
+    bottom: 0;
+}
+#contact-form .contact-input input::placeholder{
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    transition: all .3s;
+}
+#contact-form .contact-input input:focus::placeholder{
+    bottom: 20%;
+    font-size: 12px;
 }

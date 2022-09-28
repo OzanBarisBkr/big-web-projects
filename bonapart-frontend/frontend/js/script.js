@@ -136,6 +136,7 @@ $(document).ready(function(){
       let productimage = document.querySelectorAll(".product-image");
       let productName = document.querySelectorAll(".product-name-s");
       
+      
       let index = 0;
       arrowMove();
       activeFunction();
@@ -157,7 +158,9 @@ $(document).ready(function(){
     
 
       function arrowMove(){
+
           
+
           if(index >= productClass.length){
             index = 0;
           }
@@ -188,22 +191,28 @@ $(document).ready(function(){
             productName[i].classList.add("product-name-border");
           };
           
+          
           productClass[index].classList.add('active');
           productimage[index].classList.remove('border-div');
           productName[index].classList.remove('product-name-border');
 
           productClass[index].click();
+          if( productClass[index].click() ){
+            index = productClass.getAttribute("data-slick-index");
+          };
         };
         
         
         $('.arrowRight').click(function(){
+          index = productClass.getAttribute("data-slick-index");
           index++;
           arrowMove();
+          
         });
 
         $('.arrowLeft').click(function(){
-          arrowMove(); 
           index--;
+          arrowMove(); 
         });
 
    //------          -------//
