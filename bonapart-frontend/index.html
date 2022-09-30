@@ -18,7 +18,7 @@
 <body>
     <div class="main">
         <section class="banner">
-            <header>
+            <header id="header" class="header">
                 <div class="logo-banner order-1"></div>
                 <div class="hamburger-menu order-3 order-lg-2"></div>
                 <div class="search-bar-banner order-2 order-lg-3">
@@ -104,12 +104,12 @@
         </section>
 
         <section class="search-item-section " id="sis">
-            <div class="container product-search-area mx-auto bor-15">
+            <div class="container product-search-area mx-auto bor-15 ">
                 <div class="row mb-3 " >
-                    <div class="col-1 pe-0" id="sis-image">
+                    <div class="col-12 col-md-1 pe-0" id="sis-image">
                         <figure class="text-center mx-auto mt-1"><img src="./frontend/icons/settings-icon.png" alt=""></figure>
                     </div>
-                    <div class="col-11 ps-0">
+                    <div class="col-12 col-md-11 ps-0">
                         <h3 class="b-red-1" id="sis-title">TÜM ÜRÜNLERDE ARA</h3>
                         <span id="sis-content">Yakıt sistemi ürün grubunda ticari araçlar için aşağıdaki başlıca parçaları iş ortaklarına sunmaktadır.</span>
                         <a class="float-end" href="#">TÜMÜ</a>
@@ -261,14 +261,15 @@
 
         </section>
 
-        <section class="contact-section relative">
-            <div class="line-top"></div>
+        <div class="container body-10 contact-section relative">
+            
+                <div class="line-top"></div>
             <div class="container body-10 content">
                 <figure class="text-center"><img src="./frontend/icons/quote.png"  alt=""></figure>
                 
-                <p class="text-center fw-light"> Türkiye’de bulunan onaylı tedarikçilerinden tedarik eden BONAPART OTOMOTİV, kalite kaynaklı <br />
-                    problemleri de en aza indiriyor. Tüm ihtiyaçları tek bir teslimatla müşterilerine tedarik eden BONAPART <br />
-                    OTOMOTİV, lojistik ve operasyon maliyetlerini de uluslararası lojistik konusunda uzmanlaşmış ekibi ile <br />
+                <p class="text-center fw-light"> Türkiye’de bulunan onaylı tedarikçilerinden tedarik eden BONAPART OTOMOTİV, kalite kaynaklı <br class="d-none d-md-inline" />
+                    problemleri de en aza indiriyor. Tüm ihtiyaçları tek bir teslimatla müşterilerine tedarik eden BONAPART <br class="d-none d-md-inline" />
+                    OTOMOTİV, lojistik ve operasyon maliyetlerini de uluslararası lojistik konusunda uzmanlaşmış ekibi ile <br class="d-none d-md-inline" />
                     azaltmanıza yardımcı olarak hem zaman hem maliyet avantajı sunuyor.</p>
                 
                 <div class="row ">
@@ -297,38 +298,99 @@
 
                 
                 </div>
+            
 
-        </section>
+        </div>
 
-        <section class="contact-form-section w-100">
-            <div class="container body-17 text-center">
-                <h2 class="">Requested <br />
-                    a Quick Quote</h2>
-                <p class="fw-light">Look like readable English. Many desktop publishing packages and web page editors now<br />use. </p>
-                <div class="row">
-                    <form class="row" id="contact-form" action="" name="" method="POST">
-                        <div class="col-md-6 contact-input">
-                            <input type="text" name="" id="" placeholder="Name,Surname">
-                        </div>
-                        <div class="col-md-6 contact-input">
-                            <input type="number" name="" id="" placeholder="Phone">
-                        </div>
-                        <div class="col-md-6 contact-input">
-                            <input type="email" name="" id="" placeholder="E Mail">
-                        </div>
-                        <div class="col-md-6 contact-input">
-                            <input type="text" name="" id="" placeholder="Country">
-                        </div>
-                    </form>
+        <div class="container body-10 contact-form-section w-100">
+            
+                <div class="container body-17 text-center">
+                    <h2 class="">Requested <br />
+                        a Quick Quote</h2>
+                    <p class="fw-light">Look like readable English. Many desktop publishing packages and web page editors now<br />use. </p>
+                    <div class="row">
+                        <form class="row" id="contact-form" action="" name="" method="POST">
+                            <div class="col-md-6 contact-input">
+                                <input type="text" name="" id="" placeholder="Name,Surname">
+                            </div>
+                            <div class="col-md-6 contact-input">
+                                <input type="number" name="" id="" placeholder="Phone">
+                            </div>
+                            <div class="col-md-6 contact-input">
+                                <input type="email" name="" id="" placeholder="E Mail">
+                            </div>
+                            <div class="col-md-6 contact-input">
+                                <input type="text" name="" id="" placeholder="Country">
+                            </div>
+                            <div class="col-md-6 offset-md-3 contact-input">
+                                <textarea type="textarea" name="" id="" placeholder="Message"></textarea>
+                            </div>
+                            <div class="col-md-6 offset-md-3">
+                                <input type="submit" class="form-submit mx-auto " name="" id="" value="SEND">
+                            </div>
+                           
+                            
+                        </form>
+                    </div>
+                </div>
+            
+            
+        </div>
+
+        <div class="container-fluid" id="statistics">
+            <div class="statistic-area">
+                <div class="box">
+                    <span class="title">12034</span>
+                    <span class="content">Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit amet consectetur.</span>
+                </div>
+                <div class="box">
+                    <span class="title">456</span>
+                    <span class="content">Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit amet consectetur.</span>
+                </div>
+                <div class="box">
+                    <span class="title">987</span>
+                    <span class="content">Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit amet consectetur.</span>
                 </div>
             </div>
-            
-        </section>
+        </div>
 
-
-
-        <footer>
-
+        <footer id="footer">
+            <div class="copyright-nav ">
+                <nav>
+                    <ul>
+                        <a href="#"><li>KURUMSAL</li></a>
+                        <a href="#"><li>ÜRÜNLER</li></a>
+                        <a href="#"><li>MARKALAR</li></a>
+                        <a href="#"><li>MEDYA</li></a>
+                        <a href="#"><li>İLETİŞİM</li></a>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-address text-center">
+                <p>İkitelli O.S.B. Tümsan 1. Kısım Sanayi Sitesi 3. Blok No.2 34490 Başakşehir Istanbul / Turkey</p>
+            </div>
+            <div class="copy-right-bonapart ">
+                <p class="text-center">Copyright © 2022 BONAPART AUTOMOTIVE <br  />
+ALL RIGHTS RESERVED</p>
+            </div>
+            <div class="projx-logos">
+                <a href="https://www.projx.com.tr" rel="muse" class="projx-logos-link" target="_blank"></a>
+                <span class="tooltip-projx-logos">
+                    <span class="tooltip-projx-logos-content">
+                        <span class="tooltip-projx-logos-text">
+                            <span class="tooltip-projx-logos-text-inner">site design &amp; technology</span>
+                        </span>
+                    </span>
+                </span>
+                <div class="projx-logos-card">
+                    <figure class="front">
+                        <div><img src="/frontend/images/projx.png" alt="PROJX"></div>
+                    </figure>
+                    <figure class="back">
+                        <div>www.projx.com.tr</div>
+                    </figure>
+                </div>
+            </div>
         </footer>
     </div>
     

@@ -9,6 +9,16 @@ $(document).ready(function(){
     arrows: false,
     responsive: [
       {
+        breakpoint: 1680,
+        settings: {
+          slidesToShow: 8,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          arrows:true
+        }
+      },
+      {
         breakpoint: 1200,
         settings: {
           slidesToShow: 6,
@@ -62,7 +72,7 @@ $(document).ready(function(){
     arrows: true,
     responsive: [
       {
-        breakpoint: 1200,
+        breakpoint: 1250,
         settings: {
           slidesToShow: 4,
           slidesToScroll: 1,
@@ -74,7 +84,7 @@ $(document).ready(function(){
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
           dots: true,
@@ -84,8 +94,8 @@ $(document).ready(function(){
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
+          slidesToShow: 2,
+          slidesToScroll: 2,
           dots: true,
           arrows:true
         }
@@ -113,18 +123,39 @@ $(document).ready(function(){
     slidesToScroll: 1,
     arrows: false,
     responsive: [
-      
+      {
+        breakpoint: 1250,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        }
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        }
+      },
+      {
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+        }
+      },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          arrows:false
         }
       }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
     ]
   });
 
@@ -195,16 +226,11 @@ $(document).ready(function(){
           productClass[index].classList.add('active');
           productimage[index].classList.remove('border-div');
           productName[index].classList.remove('product-name-border');
-
           productClass[index].click();
-          if( productClass[index].click() ){
-            index = productClass.getAttribute("data-slick-index");
-          };
         };
         
         
         $('.arrowRight').click(function(){
-          index = productClass.getAttribute("data-slick-index");
           index++;
           arrowMove();
           
@@ -258,10 +284,18 @@ $(document).ready(function(){
 
         //----progress end---//
 
-
-
-
-
+      //   $(document).ready(function() {
+      //     $(document).scroll(function () {
+      //         var scroll = $(this).scrollTop();
+      //         var topDist = $("#header").position();
+      //         if (scroll > topDist.top) {
+      //             $('#header').css({"position":"fixed","top":"0","left":"0","minWidth":"100%","paddingRight":"200px","backgroundColor":"#C11D2A","opacity":"1","zIndex":"99999"});
+      //         } else {
+      //             $('#header').css({"position":"static","top":"auto"});
+      //         }
+      //     });
+      // });
+        
 
     }); // document.ready end
 
