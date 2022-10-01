@@ -166,7 +166,7 @@ header .hamburger-menu{
     width: 61px;
     height: 39px;
 }
-header .search-bar-banner{
+.banner .search-bar-banner{
     margin: 0 auto;
     height: 60px;
     width: 500px;
@@ -175,7 +175,7 @@ header .search-bar-banner{
     align-items: center;
     position: relative;
 }
-header .search-bar-banner input{
+.banner .search-bar-banner input{
     width: 100%;
     height: 100%;
     border-radius: 50px;
@@ -187,12 +187,12 @@ header .search-bar-banner input{
 
     padding: 20px 0px 20px 40px;
 }
-header .search-bar-banner input::placeholder{
+.banner .search-bar-banner input::placeholder{
     color: #000;
     font-weight: 300;
 }
 
-header .search-bar-banner a{
+.banner .search-bar-banner a{
     width: 66px;
     height: 60px;
     display: block;
@@ -202,7 +202,7 @@ header .search-bar-banner a{
     right: 0%;
     transform: translateY(-50%);
 }
-header .search-bar-banner img{
+.banner .search-bar-banner img{
     width: 100%;
     object-fit: cover;
 }
@@ -253,7 +253,7 @@ header .navigation ul li a{
     header{
         justify-content: space-between;
     }
-    header .search-bar-banner{
+    .banner header .search-bar-banner{
         position: absolute;
         width: 70%!important;
         top: 30%;
@@ -270,7 +270,7 @@ header .navigation ul li a{
     header{
         margin:0 40px!important;
     }
-    header .search-bar-banner{
+    .banner .search-bar-banner{
         width: 85%!important;
     }
 }
@@ -406,6 +406,111 @@ header .navigation ul li a{
     }
 }
 
+.burger-open{
+    position: fixed;
+    left: 0;
+    top: 0;
+    min-width: 100%;
+    background-color: rgba(0, 58, 120, .8);
+    z-index: 999;
+    height: 100vh;
+     
+}
+.burger-open .burger-close{
+    position: absolute;
+    top: 5%;
+    right: 0%;
+    margin-right: 120px;
+    font-size: 150px;
+    color: #fff;
+    font-weight: 100;
+    cursor: pointer;
+    transform: rotate(45deg);
+}
+.burger-open .container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 850px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+
+}
+.burger-open .container .search-bar-banner{
+    margin-bottom: 20px;
+    background-color: #fff;
+    height: 80px;
+    width: 850px;
+}
+
+.burger-open .container .search-bar-banner input::placeholder{
+    font-weight: 600;
+    font-style: normal;
+}
+.burger-open .container .search-bar-banner a{
+    width: 86px;
+    height: 80px;
+}
+.burger-open .container .search-mean{
+    margin-left: 25px;
+}
+.burger-open .container .search-mean p{
+    color: #fff;
+    font-weight: 300;
+}
+.burger-open .container .search-mean p:first-child span{
+    font-style: italic;
+    font-weight: 600;
+}
+@media screen and (max-width:768px) {
+    .burger-open .container{
+        width: 90%;
+    }
+    .burger-open .container .search-bar-banner{
+        width: 90%;
+    }
+    .burger-open .container .search-mean{
+        margin-left: 45px;
+    }
+}
+@media screen and (max-width:450px) {
+    .burger-open .container{
+        width: 95%;
+    }
+    .burger-open .container .search-bar-banner{
+        width: 95%;
+        height: 60px;
+        margin-bottom: 30px;
+    }
+    .burger-open .container .search-mean{
+        margin-left: 45px;
+    }
+    .burger-open .container .search-bar-banner a{
+        width: 61px;
+        height: 55px;
+    }
+    .burger-open .container .search-mean p{
+        margin-bottom: 25px;
+    }
+    .burger-open .container .search-bar-banner input::placeholder{
+        font-size: 13px;
+        font-weight: 400;
+        font-style: normal;
+    }
+    .burger-open .container .search-bar-banner input {
+        padding-left: 10px;
+        margin-right: 50px;
+    }
+    .burger-open .burger-close{
+        position: absolute;
+        font-weight: 200;
+        margin-right: 90px;
+        font-size: 100px;
+
+    }
+}
+                    
 
   /* slick settings */
 .banner .slick-dots li{
@@ -1102,12 +1207,21 @@ scrollbar-width: none; /* Firefox */
 #contact-form .form-submit{
     width: 170px;
     height: 50px;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
     border: none;
     font-weight: 300;
     font-family: 'Jost', sans-serif;
     color: var(--main-b);
+    box-shadow: var(--shadow);
+    transition: all .3s ease-in;
+
+}
+#contact-form .form-submit:hover{
+    background-color: rgb(228, 228, 228);
+}
+#contact-form .form-submit:focus{
+    border: 1px solid rgba(0, 0, 0, 0.6);
 }
 
 #contact-form .contact-input input::marker{
@@ -1129,6 +1243,11 @@ scrollbar-width: none; /* Firefox */
     .contact-form-section h2{
         font-size: 45px;
         margin-bottom: 25px;
+    }
+    #contact-form .contact-input input,
+    #contact-form .contact-input textarea{
+        width: 90%;
+        font-size: 15px;
     }
 }
 
@@ -1211,7 +1330,7 @@ footer::before{
     position: absolute;
     width: 108px;
     height: 136px;
-    z-index: 999;
+    z-index: 100;
     top: 0;
     left: 50%;
     transform: translate(-50%, -50%);

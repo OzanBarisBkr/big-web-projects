@@ -77,7 +77,7 @@ $(document).ready(function(){
           slidesToShow: 4,
           slidesToScroll: 1,
           infinite: true,
-          dots: true,
+          dots: false,
           arrows:true
         }
       },
@@ -87,7 +87,6 @@ $(document).ready(function(){
           slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
-          dots: true,
           arrows:true
         }
       },
@@ -96,7 +95,6 @@ $(document).ready(function(){
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          dots: true,
           arrows:true
         }
       },
@@ -226,6 +224,7 @@ $(document).ready(function(){
           productClass[index].classList.add('active');
           productimage[index].classList.remove('border-div');
           productName[index].classList.remove('product-name-border');
+
           productClass[index].click();
         };
         
@@ -283,6 +282,16 @@ $(document).ready(function(){
         }
 
         //----progress end---//
+
+        $(".hamburger-menu").click(function(){
+            $(".burger-open").removeClass("d-none");
+            $(".burger-close").click(function(){
+              $(".burger-open").addClass("d-none");
+            });
+        });
+       
+
+
 
       //   $(document).ready(function() {
       //     $(document).scroll(function () {
