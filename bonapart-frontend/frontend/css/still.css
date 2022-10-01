@@ -126,6 +126,10 @@ h5{
     {
         max-width: 1230px;
     }
+    .container.body-18
+    {
+        max-width: 1500px;
+    }
 }
 
 /* body */
@@ -710,6 +714,162 @@ header .navigation ul li a{
     
 }
 
+/* call section onclick */
+
+#open-search{
+    padding: 90px 115px 0px 115px;
+    background-color: #fff;
+}
+#open-search .title{
+    margin-bottom: 25px;
+    align-items: center;
+}
+#open-search .title h4{
+    color:var(--main-b);
+    font-size: 25px;
+}
+#open-search .title p{
+    display: inline-block;
+    font-style: italic;
+}
+#open-search .title .cat-to-cat {
+    font-style: italic;
+    font-weight: 500;
+
+}
+#open-search .item-box{
+    padding: 20px 20px 15px 30px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    position: relative;
+    display: flex;
+    box-shadow: var(--shadow);
+    margin-bottom: 40px;
+}
+#open-search .item-box::before{
+    position: absolute;
+    content: "";
+    z-index: 20;
+    height: 63%;
+    width: 2px;
+    background-color: var(--main-r);
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#open-search .item-box .image-box{
+    width: 225px;
+    height: 215px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#open-search .item-box .image-box img{
+    object-fit: contain;
+}
+#open-search .item-content {
+    margin-left: 42px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#open-search .item-content h5,
+#open-search .item-content p{
+    margin-bottom: 25px;
+}
+#open-search .item-content h5{
+    font-size: 20px;
+    font-weight: 600;
+}
+#open-search .item-content p{
+    font-size: 13px;
+    font-weight: 300;
+}
+#open-search .item-box li{
+    font-weight: 500;
+}
+#open-search .item-box li:not(:last-child){
+    display: inline-block;
+    padding-right: 20px;
+    margin-right: 28px;
+    border-right: 1px solid var(--main-r);
+}
+#open-search .item-box .oem{
+    color: var(--main-r);
+}
+#open-search .item-box .marketing{
+    height: 40px;
+    display: flex;
+}
+#open-search .item-box .marketing .like,
+#open-search .item-box .marketing .liked,
+#open-search .item-box .marketing .inspect,
+#open-search .item-box .marketing .add-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #fff;
+    cursor: pointer;
+
+}
+#open-search .item-box .marketing .like,
+#open-search .item-box .marketing .liked{
+    width: 62px;
+    background-color:var(--bg-2);
+    border-radius: 5px;
+    margin-right: 10px;
+}
+#open-search .item-box .marketing .inspect{
+    width: 75px;
+    border-radius: 5px;
+    margin-right: 30px;
+}
+#open-search .item-box .marketing .inspect a{
+    background-color: var(--main-b);
+    color: #fff;
+    font-size: 13px;
+    padding: 10px 15px;
+    border-radius: 5px;
+
+}
+#open-search .item-box .marketing .add-card{
+    background-color: var(--main-r);
+    border-radius: 5px;
+}
+#open-search .item-box .marketing .add-card a{
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 13px;
+}
+#open-search .item-box .marketing .add-card .how-much{
+    border-right: 1px solid rgba(255, 255, 255, .5);
+    padding: 10px 0px 10px 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#open-search .item-box .marketing .add-card span{
+    font-size: 13px;
+    margin-right: 5px;
+    padding: 3px;
+}
+#open-search .item-box .marketing .add-card span:not(:last-child){
+    margin-right: 5px;
+}
+
+#open-search .brand{
+    width: 100px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border: 1px solid rgba(172, 172, 172, .4);
+}
 
 
 

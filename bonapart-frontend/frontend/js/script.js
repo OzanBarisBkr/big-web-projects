@@ -282,11 +282,21 @@ $(document).ready(function(){
         }
 
         //----progress end---//
-
+        //burgermenu
         $(".hamburger-menu").click(function(){
             $(".burger-open").removeClass("d-none");
             $(".burger-close").click(function(){
               $(".burger-open").addClass("d-none");
+            });
+        });
+        //like
+        $(".like").click(function(){
+            $(".liked").removeClass("d-none");
+            $(".like").addClass("d-none");
+
+            $(".liked").click(function(){
+              $(".liked").addClass("d-none");
+              $(".like").removeClass("d-none");
             });
         });
        
