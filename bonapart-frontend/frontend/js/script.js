@@ -289,19 +289,10 @@ $(document).ready(function(){
               $(".burger-open").addClass("d-none");
             });
         });
-        //like
-        $(".like").click(function(){
-            $(".liked").removeClass("d-none");
-            $(".like").addClass("d-none");
-
-            $(".liked").click(function(){
-              $(".liked").addClass("d-none");
-              $(".like").removeClass("d-none");
-            });
-        });
+        
        
 
-
+     
 
       //   $(document).ready(function() {
       //     $(document).scroll(function () {
