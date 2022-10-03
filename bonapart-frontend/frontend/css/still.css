@@ -9,6 +9,7 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 15px;
+   
 }
 body{
     
@@ -153,7 +154,21 @@ h5{
     display: flex;
     flex-direction: row;
     align-items: center;
+    transition: .6s;
+    z-index: 999;
+}
+header.sticky{
+    margin: 0!important;
+    position: fixed;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 25px;
+    height: 100px!important;
+    width: 100%;
+    background-color: rgba(0, 58, 120, .7);
 
+    backdrop-filter: blur(10px);
+   
 }
 header .logo-banner{
     background: url(../../frontend/images/logo-bonapart.png);
@@ -264,6 +279,9 @@ header .navigation ul li a{
         left: 50%;
         transform: translate(-50%, -50%);
     }
+    header.sticky .search-bar-banner{
+        display: none;
+    }
 }
 @media screen and (max-width:769px){
     header .search-bar-banner{
@@ -272,10 +290,10 @@ header .navigation ul li a{
 }
 @media screen and (max-width:500px){
     header{
-        margin:0 40px!important;
+        margin:0 25px!important;
     }
     .banner .search-bar-banner{
-        width: 85%!important;
+        width: 90%!important;
     }
 }
 
@@ -390,13 +408,11 @@ header .navigation ul li a{
         width: 97.5%;
         left:1.25%;
     }
-
-}
-@media screen and (max-width:1200px){
     .arrowLeft,.arrowRight{
         display: none;
     }
 }
+
 @media screen and (max-width:768px) {
     .banner-slider .slick-dots {
         bottom: -45px;
@@ -642,7 +658,10 @@ header .navigation ul li a{
 @media screen and (max-width:1200px) {
     .main .banner .banner-slider, .main .banner .banner-filter{
         margin:0px auto;
-        width: 90%;
+        width: 80%;
+        
+    }
+    .main .banner .banner-filter{
         padding: 30px 30px 0px;
     }
     .filter-item-section .product-search-area::after{
@@ -1833,7 +1852,7 @@ scrollbar-width: none; /* Firefox */
 }
 @media screen and (max-width:1200px) {
     #statistics .statistic-area{
-        padding: 50px;
+       
         flex-direction: column;
     }
     #statistics .statistic-area .box{

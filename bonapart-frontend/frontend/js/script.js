@@ -1,6 +1,18 @@
 /* slick */
 $(document).ready(function(){
 
+
+  window.addEventListener('scroll', function(){
+    var header = document.querySelector('header');
+    var banner = document.querySelector('.banner')
+    header.classList.toggle('sticky', window.scrollY > 150);
+    banner.classList.toggle('pt-0', window.scrollY>150 );
+});
+
+
+
+
+
   //burgermenu
   $(".hamburger-menu").click(function(){
     $(".burger-open").removeClass("d-none");
