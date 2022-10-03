@@ -1,5 +1,70 @@
 /* slick */
 $(document).ready(function(){
+
+  //burgermenu
+  $(".hamburger-menu").click(function(){
+    $(".burger-open").removeClass("d-none");
+    $(".burger-close").click(function(){
+      $(".burger-open").addClass("d-none");
+    });
+});
+
+  //like
+$('.like-box').on('click', function (){
+                            
+  if( $(this).find('.heart-1').css('display') == 'none' ){
+          $(this).find('.heart-2').addClass('d-none');
+          $(this).find('.heart-1').css('display', 'block');
+ 
+  }else{
+      $(this).find('.heart-1').css('display', 'none');
+      $(this).find('.heart-2').removeClass('d-none');
+  }
+});
+
+//page 2 - item - design
+
+$('.design-buttons .item').click(function(){
+    $('.design-buttons .item').removeClass('active');
+
+    $(this).addClass('active');
+});
+
+designButtons();
+function designButtons(){
+    $('.design-buttons .design-2').click(function(){
+      $('#open-search .item-box').addClass('col-md-6');
+      $('#open-search .brand').css({'bottom':'5%','left':'3%','top':'inherit'});
+      $('#open-search .item-box ul').addClass('flex-wrap');
+      $('#open-search .item-box li:last-child').css('margin','20px 0px');
+      $('#open-search .item-content').css('margin-left','22px');
+  });
+  $('.design-buttons .design-1').click(function(){
+      $('#open-search .item-box').removeClass('col-md-6');
+      $('#open-search .brand').css({'top':'2%','right':'1%','bottom':'inherit','left':'inherit'});
+      $('#open-search .item-box ul').removeClass('flex-wrap');
+      $('#open-search .item-box li:last-child').css('margin','0px');
+      $('#open-search .item-content').css('margin-left','42px');
+
+      
+  });
+};
+
+
+$('.page-box-number').click(function(){
+  $('.page-box-number').removeClass('active');
+
+  $(this).addClass('active');
+  var indexo = $('.page-box-number').length;
+  console.log(indexo);
+});
+
+
+
+
+
+  
+
   $('.banner-s-product-class-section').slick({
     dots: false,
     infinite: true,
@@ -166,7 +231,7 @@ $(document).ready(function(){
       let productName = document.querySelectorAll(".product-name-s");
       
       
-      let index = 0;
+      var index = 0;
       arrowMove();
       activeFunction();
       
@@ -282,13 +347,7 @@ $(document).ready(function(){
         }
 
         //----progress end---//
-        //burgermenu
-        $(".hamburger-menu").click(function(){
-            $(".burger-open").removeClass("d-none");
-            $(".burger-close").click(function(){
-              $(".burger-open").addClass("d-none");
-            });
-        });
+        
         
        
 
