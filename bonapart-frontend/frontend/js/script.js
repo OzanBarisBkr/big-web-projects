@@ -62,9 +62,16 @@ function designButtons(){
   });
 };
 
-
+//page 2
 $('.page-box-number').click(function(){
   $('.page-box-number').removeClass('active');
+
+  $(this).addClass('active');
+  
+});
+//page product-show
+$('.item-image').click(function(){
+  $('.item-image').removeClass('active');
 
   $(this).addClass('active');
   

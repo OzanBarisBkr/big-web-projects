@@ -840,16 +840,19 @@ header .navigation ul li a{
 /* ----- */
 
 /* --- Page Product (3)--- */
-
-.product-breadcrumb{
+.show-item-section {
+    background-color: var(--bg-2);
+}
+.show-product .product-breadcrumb{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     color: #fff;
     font-style: italic;
+    padding: 0 90px;
 }
 
-.product-show-area {
+.show-item-section .product-show-area {
     min-width: 1670px;
 
     margin-top: -200px;
@@ -860,20 +863,20 @@ header .navigation ul li a{
     flex-direction: column;
     background-color: var(--bg-2);
 }
-.item-detail h3{
+.show-item-section .item-detail h3{
     color: var(--main-b);
     font-size: 30px;
     font-weight: 600;
     letter-spacing: -1px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
-.item-detail .text-in-between{
+.show-item-section .item-detail .text-in-between{
     margin-top: 20px;
     margin-bottom: 45px;
     font-size: 15px;
     font-weight: 300;
 }
-.item-detail .box-item{
+.show-item-section .item-detail .box-item{
     height: 65px;
     display: flex;
     align-items: center;
@@ -882,7 +885,7 @@ header .navigation ul li a{
     padding: 0!important;
     color: #fff;
 }
-.item-detail .box-item p{
+.show-item-section .item-detail .box-item p{
     color: #000;
     letter-spacing: 1px;
     font-weight: 300;
@@ -890,17 +893,17 @@ header .navigation ul li a{
 .show-item-section .add-to-card{
     margin: 30px 0px;
 }
-.item-detail .box-item.how-much{
+.show-item-section .item-detail .box-item.how-much{
     background-color: var(--main-b);
 }
-.item-detail .box-item.how-much span{
+.show-item-section .item-detail .box-item.how-much span{
     font-size: 25px;
     cursor: pointer;
 }
-.item-detail .box-item.how-much span:not(:last-child){
+.show-item-section .item-detail .box-item.how-much span:not(:last-child){
     margin-right: 13px;
 }
-.item-detail .box-item.how-much span:nth-child(2){
+.show-item-section .item-detail .box-item.how-much span:nth-child(2){
     background-color: #fff;
     font-size: 18px;
     width: 50px;
@@ -910,10 +913,10 @@ header .navigation ul li a{
     justify-content: center;
     height: 80%;
 }
-.item-detail .box-item.add-to-basket{
+.show-item-section .item-detail .box-item.add-to-basket{
     background-color: var(--main-r);
 }
-.item-detail .box-item.add-to-basket button{
+.show-item-section .item-detail .box-item.add-to-basket button{
     background-color:var(--main-r);
     width: 100%;
     height: 100%;
@@ -923,7 +926,7 @@ header .navigation ul li a{
     color: #fff;
     position: relative;
 }
-.item-detail .box-item.add-to-basket button::before{
+.show-item-section .item-detail .box-item.add-to-basket button::before{
     content: "";
     background-image: url(../../frontend/icons/basket.png);
     background-repeat: no-repeat;
@@ -935,24 +938,125 @@ header .navigation ul li a{
     margin-top: 4px;
 }
 
-.item-detail-table{
+.show-item-section .item-detail-table{
     width: 100%;
 }
-.item-detail-table th{
+.show-item-section .item-detail-table th{
     font-weight: 500;
 }
-.item-detail-table tr{
+.show-item-section .item-detail-table tr{
     height: 55px;
+    border-top: 1px solid #C1C1C1;
 }
-.item-detail-table span{
+.show-item-section .item-detail-table tr:last-child{
+    border-bottom: 1px solid #C1C1C1;
+}
+.show-item-section .item-detail-table span{
     font-size: 15px;
     font-weight: 300;
 }
-.item-detail-table .stock-success{
+.show-item-section .item-detail-table .stock-success{
     font-style: italic;
     font-weight: 600;
     color: #5BBE5F;
 }
+.show-item-section .item-detail .item-box-link{
+    height: 61px;
+}
+.show-item-section .item-detail .item-box-link a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    transition: all .3s ease;
+}
+.show-item-section .item-detail .item-box-link:nth-child(1) a{
+    border: 1px solid var(--main-r);
+    color: var(--main-r);
+}
+.show-item-section .item-detail .item-box-link:nth-child(1) a:hover{
+    background-color: var(--main-r);
+    color: #fff;
+}
+.show-item-section .item-detail .item-box-link:nth-child(2) a{
+    border: 1px solid var(--main-b);
+    color: var(--main-b);
+}
+.show-item-section .item-detail .item-box-link:nth-child(2) a:hover{
+    background-color: var(--main-b);
+    color: #fff;
+}
+.show-item-section .item-detail .item-box-link:nth-child(3) a{
+    border: 1px solid #000;
+    color: #000;
+}
+.show-item-section .item-detail .item-box-link:nth-child(3) a:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.show-item-section .item-picture{
+    background-color: #fff;
+    padding: 0 30px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.show-item-section .item-picture img{
+    width: 100%;
+    object-fit: contain;
+}
+.show-item-section .item-picture-slider{
+    height: 110px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+.show-item-section .item-picture-slider .item-image{
+    cursor: pointer;
+    height: 90px;
+    width: 90px;
+    
+}
+.show-item-section .item-picture-slider .item-image.active{
+    border: 1px solid #d1d1d1;
+    background-color: transparent!important;
+    border-radius: 0!important;
+}
+.show-item-section .item-picture-slider .item-image img{
+    object-fit: cover;
+    height: 86px;
+    width: 86px;
+}
+.show-item-section .item-picture-slider .item-arrow{
+    height: 30px;
+    width: 30px;
+    background-color: var(--main-r);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.show-item-section .item-picture,
+.show-item-section .item-picture-slider{
+    border: 1px solid #D1D1D1;
+}
+
+
+
+
+.show-item-section .bordered{
+    margin: 50px 0px;
+}
+
 
 
 @media screen and (max-width: 1700px) {
@@ -965,6 +1069,12 @@ header .navigation ul li a{
 @media screen and (max-width: 1250px) {
     .product-show-area{
         padding: 80px;
+    }
+    .show-product .product-breadcrumb{
+        padding: 0px 0px!important;
+    }
+    .main .banner .show-product{
+        margin: 0 50px;
     }
 }
 @media screen and (max-width: 768px) {
