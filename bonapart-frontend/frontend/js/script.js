@@ -67,8 +67,7 @@ $('.page-box-number').click(function(){
   $('.page-box-number').removeClass('active');
 
   $(this).addClass('active');
-  var indexo = $('.page-box-number').length;
-  console.log(indexo);
+  
 });
 
 
