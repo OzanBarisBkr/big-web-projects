@@ -644,12 +644,35 @@ header .navigation ul li a{
     color: #fff;
     font-style: italic;
 }
+.search-breadcrumb .breadcrumb-right{
+    display: flex;
+
+}
+.breadcrumb-right .share-box{
+    background-color: var(--bg-2);
+    border-radius: 5px;
+    margin-left: 10px;
+   
+}
+.breadcrumb-right .share-box a{
+    display: inline-block;
+    color: var(--main-b);
+    height: 53px;
+    width: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
 
 .search-breadcrumb .breadcrumb-left,
 .search-breadcrumb .breadcrumb-right,
 .search-breadcrumb span{
     font-size: 20px;
     font-weight: 300;
+}
+.breadcrumb-right #like{
+    height: 53px!important;
 }
 
 @media screen and (max-width:1400px) {
@@ -667,7 +690,7 @@ header .navigation ul li a{
         padding: 30px 30px 0px;
     }
     .filter-item-section .product-search-area::after{
-       display: none;
+        display: none;
     }
     .search-breadcrumb .breadcrumb-left,
     .search-breadcrumb .breadcrumb-right,
@@ -675,6 +698,15 @@ header .navigation ul li a{
         font-size: 15px;
     }
 }
+@media screen and (max-width:767px){
+    .product-breadcrumb {
+        flex-direction: column;
+    }
+    .product-breadcrumb .breadcrumb-right{
+        display: flex;
+        justify-content: space-around;
+    }
+} 
        
 
 
@@ -1087,8 +1119,59 @@ header .navigation ul li a{
     }
     
 }
+.product-content-area{
+    margin-bottom: 160px;
+}
+.product-content-area .product-content-box{
+    padding: 20px;
+    width: 100%;
+    cursor: pointer;
+    transition: all .3s ease-out;
+}
+.product-content-area .product-content-box.opened{
+    border-radius: 20px;
+    border: 1px solid #d1d1d1;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+.product-content-area .product-content-box .button-accordion{
+    width: 100%;
+    height: 45px;
+    padding: 8px 18px;
+    background-color: var(--main-b);
+    color: #fff;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.product-content-area .product-content-box .button-accordion span{
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    
+}
+.product-content-area .product-content-box .button-accordion .accordion-symbol{
+    font-size: 33px;
+}
 
-
+.product-content-area .product-content-box .accordion-content{
+    padding: 20px;
+    display: none;
+    line-height: 25px;
+}
+.opened .accordion-content{
+    display: block!important;
+}
+@media screen and (max-width:768px) {
+    .show-item-section .product-show-area{
+        padding: 50px 25px;
+    }
+    .main .banner .show-product{
+        padding: 30px 15px;
+        margin: 0 25px;
+    }
+}
 /* ----------------------- */
 
 .product-search-area.active-before::before{
@@ -1363,6 +1446,18 @@ header .navigation ul li a{
 #open-search .item-box .oem{
     color: var(--main-r)!important;
 }
+#like {
+    height: 53px;
+    width: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #fff;
+    cursor: pointer;
+    background-color:var(--bg-2);
+    border-radius: 5px;
+}
 #open-search .item-box .marketing{
     height: 40px;
     display: flex;
@@ -1374,7 +1469,7 @@ header .navigation ul li a{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    height: 100%!important;
     color: #fff;
     cursor: pointer;
 }
@@ -1520,7 +1615,7 @@ header .navigation ul li a{
     }
     #open-search .item-box .marketing .like, #open-search .item-box .marketing .liked {
         position: absolute;
-        height: 50px;
+        height: 50px!important;
         top: 2%;
         right: 0;
     }
@@ -1618,6 +1713,14 @@ header .navigation ul li a{
     box-shadow: var(--shadow);
     border-radius: 10px;
     margin: 0px 40px 30px 10px;
+}
+.most-search-items .most-card #like{
+    position: absolute;
+    top: 0;
+    right: 15px;
+    width: 38px;
+    height: 44px;
+    border-radius: 0;
 }
 .most-search-items .most-card:last-child{
     margin-right: 15px;

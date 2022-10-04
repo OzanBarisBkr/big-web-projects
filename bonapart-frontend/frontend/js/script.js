@@ -9,6 +9,74 @@ $(document).ready(function(){
     banner.classList.toggle('pt-0', window.scrollY>150 );
 });
 
+  //product-detail-page
+  $('.box-1 .button-accordion').click(function(){
+    if( $(this).find('.accordion-minus').hasClass('d-none')== true ){
+      $(this).find('.accordion-plus').addClass('d-none');
+      $(this).find('.accordion-minus').removeClass('d-none');
+      $('.box-1').addClass('opened');
+    }else{
+      $(this).find('.accordion-minus').addClass('d-none');
+      $(this).find('.accordion-plus').removeClass('d-none');
+      $('.box-1').removeClass('opened');
+    };
+
+    
+  });
+  $('.box-2 .button-accordion').click(function(){
+    if( $(this).find('.accordion-minus').hasClass('d-none')== true ){
+      $(this).find('.accordion-plus').addClass('d-none');
+      $(this).find('.accordion-minus').removeClass('d-none');
+      $('.box-2').addClass('opened');
+    }else{
+      $(this).find('.accordion-minus').addClass('d-none');
+      $(this).find('.accordion-plus').removeClass('d-none');
+      $(this).find('.accordion-content').css('visibility', 'hidden');
+      $('.box-2').removeClass('opened');
+    };
+
+    
+  });
+  $('.box-3 .button-accordion').click(function(){
+    if( $(this).find('.accordion-minus').hasClass('d-none')== true ){
+      $(this).find('.accordion-plus').addClass('d-none');
+      $(this).find('.accordion-minus').removeClass('d-none');
+      $('.box-3').addClass('opened');
+    }else{
+      $(this).find('.accordion-minus').addClass('d-none');
+      $(this).find('.accordion-plus').removeClass('d-none');
+      $('.box-3').removeClass('opened');
+    };
+
+    
+  });
+
+
+  // result basket
+
+
+        var resultValue = 1;
+        var result = document.getElementById('result');
+        result.innerHTML = resultValue;
+
+    $('.minus').click(function(){
+      if( resultValue <= 1){
+        resultValue = 1;
+      };
+      resultValue--;
+      result.innerHTML = resultValue;
+
+    });
+    $('.plus').on('click', function(){
+      if(resultValue >= 9){
+        resultValue = 9;
+      };
+      resultValue ++;
+      result.innerHTML = resultValue;
+
+    });
+
+//   ---------------
 
 
 
