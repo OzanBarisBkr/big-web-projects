@@ -57,7 +57,7 @@ $(document).ready(function(){
 
         var resultValue = 1;
         var result = document.getElementById('result');
-        result.innerHTML = resultValue;
+        
 
     $('.minus').click(function(){
       if( resultValue <= 1){
