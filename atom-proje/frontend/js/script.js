@@ -122,6 +122,25 @@ $('.scroll-down-banner').click(function(){
       });
 
 
+      $('#ourServicesBoxSlide').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        responsive: [
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
+      });
     
 
 
@@ -164,11 +183,12 @@ $('.scroll-down-banner').click(function(){
   
   $('.slider').slick({
     dots: false,
-    arrows: true,
+    arrows: false,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    
     responsive: [
       {
         breakpoint: 1324,
@@ -181,6 +201,7 @@ $('.scroll-down-banner').click(function(){
       {
         breakpoint: 769,
         settings: {
+          mobileFirst:true,
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true
