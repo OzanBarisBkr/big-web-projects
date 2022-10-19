@@ -1,0 +1,22 @@
+.projx-logos { width: 100px; height: 53px; position: relative; text-align: center; margin-bottom: 30px;}
+.projx-logos * {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+.projx-logos > .projx-logos-link {display: block;width: 100%;height: 100%;position: absolute;z-index: 1;}
+.projx-logos-card {width: 100%;height: 100%;position: relative;-webkit-perspective: 100px;-moz-perspective: 100px;-o-perspective: 100px;perspective: 100px;}
+.projx-logos-card figure {display: block;height: 100%;width: 100%;position: absolute;padding: 0;margin: 0;-webkit-backface-visibility: hidden;-moz-backface-visibility: hidden;-o-backface-visibility: hidden;backface-visibility: hidden;-webkit-transition: -webkit-transform 0.4s;-moz-transition: -moz-transform 0.4s;-o-transition: -o-transform 0.4s;transition: transform 0.4s;-webkit-transform-style: preserve-3d;-moz-transform-style: preserve-3d;-o-transform-style: preserve-3d;transform-style: preserve-3d;}
+.projx-logos-card figure > div {width: 100%;height: 100%;background-repeat: no-repeat;background-size: contain;background-position: center;}
+.projx-logos-card .back > div {color: #fff;font-size: 12px;padding-top: 20px;}
+.projx-logos .projx-logos-card .front img { height: 30px; }
+.projx-logos .projx-logos-card .back,
+.projx-logos:hover .projx-logos-card .front {-webkit-transform: rotateY(180deg);-moz-transform: rotateY(180deg);-o-transform: rotateY(180deg);transform: rotateY(180deg);}
+.projx-logos:hover .projx-logos-card .back {-webkit-transform: rotateY(360deg);-moz-transform: rotateY(360deg);-o-transform: rotateY(360deg);transform: rotateY(360deg);}
+.tooltip-projx-logos {display: block;position: relative;z-index: 999;}
+.tooltip-projx-logos:after {content: '';position: absolute;width: 100%;height: 10px;bottom: 100%;left: 50%;pointer-events: none;-webkit-transform: translateX(-50%);transform: translateX(-50%);}
+.projx-logos:hover .tooltip-projx-logos::after {pointer-events: auto;}
+.tooltip-projx-logos-content {position: absolute;z-index: 9999;width: 140px;left: 50%;bottom: 100%;font-size: 13px;line-height: 1.2;margin: 0 0 10px -70px;text-align: center;font-weight: 400;color: #fff;background: transparent;opacity: 0;cursor: default;pointer-events: none; -webkit-font-smoothing: antialiased; -webkit-transition: opacity 0.3s 0.3s;transition: opacity 0.3s 0.3s;}
+.projx-logos:hover .tooltip-projx-logos-content {opacity: 1;pointer-events: auto;-webkit-transition-delay: 0s;transition-delay: 0s;}
+.tooltip-projx-logos-content span {display: block;}
+.tooltip-projx-logos-text {border-bottom: 2px solid #fffaf0;overflow: hidden;-webkit-transform: scale3d(0,1,1);transform: scale3d(0,1,1);-webkit-transition: -webkit-transform 0.3s 0.3s;transition: transform 0.3s 0.3s;}
+.projx-logos:hover .tooltip-projx-logos-content .tooltip-projx-logos-text {-webkit-transition-delay: 0s;transition-delay: 0s;-webkit-transform: scale3d(1, 1, 1);transform: scale3d(1, 1, 1);}
+.tooltip-projx-logos-text-inner {background: rgba(0, 0, 0, 0.6);padding: 7px 10px;-webkit-transform: translate3d(0,100%,0);transform: translate3d(0,100%,0); -webkit-transition: -webkit-transform 0.3s;transition: transform 0.3s;}
+.projx-logos:hover .tooltip-projx-logos-content .tooltip-projx-logos-text-inner {-webkit-transition-delay: 0.3s;transition-delay: 0.3s;-webkit-transform: translate3d(0, 0, 0);transform: translate3d(0, 0, 0);}
+.tooltip-projx-logos-content:after {content: '';bottom: -14px;left: 50%;border: solid transparent;height: 0;width: 0;position: absolute;pointer-events: none;border-color: transparent;border-top-color: #fffaf0;border-width: 7px;margin-left: -7px;}
