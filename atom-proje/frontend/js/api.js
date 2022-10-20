@@ -75,10 +75,94 @@ $(document).ready(function(){
         },
         
     ];
+
+            //services group
+    var OurServicesItemsGroup =[
+        {
+            image: "./frontend/images/urunler-2/1.png",
+            title: "Endüstriyel Buzdolabı Servisi",
+            content: "Endüstriyel mutfak teknik servisi alanında en iyi ve en hesaplı teknik servis hizmetinden yararlanmak için bizimle iletişime geçebilirsiniz  »",
+            hover: "Endüstriyel Buzdolabı",
+            where:"#"
+        },
+        {
+            image: "./frontend/images/urunler-2/2.png",
+            title: "Endüstriyel Bulaşık Makinesi Servisi",
+            content: "Endüstriyel bulaşık makineleri için doğru arıza tespiti yaparak üstün bir teknik servis hizmeti sağlıyoruz. . Endüstriyel mutfak teknik servisi alanında…  »",
+            hover: "Endüstriyel Bulaşık Makinesi",
+            where:"#"
+        },
+        {
+            image: "./frontend/images/urunler-2/3.png",
+            title: "Endüstriyel Ocak Servisi",
+            content: "Yerinde çözüm yerinde onarım güvencesiyle endüstriyel ocaklar için uzman ekibimizle profesyonel çözümler üretiyoruz. Sunduğumuz hesaplı fiyatlarla   »",
+            hover: "Endüstriyel Ocak",
+            where:"#"
+        },
+        {
+            image: "./frontend/images/urunler-2/4.png",
+            title: "Endüstriyel Fritöz  Servisi",
+            content: "Alternatif Tamir Onarım Merkezi olarak, deneyimli ekibimizle endüstriyel fritözler için gereken tüm bakım hizmetini sağlıyoruz. Marka ve model  »",
+            hover: "Endüstriyel Fritöz",
+            where:"#"
+        },
+        {
+            image: "./frontend/images/urunler-2/5.png",
+            title: "Endüstriyel Fırın Servisi",
+            content: "Hesaplı ve tecrübeli hizmeti ayağınıza getiren ATOM, endüstriyel fırınlar için hızlı arıza tespiti ve doğru çözümler üretir. İstanbul’un her yerinde…  »",
+            hover: "Endüstriyel Fırın",
+            where:"#"
+        },
+        {
+            image: "./frontend/images/urunler-2/6.png",
+            title: "Endüstriyel Buz Makinesi Servisi",
+            content: "Atom Teknik Servis’in tecrübeli ekibi, endüstriyel buz makinenize gerekli bakımları yaparak makinenizin ömrünü uzatır. Herhangi bir arıza durumunda…   »",
+            hover: "Endüstriyel Buz Makinesi",
+            where:"#"
+        }
+        
+    ];
+
+
+    var OurServicesItemsBanner =[
+        {
+            image: "./frontend/images/banner-images/banner-1.png",
+            title: "Televizyon Onarım ve Bakımı",
+            content: "Televizyon onarım ve bakımında Tecrübeli servis çalışanları ile üstün hizmet",
+            where:"#"
+        },
+        {
+            image: "./frontend/images/banner-images/banner-2.png",
+            title: "Kombi Onarım ve Bakımı",
+            content: "Kombi onarım ve bakımında Tecrübeli servis çalışanları ile üstün hizmet",
+            where:"#"
+        },
+        {
+            image: "./frontend/images/banner-images/banner-3.png",
+            title: "Çamaşır Makinası Onarım ve Bakımı",
+            content: "Çamaşır Makinası onarım ve bakımında Tecrübeli servis çalışanları ile üstün hizmet",
+            where:"#"
+        },
+        {
+            image: "./frontend/images/banner-images/banner-4.png",
+            title: "Endüstriyel Mutfak Onarım ve Bakımı",
+            content: "Endüstriyel Mutfak onarım ve bakımında Tecrübeli servis çalışanları ile üstün hizmet",
+            where:"#"
+        }
+    ];
     
 
     var ourServices= $("#ourServicesBox");
     var ourServicesSlide= $("#ourServicesBoxSlide");
+
+    //services group
+    var ourServicesGroup= $("#ourServiceGroup");
+    var ourServicesSlideGroup= $("#ourServiceGroupM");
+
+
+
+
+    var ourServicesSlideBanner= $("#ourServicesBoxSlideMobile");
         
 
     OurServicesItems.forEach((et) =>{
@@ -89,6 +173,27 @@ $(document).ready(function(){
     OurServicesItems.forEach((et) =>{
         ourServicesSlide.append(
             "<div class='col-12 col-lg-4'> <div class='box-item wow fadeInLeft' data-wow-delay='200ms' > <div class='item-img'> <img class='w-100' src='"+ et.image +"' alt='...'> </div><div class='item-content'> <h5>"+ et.title +"</h5> <p>"+ et.content +"</p></div><div class='visible-content'> "+ et.hover +" <br>Onarım Ve Bakımı <a class='btn-style-2' href='"+ et.where +"' tabindex='0'>Detaylı Oku »</a> </div></div></div>"
+            );
+    });
+
+
+    //servicesGroup
+    OurServicesItemsGroup.forEach((et) =>{
+        ourServicesGroup.append(
+            "<div class='col-md-6 col-lg-4'> <div class='box-item wow fadeInLeft' data-wow-delay='200ms' > <div class='item-img'> <img class='w-100' src='"+ et.image +"' alt='...'> </div><div class='item-content'> <h5>"+ et.title +"</h5> <p>"+ et.content +"</p></div><div class='visible-content-2'> "+ et.hover +" <br>Onarım Ve Bakımı <a class='btn-style-2' href='"+ et.where +"' tabindex='0'>Detaylı Oku »</a> </div></div></div>"
+            );
+    });
+    OurServicesItemsGroup.forEach((et) =>{
+        ourServicesSlideGroup.append(
+            "<div class='col-12 col-lg-4'> <div class='box-item wow fadeInLeft' data-wow-delay='200ms' > <div class='item-img'> <img class='w-100' src='"+ et.image +"' alt='...'> </div><div class='item-content'> <h5>"+ et.title +"</h5> <p>"+ et.content +"</p></div><div class='visible-content-2'> "+ et.hover +" <br>Onarım Ve Bakımı <a class='btn-style-2' href='"+ et.where +"' tabindex='0'>Detaylı Oku »</a> </div></div></div>"
+            );
+    });
+
+
+    //homeBanner
+    OurServicesItemsBanner.forEach((et) =>{
+        ourServicesSlideBanner.append(
+            "<div class='col-12 col-lg-4'> <div class='box-item wow fadeInLeft' data-wow-delay='200ms' > <div class='item-img'> <img class='w-100' src='"+ et.image +"' alt='...'> </div><div class='item-content'> <h5 class='wow fadeInDown' data-wow-delay='200ms'>"+ et.title +"</h5> <p class='wow fadeInDown' data-wow-delay='400ms'>"+ et.content +"</p></div></div></div>"
             );
     });
 
