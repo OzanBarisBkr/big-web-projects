@@ -48,6 +48,9 @@ h3{
 .bg-3{
     background-color: #404040!important;
 }
+.bg-4{
+    background-color: #F4F5F9!important;
+}
 .bg-t-3{
     color: #404040!important;
 }
@@ -1303,8 +1306,19 @@ header .banner-social a:last-child{
     width: 50%;
     background-color: var(--before-b);
     height: 100%;
+    z-index: -2;
+}
+.blog-s-2::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #F4F5F9;
+    height: 100%;
     z-index: -1;
 }
+
 .blog-section h3 {
     font-size: 40px;
     color: var(--main-b);
@@ -2189,9 +2203,19 @@ header .banner-social a:last-child{
     background-color: var(--main-b);
     padding: 35px 150px;
 }
+.services-detail .content-2{
+    width: 100%;
+    background-color: var(--main-b);
+    padding: 35px 100px;
+}
 .services-detail h3{
     font-size: 40px;
     margin-bottom: 15px;
+}
+.services-detail h4{
+    font-size: 25px;
+    margin-bottom: 15px;
+    text-align: left;
 }
 .services-detail p{
     font-size: 18px;
@@ -2205,6 +2229,9 @@ header .banner-social a:last-child{
     .services-detail .content{
         padding: 35px 50px;
     }
+    .services-detail .content-2{
+        padding: 35px 50px;
+    }
     
 }
 @media screen and (max-width:768px) {
@@ -2212,6 +2239,9 @@ header .banner-social a:last-child{
         margin-bottom: 30px;
     }
     .services-detail .content{
+        padding: 20px;
+    }
+    .services-detail .content-2{
         padding: 20px;
     }
     
@@ -2234,7 +2264,7 @@ header .banner-social a:last-child{
     align-items: center;
     justify-content: center;
     padding: 50px 0px;
-    margin: 100px;
+    margin: 100px 0px;
     z-index: -2;
 }
 .call-now h5{
@@ -2399,6 +2429,92 @@ header .banner-social a:last-child{
     }
 }
 
+/*--------------------*/
+
+
+.dual-section{
+    width: 100%;
+    padding: 80px 0px;
+    position: relative;
+}
+.bg50{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #F4F5F9;
+    z-index: -1;
+}
+.dual-section .dual-content{
+    padding-left: 60px;
+    width: 100%;
+}
+.dual-section2 .dual-content{
+    padding-right: 60px;
+    width: 100%;
+}
+.dual-section h5{
+    font-size: 30px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 40px;
+}
+.dual-section p{
+    font-size: 18px;
+    font-weight: 300;
+    color: #585858;
+    line-height: 30px;
+}
+.dual-section2{
+    width: 100%;
+    padding: 80px 0px;
+    position: relative;
+}
+
+
+.dual-section2 h5{
+    font-size: 30px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 40px;
+}
+.dual-section2 p{
+    font-size: 18px;
+    font-weight: 300;
+    color: #585858;
+    line-height: 30px;
+}
+@media screen and (max-width:767px) {
+    .dual-section{
+        padding: 30px;
+    }
+    .dual-section2{
+        padding: 30px;
+    }
+    .bg50{
+        display: none;
+    }
+    .dual-section .dual-content{
+       padding: 15px;
+    }
+    .dual-section2 .dual-content{
+
+        padding: 15px;
+    }
+    
+}
+
+
+.horizon{
+    height: 100px;
+}
+@media screen and (max-width:768px) {
+    .horizon{
+        height: 50px;
+    }
+}
+
 /* footer area */
 
 .footer-above{
@@ -2415,6 +2531,7 @@ header .banner-social a:last-child{
 .footer-above h5{
     font-size: 20px;
     font-weight: bold;
+
 }
 .footer-above p{
     font-size: 18px;
@@ -2679,6 +2796,14 @@ footer .all-rights .footer-mail::before{
 
   .demo-swiper.demo-swiper-auto .swiper-slide:nth-child(3n) {
     width: 30%;
+  }
+  .slide-wrapper .slick-list{
+    height: calc(100% + 200px)!important;
+  }
+  @media screen and (max-width:1200px) {
+    .slick-list{
+        height: auto!important;
+      }
   }
   
  

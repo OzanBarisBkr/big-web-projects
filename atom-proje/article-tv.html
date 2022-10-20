@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATOM</title>
+    <link rel="stylesheet" href="./frontend/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./frontend/css/still.css">
+    <link rel="stylesheet" href="./frontend/css/projx.css">
+    <link rel="stylesheet" href="./frontend/css/animate-css.css">
+    <link rel="stylesheet" href="./frontend/slick/slick-theme.css">
+    <link rel="stylesheet" href="./frontend/slick/slick.css">
+    <link rel="stylesheet" href="./frontend/css/animation-plus.css">
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
+</head>
+
+<body>
+    <div class="main relative">
+        
+
+            <div class="container-fluid p-0 ">
+                <header>
+                    <div class="banner-logo ">
+                        <a href="#">
+                            <figure>
+                                <img src="./frontend/images/atom-logo.png" alt="...">
+                            </figure>
+                        </a>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li class="y-bottom"><a href="#">HİZMETLERİMİZ</a>
+                                <div class="dropdown-list-items">
+                                    <div class="list-left">
+                                        <h5>Ev Ve Ofis<br />
+                                            Teknik Servis Onarımı</h5>
+                                        <ul>
+                                            <li><a href="#">• Klima Bakım Onarım</a></li>
+                                            <li><a href="#">• Televizyon Bakım Onarım</a></li>
+                                            <li><a href="#">• Çamaşır makinası Bakım Onarım</a></li>
+                                            <li><a href="#">• Bulaşık makinası Bakım Onarım</a></li>
+                                            <li><a href="#">• Buzdolabı Bakım Onarım</a></li>
+                                            <li><a href="#">• Kombi Bakım Onarım</a></li>
+                                        </ul>
+                                        <a class="list-button-2" href="#">Tümünü Gör »</a>
+                                    </div>
+                                    <div class="list-right">
+                                        <h5>Endüstriyel Mutfak <br />
+                                            Ekipmanları Onarımı</h5>
+                                        <ul>
+                                            <li><a href="#">• Endüstriyel Buzdolabı Servisi
+                                                </a></li>
+                                            <li><a href="#">• Endüstriyel Bulaşık Makinesi Servisi</a></li>
+                                            <li><a href="#">• Endüstriyel Ocak Servisi</a></li>
+                                            <li><a href="#">• Endüstriyel Fritöz Servisi</a></li>
+                                            <li><a href="#">• Endüstriyel Buz Makinesi Servisi</a></li>
+                                            <li><a href="#">• Endüstriyel Fırın Servisi</a></li>
+                                        </ul>
+                                        <a class="list-button-2" href="#">Tümünü Gör »</a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="y-bottom"><a href="#">BLOG</a></li>
+                            <li class="y-bottom"><a href="#">HAKKIMIZDA</a></li>
+                            <li class="y-bottom"><a href="#">İLETİŞİM</a></li>
+                        </ul>
+                    </nav>
+                    <div class="banner-social ms-auto">
+                        <a href="#" class="click-popup">
+                            <img class="me-3" src="./frontend/icons/run.png" alt="">
+                            SERVİS ÇAĞIR !
+                        </a>
+                        <a href="#">
+                            <img class="me-3" src="./frontend/icons/whatsapp.png" alt="">
+                            0 532 206 08 08
+                        </a>
+                    </div>
+                </header>
+            </div>
+        
+
+        <div class="services-popup relative">
+            <div class="close-popup"><i class="fa-solid fa-xmark"></i></div>
+            <section class="call-us">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="call-us-form">
+                                <h3>ŞİMDİ SERVİS ÇAĞIR !</h3>
+                                <p>Hemen Talep Oluşturun, Anında Sorununuzu Çözelim!</p>
+                                <form class="row" action="" id="callUsForm">
+                                    <div class="col-12">
+                                        <div class="input-box">
+                                            <input type="text" name="" id="" placeholder="Adınız Soyadınız *" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="input-box">
+                                            <input type="tel" name="" id="" placeholder="Telefon Numaranız *" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="input-box">
+                                            <input type="email" name="" id="" placeholder="E-Posta">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="input-box">
+                                            <input type="text" name="" id="" placeholder="Arızalı Ürün Marka Model">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="input-box">
+                                            <input type="date" name="" id="" placeholder="Servis Tarihi Seçin">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="textarea">
+                                            <textarea name="" id="" cols="30" rows="10" placeholder="Arıza Hakkında Detaylı Bilg Verin"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="approve">
+                                            <input type="checkbox" name="" id="idid">
+                                            <label for="idid"></label>
+                                            <p><a href="#"  target="_blank">Aydınlatma Metni</a>’ni okudum ve onaylıyorum.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <a href="#" class="btn-style-3">
+                                            <span>GÖNDER</span>
+                                        </a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    
+        <div class="before-effect"></div>
+
+        <section id="breadcrumb">
+            <div class="container body-5">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="breadcrumb">
+                            <span id="parent-page">anasayfa</span> > <span id="child-page">blog</span> > <span id="">blog detay</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="services-detail mt-5">
+            <div class="container body-1">
+                <div class="item-img shine-animation">
+                    <img class="w-100" src="./frontend/images/tv-title.png" alt="">
+                </div>
+                 <div class="content-2">
+                    <h4>Televizyon Tamiri Ile İlgili Merak Edilenler</h4> 
+                    
+                 </div>  
+                
+            </div>
+        </section>
+
+        <div class="container-fluid relative">
+            <div class="dual-section">
+                <div class="container body-19">
+                    <div class="row ">
+                        <div class="col-md-6 shine-animation wow fadeInLeft text-center text-md-end " data-wow-delay="500ms">
+                            
+                            
+                                <figure class="">
+                                    <img  src="./frontend/images/tv-1.png" class="  w-100" alt="">
+                                </figure>
+                            
+                            
+                        </div>
+                        <div class="col-md-6 my-auto">
+                            <div class="dual-content my-auto align-self-center  my-auto">
+                                <h5 class="wow fadeInDown" data-wow-delay="200ms">Televizyon Türlerini Yakından<br /> Tanıyalım</h5>
+                                <p>İyi bir televizyon tamircisi, Lcd, Led, Plazma veya tüplü televizyonları, marka ayırmaksızın, müşteri memnuniyetini esas alarak tamir edip ilk günkü kalitesine kavuşturmalıdır. Aradığınız televizyon tamircisi ile her zaman karşılaşmayabilirsiniz.</p>
+                                <p class="wow fadeInDown" data-wow-delay="400ms">LCD TV: LCD televizyonlardaki background aydınlatma sistemine sahip olması sebebiyle görüntü sinyalinden gelen renklerin yüzde 7 ile 75’i ekrana yansıtılabilme kapasitesine sahiptir. Bunların dışında background aydınlatma sistemi, aydınlatmayı sağlayan floresanın sürekli açık kalması yüzünden LCD televizyonlar LED televizyonlara nazaran daha fazla elektrik tüketirler.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="bg50"></div>
+            </div>
+            
+        </div>
+
+
+
+        <div class="container body-19 p-0">
+            <div class="call-now">
+                <h5 class="text-center wow fadeInDown" data-wow-delay="150ms">SİZ DE HEMEN BİZİ ARAYIN,<br />
+                    ETKİN VE TECRÜBELİ HİZMETİ DENEYİMLEYİN.</h5>
+                <p class="text-center wow fadeInDown" data-wow-delay="250ms">İlgili markanın hızlı teknik servisi olarak hizmet vermekteyiz.<br />
+                    Yapılan Tüm İşlemler Firmamız Tarafından 6 AY Atom Teknik Servis Güvencesi Altındadır.</p>
+                <div class="social">
+                    <div class="social-left click-popup wow fadeInLeft" data-wow-delay="500ms">
+                        <img src="./frontend/icons/run2.png" alt="">
+                        <div class="left-content">
+                            <h5>SERVİS ÇAĞIR</h5>
+                            <p>Formu Doldur! Arayalım</p>
+                        </div>
+                    </div>
+                    <div class="social-right wow fadeInRight" data-wow-delay="500ms">
+                        <a href="">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <div class="left-content">
+                                <h5>WhatsApp Hattı</h5>
+                                <p>Formu Doldur! Arayalım</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <section class="counter-2 my-5 my-md-0">
+            <div class="container">
+                <div class="row gx-5">
+                    <div class="col-12">
+                        <div class="counter-numbers">
+                            <div class="row ">
+                                <div class="col-6 col-lg-3  item">
+                                    <div class="value" akhi="782">0</div>
+                                    <span>Ürün Tamiri</span>
+                                </div>
+                                <div class="col-6 col-lg-3 item">
+                                    <div class="value" akhi="244">0</div>
+                                    <span>Haneye Hizmet </span>
+                                </div>
+                                <div class="col-6 col-lg-3 item">
+                                    <div class="value" akhi="18">0</div>
+                                    <span>Yıllık Tecrübe</span>
+                                </div>
+                                <div class="col-6 col-lg-3 item">
+                                    <div class="value yuzde" akhi="98">0</div>
+                                    <span>Mutlu Müşteri</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+
+
+        
+
+
+        
+
+        <div class="container body-11 relative">
+            <div class="dual-section2">
+                <div class="row ">
+                    <div class="col-md-6 shine-animation wow fadeInRight text-center text-md-end order-1 order-md-2" data-wow-delay="500ms">
+                            <figure class="">
+                                <img  src="./frontend/images/tv-2.png" class="  w-100" alt="">
+                            </figure>
+                    </div>
+                    <div class="col-md-6 my-auto order-2 order-md-1">
+                        <div class="dual-content my-auto align-self-center  my-auto">
+                            <h5 class="wow fadeInDown" data-wow-delay="200ms">Televizyon Türlerini Yakından<br /> Tanıyalım</h5>
+                            <p class="wow fadeInDown" data-wow-delay="400ms">LED TV: LED televizyonların LCD televizyonladan farkları, ekranda görüntü meydana gelirken kullanılan background ışıklandırma teknolojisindeki ilerlemedir. Normalde LCD televizyonlarda background aydınlatma bir floresan ile yapılır. Floresan televizyon açıldığı zaman yanmaya başlar ve gönderdiği ışık devamlı olarak açık kalır.</p>
+                            <p class="wow fadeInDown" data-wow-delay="600ms">PLAZMA TV: Plazma ekran bir görüntüleme paneli çeşididir. 30 inç(76 cm) ve daha fazla büyüklükteki ekranlar için tercih edilir. Yaygın olarak yapılarını içlerinde sıkıştırılmış iyonize gaz bulunan elektrik yüklü görüntü hücreler oluşturur. Yüksek çözünürlüklü plazma televizyon teknolojisine ek olarak geliştirilen çözünürlüklerdir.
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
+
+        <section class="why-us my-5 my-md-0">
+            <div class="container body-1">
+                <div class="box-section mt-0">
+                    <div class="container body-14">
+                        <div class="row ">
+                            <div class="col-md-4">
+                                <div class="box-item wow fadeInLeft" data-wow-delay="150ms">
+                                    <img src="./frontend/icons/tecrube.png" alt="">
+                                    <h5>18 Yıllık Tecrübe</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="box-item wow fadeInLeft" data-wow-delay="450ms">
+                                    <img src="./frontend/icons/hizmet.png" alt="">
+                                    <h5>Üstün Hizmet</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="box-item wow fadeInLeft" data-wow-delay="750ms">
+                                    <img src="./frontend/icons/smile.png" alt="">
+                                    <h5>Mutlu Müşteri</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="horizon"></div>
+
+        <section class="blog-section blog-s-2 ">
+            <div class="container body-5">
+                <h3>BLOG »</h3>
+
+            <div class="blog-slider">
+                <div class="blog-box ">
+                    <div class="item-img shine-animation">
+                        <img src="./frontend/images/blog-1.png" alt="...">
+                    </div>
+                    <div class="item-content">
+                        <h5>Televizyon Tamiri ve Bakımı</h5>
+                        <p>Televizyon, şüphesiz hayatımızda önemli 
+                            bir yer ediniyor. Biz de İstanbul Teknik 
+                            Servis olarak, marka ve model fark 
+                            etmeksizin televi…»</p>
+                        <a href="#" class="btn-style-4">DETAYLI OKU »</a>
+                    </div>
+                </div>
+                <div class="blog-box ">
+                    <div class="item-img shine-animation">
+                        <img src="./frontend/images/blog-2.png" alt="...">
+                    </div>
+                    <div class="item-content">
+                        <h5>Televizyon Tamiri ve Bakımı</h5>
+                        <p>Televizyon, şüphesiz hayatımızda önemli 
+                            bir yer ediniyor. Biz de İstanbul Teknik 
+                            Servis olarak, marka ve model fark 
+                            etmeksizin televi…»</p>
+                        <a href="#" class="btn-style-4">DETAYLI OKU »</a>
+                    </div>
+                </div>
+                <div class="blog-box ">
+                    <div class="item-img shine-animation">
+                        <img src="./frontend/images/blog-3.png" alt="...">
+                    </div>
+                    <div class="item-content">
+                        <h5>Televizyon Tamiri ve Bakımı</h5>
+                        <p>Televizyon, şüphesiz hayatımızda önemli 
+                            bir yer ediniyor. Biz de İstanbul Teknik 
+                            Servis olarak, marka ve model fark 
+                            etmeksizin televi…»</p>
+                        <a href="#" class="btn-style-4">DETAYLI OKU »</a>
+                    </div>
+                </div>
+                <div class="blog-box ">
+                    <div class="item-img shine-animation">
+                        <img src="./frontend/images/blog-1.png" alt="...">
+                    </div>
+                    <div class="item-content">
+                        <h5>Televizyon Tamiri ve Bakımı</h5>
+                        <p>Televizyon, şüphesiz hayatımızda önemli 
+                            bir yer ediniyor. Biz de İstanbul Teknik 
+                            Servis olarak, marka ve model fark 
+                            etmeksizin televi…»</p>
+                        <a href="#" class="btn-style-4">DETAYLI OKU »</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        
+        <section class="services" id="services-section">
+            <div class="container body-5 ">
+                <div class="row ">
+                    <div class="col-md-6 col-lg-8 mb-4 mb-md-0 wow fadeInLeft" data-wow-delay="200ms">
+                        <div class="services-slider ">
+                            <div class="item">
+                                <div class="item-img">
+                                    <img src="./frontend/images/klima-onarim.png" alt="...">
+                                    <div class="visible-content">
+                                        Klima <br /> Onarım Ve Bakımı
+                                        <a class="btn-style-2" href="#">Detaylı Oku »</a>
+                                    </div>
+                                </div>
+                                <div class="item-title">
+                                    <h5>Klima <br />
+                                        Onarımı ve
+                                        Bakımı</h5>
+                                    <a class="btn-style-2" href="#">Detaylı Oku »</a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item-img">
+                                    <img src="./frontend/images/camasir.png" alt="...">
+                                    <div class="visible-content">
+                                        Çamaşır Makinası <br /> Onarım Ve Bakımı
+                                        <a class="btn-style-2" href="#">Detaylı Oku »</a>
+                                    </div>
+                                </div>
+                                <div class="item-title">
+                                    <h5>Çamaşır Makinası<br />
+                                        Onarım Ve Bakımı</h5>
+                                    <a class="btn-style-2" href="#">Detaylı Oku »</a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item-img">
+                                    <img src="./frontend/images/klima-onarim.png" alt="...">
+                                    <div class="visible-content">
+                                        Klima <br /> Onarım Ve Bakımı
+                                        <a class="btn-style-2" href="#">Detaylı Oku »</a>
+                                    </div>
+                                </div>
+                                <div class="item-title">
+                                    <h5>Klima Onarımı ve<br />
+                                        Bakımı</h5>
+                                    <a class="btn-style-2" href="#">Detaylı Oku »</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 my-auto " >
+                        <div class="services-content ">
+                            <h3 class="wow fadeInDown" data-wow-delay="200ms">HİZMETLERİMİZ</h3>
+
+                            <p class="wow fadeInDown" data-wow-delay="400ms">İstanbul genelinde, tüm Beyaz Eşyalarınız için Teknik servis hizmeti veriyoruz. Teknik
+                                servis firması olarak uzun yılların verdiği tecrübe ile Vermekte olduğumuz hizmetleri
+                                her daim en iyi olabilmek adına kendimizi geliştirmekte ve firma olarak kendimize farklı
+                                konular içerisinde de yenilikler katmaktayız.</p>
+
+                            <a href="#" class="btn-style-3 wow fadeInUp" data-wow-delay="600ms">
+                                <span>TÜM HİZMETLERİMİZ</span></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+
+        
+
+        
+        <div class="footer-above mt-0">
+            <div class="online-form wow fadeInLeft" data-wow-delay="150ms">
+                <h5>ONLINE FORM</h5>
+                <p>Formu Doldur! Arayalım</p>
+            </div>
+            <div class="whatsapp-contact wow fadeInRight" data-wow-delay="150ms">
+                <a href="#">
+                    <h5>WhatsApp Hattı</h5>
+                    <p>0 532 206 08 08</p>
+                </a>
+            </div>
+        </div>
+        <footer>
+
+            <div class="container body-5">
+                <div class="row">
+                    <div class="col-md-4 col-lg-3 mb-5 mb-md-0">
+                        <div class="logo-section d-flex flex-column wow fadeInLeft" data-wow-delay="150ms">
+                            <a href="#"><img  class="mb-4 logo-img" src="./frontend/images/logo-footer.png" alt=""></a>
+                            <a href="#" class="footer-instagram d-flex flex-column align-items-center text-center text-md-start">
+                                <i class="fa-brands fa-instagram"></i>
+                                <p>BİZİ <span>INSTAGRAM'DA</span><br /> TAKİP EDİN</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-lg-9">
+                        <div class="row g5">
+                            <div class="col-md-6 col-lg-3">
+                                <div class="footer-nav wow fadeInDown" data-wow-delay="150ms">
+                                    <a href="#"><h5>KURUMSAL</h5></a>
+                                    <ul>
+                                        <li><a href="#">Hakkımızda</a></li>
+                                        <li><a href="#">Gizlilik Politikası</a></li>
+                                        <li><a href="#">Garanti Politikamız</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="footer-nav wow fadeInDown" data-wow-delay="300ms">
+                                    <a href="#"><h5>EV VE OFİS</h5></a>
+                                    <ul>
+                                        <li><a href="#">•   Klima Bakım Onarım</a></li>
+                                        <li><a href="#">•   Televizyon  Bakım Onarım</a></li>
+                                        <li><a href="#">•   Çamaşır makinası  Bakım Onarım</a></li>
+                                        <li><a href="#">•   Bulaşık makinası  Bakım Onarım</a></li>
+                                        <li><a href="#">•   Buzdolabı  Bakım Onarım</a></li>
+                                        <li><a href="#">•   Kombi  Bakım Onarım</a></li>
+                                        <li><a href="#">•   Ocak  Bakım Onarım</a></li>
+                                        <li><a href="#">•   Fırın  Bakım Onarım</a></li>
+                                        <li><a href="#">•   Aspiratör  Bakım Onarım</a></li>
+                                        <li><a href="#">•   Elektrikli Ev Aletleri Bakım Onarım</a></li>
+                                    </ul>
+                                    <a class="list-button-2" href="#">Tümünü Gör »</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="footer-nav wow fadeInDown" data-wow-delay="450ms">
+                                    <a href="#"><h5>ENDÜSTRİYEL MUTFAK</h5></a>
+                                    <ul>
+                                        <li><a href="#">•   Endüstriyel Buzdolabı Servisi</a></li>
+                                        <li><a href="#">•   Endüstriyel Bulaşık Makinesi Servisi</a></li>
+                                        <li><a href="#">•   Endüstriyel Ocak Servisi</a></li>
+                                        <li><a href="#">•   Endüstriyel Fritöz  Servisi</a></li>
+                                        <li><a href="#">•   Endüstriyel Buz Makinesi Servisi</a></li>
+                                        <li><a href="#">•   Endüstriyel Fırın Servisi</a></li>
+                                    </ul>
+                                    <a class="list-button-2" href="#">Tümünü Gör »</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="footer-nav wow fadeInDown" data-wow-delay="600ms">
+                                    <a href="#"><h5>İLETİŞİM</h5></a>
+                                    <p>Mustafa Kemal Paşa Caddesi<br />
+                                        Siyavuşpaşa Mah. 163 Sk. No:2/A-B<br />
+                                        Bahçelievler - İSTANBUL
+                                        </p>
+                                    <h4>ÇALIŞMA SAATLERİ</h4>
+                                    <p>Hafta içi : 09:00-20:00<br />
+                                        Hafta sonu : 09:00-20:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="all-rights">
+                            <div class="projx-logos wow fadeInDown" data-wow-delay="150ms">
+                                <a href="https://www.projx.com.tr" rel="muse" class="projx-logos-link" target="_blank"></a>
+                                <span class="tooltip-projx-logos">
+                                    <span class="tooltip-projx-logos-content">
+                                        <span class="tooltip-projx-logos-text">
+                                            <span class="tooltip-projx-logos-text-inner">site design & technology</span>
+                                        </span>
+                                    </span>
+                                </span>
+                                <div class="projx-logos-card">
+                                    <figure class="front">
+                                        <div><img src="./frontend/images/projx-yatay-beyaz.png" alt="PROJX"></div>
+                                    </figure>
+                                    <figure class="back">
+                                        <div>www.projx.com.tr</div>
+                                    </figure>
+                                </div>
+                            </div>
+                            <p class="wow fadeInDown" data-wow-delay="250ms">Copyright © 2022 ATOM TEKNİK SERVİS All rights reserved.</p>
+                            <a class="footer-phone ms-auto wow fadeInDown" data-wow-delay="350ms" href="tel:05322060808">0 532 206 08 08</a>
+                            <a class="footer-mail wow fadeInDown" data-wow-delay="450ms" href="mailto:destek@atomteknikservis.com">destek@atomteknikservis.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </footer>
+
+    
+        
+        
+
+
+        
+
+
+
+
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/d274e337c4.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="frontend/js/api.js"></script>
+    <script src="frontend/js/script.js"></script>
+    <script src="frontend/js/bootstrap.bundle.js"></script>
+    <script src="frontend/js/wow.min.js"></script>
+    <script src="frontend/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
