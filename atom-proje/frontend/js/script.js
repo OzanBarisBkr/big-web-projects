@@ -18,10 +18,14 @@ $('.close-popup').click(function(){
     $('.services-popup').css('display','none');
 });
 
-// $('.scroll-down-banner').click(function(){
-//   $("html, body").animate(
-//     { scrollTop: "0" }, 3000);
-// }); 
+$('#services-section .item').click(function(){
+  $("html, body").animate(
+    { scrollTop: "0" }, 750);
+}); 
+$('.ourServices .visible-content-2').click(function(){
+  $("html, body").animate(
+    { scrollTop: "0" }, 750);
+}); 
 
 
 $(function() {
