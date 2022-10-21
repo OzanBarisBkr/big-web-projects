@@ -887,6 +887,9 @@ header .banner-social a:last-child{
     }
 }
 /* counter - 2 */
+.counter-2 .item{
+    text-align: center;
+}
 .counter-2 {
     margin-top: 100px!important;
     display: flex;
@@ -924,7 +927,8 @@ header .banner-social a:last-child{
 }
 .counter-2 .counter-numbers span{
     color: #7E7E7E;
-    margin-left: 30px;
+    margin-left: 60px;
+    text-align: center;
 }
 @media screen and (max-width:1200px) {
     .counter-2 .counter-numbers .value{
@@ -936,6 +940,9 @@ header .banner-social a:last-child{
     .counter-2{
         margin-top: 50px!important;
     }
+    .counter-2 .counter-numbers span{
+        margin-left: 40px!important;
+    }
 }
 @media screen and (max-width:768px) {
     .counter-2{
@@ -943,10 +950,20 @@ header .banner-social a:last-child{
     }
     .counter-2 .counter-numbers .value{
         font-size: 40px;
-        margin-left: 30px;
+        margin-left: 0px!important;
+    }
+    .counter-2 .counter-numbers span{
+        
+        margin-left: 0px!important;
     }
     .counter-2 .counter-numbers .yuzde::after{
         font-size: 40px;
+    }
+    .counter-2 .counter-numbers .value::before {
+        left: 50%;
+        bottom: 0;
+        width: 50%;
+        transform: translateX(-50%);
     }
 }
   
@@ -1191,6 +1208,7 @@ header .banner-social a:last-child{
 @media screen and (max-width:768px) {
     .comment-section h3{
         font-size: 30px!important;
+        margin-bottom: 40px;
     }
     .comment-section .box-item > img{
         width: 35px;
@@ -1683,7 +1701,8 @@ header .banner-social a:last-child{
     font-size: 25px;
     font-style: italic;
     font-weight: 200;
-    line-height: 41px;
+    line-height: 40px;
+    color: #0F0F0F;
 }
 @media screen and (max-width:1000px) {
     .image-content-section p{
@@ -1731,7 +1750,9 @@ header .banner-social a:last-child{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
+    height: 160px;
+    
 }
 .why-us .box-section h5{
     margin-top: 20px;
@@ -2884,6 +2905,7 @@ footer .footer-nav li:hover{
 footer .footer-nav li a{
     font-size: 14px;
     font-weight: 300;
+    letter-spacing: 0px;
 }
 footer .footer-nav h4{
     font-size: 16px;

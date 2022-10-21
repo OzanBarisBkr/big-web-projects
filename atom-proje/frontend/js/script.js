@@ -42,9 +42,11 @@ $(function() {
         dots: true,
         arrows: true,
         infinite: true,
-        speed: 1000,
+        speed: 1500,
         slidesToShow: 1,
         slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3500,
         responsive: [
           {
             breakpoint: 1024,
@@ -66,6 +68,8 @@ $(function() {
         dots: false,
         arrows: true,
         infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
         speed: 1000,
         slidesToShow: 2,
         slidesToScroll: 1,
@@ -96,7 +100,7 @@ $(function() {
       $('.blog-slider').slick({
         dots: false,
         infinite: false,
-        speed: 300,
+        speed: 700,
         slidesToShow: 3,
         slidesToScroll: 3,
         responsive: [
@@ -195,7 +199,7 @@ $(function() {
 
 
       const counters = document.querySelectorAll('.value');
-      const speed = 200;
+      const speed = 400;
 
     counters.forEach( counter => {
     const animate = () => {
