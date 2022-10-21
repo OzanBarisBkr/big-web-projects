@@ -6,8 +6,8 @@ $(document).ready(function(){
     var header = document.querySelector('header');
     var banner = document.querySelector('.banner');
     var bannerSlider = this.document.querySelector('.slide-image');
-    header.classList.toggle('sticky', window.scrollY > 50);
-    banner.classList.toggle('pt-0', window.scrollY> 50);
+    header.classList.toggle('sticky', window.scrollY > 200);
+    banner.classList.toggle('pt-0', window.scrollY> 200);
     // bannerSlider.Style.marginTop = '200px';
 });
 

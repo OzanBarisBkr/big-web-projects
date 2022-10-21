@@ -158,6 +158,7 @@ $(document).ready(function(){
     //services group
     
     var ourServicesSlideGroup= $("#ourServiceGroupM");
+    var ourServicesNormal= $(".our-services-normal");
 
 
 
@@ -181,6 +182,12 @@ $(document).ready(function(){
     
     OurServicesItemsGroup.forEach((et) =>{
         ourServicesSlideGroup.append(
+            "<div class='col-12 col-lg-4'> <div class='box-item wow fadeInLeft' data-wow-delay='200ms' > <div class='item-img'> <img class='w-100' src='"+ et.image +"' alt='...'> </div><div class='item-content'> <h5>"+ et.title +"</h5> <p>"+ et.content +"</p></div><div class='visible-content-2'> "+ et.hover +" <br>Onarım Ve Bakımı <a class='btn-style-2' href='"+ et.where +"' tabindex='0'>Detaylı Oku »</a> </div></div></div>"
+            );
+    });
+
+    OurServicesItemsGroup.forEach((et) =>{
+        ourServicesNormal.append(
             "<div class='col-12 col-lg-4'> <div class='box-item wow fadeInLeft' data-wow-delay='200ms' > <div class='item-img'> <img class='w-100' src='"+ et.image +"' alt='...'> </div><div class='item-content'> <h5>"+ et.title +"</h5> <p>"+ et.content +"</p></div><div class='visible-content-2'> "+ et.hover +" <br>Onarım Ve Bakımı <a class='btn-style-2' href='"+ et.where +"' tabindex='0'>Detaylı Oku »</a> </div></div></div>"
             );
     });
