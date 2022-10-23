@@ -1763,11 +1763,6 @@ header .banner-social a:last-child{
     height: 270px;
     z-index: -1;
 }
-@media screen and (max-width:600px) {
-    .breadcrumb span{
-        margin-left: 0;
-    }
-}
 
 /* --------- */
 
