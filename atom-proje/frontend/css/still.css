@@ -780,7 +780,7 @@ header .banner-social a:last-child{
 }
 @media screen and (max-width:768px) {
     .services-slider .item-img{
-        width: 350px;
+        width: 100%;
     }
     .services h3{
         margin-top: 50px;
@@ -794,13 +794,14 @@ header .banner-social a:last-child{
         margin: 0px!important;
     }
     .services {
-        padding: 0px!important;
+        padding: 0px;
     }
+   
 
 }
 @media screen and (max-width:767px) {
     .services {
-        padding: 50px 20px;
+        padding: 20px 20px;
     }
     .services::before{
        width: 100%;
@@ -811,6 +812,7 @@ header .banner-social a:last-child{
     .services .slick-prev::before{
         margin-right: -60px;
     }
+   
     
 }
 
@@ -946,6 +948,15 @@ header .banner-social a:last-child{
     }
     .counter .counter-numbers .yuzde::after{
         font-size: 40px;
+    }
+}
+@media screen and (max-width:767px) {
+    .counter{
+        height: auto;
+        margin-top: 0px!important;
+    }
+    .counter .btn-style-3{
+        margin: 0 auto;
     }
 }
 /* counter - 2 */
@@ -1158,6 +1169,17 @@ header .banner-social a:last-child{
 .how-it-works .how-it-image img{
     object-fit: cover;
 }
+.how-it-works .slick-dots {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
 
 
 @media screen and (max-width:1200px) {
@@ -1207,7 +1229,15 @@ header .banner-social a:last-child{
         width: 300px;
         
     }
-    
+    #howItOriginal{
+        display: none;
+    }
+    #howItSlider{
+        display: block!important;
+    }
+    .how-it-works h3{
+        font-size: 25px!important;
+    }
 }
 
 
@@ -1256,7 +1286,9 @@ header .banner-social a:last-child{
     cursor: pointer;
     margin: 0 20px;
 }
-.comment-section .box-item.comment-section .box-item.comment-section .box-item
+.swiper-slide:nth-child(even){
+  margin-top: 50px!important;
+}
 .comment-section .author{
     font-weight: 600;
 }
@@ -1273,6 +1305,12 @@ header .banner-social a:last-child{
     .comment-section .box-item > img{
         width: 35px;
     }
+    .swiper-slide:nth-child(even){
+        margin-top: 0px!important;
+      }
+      .comment-section h3::before{
+        width: 40%;
+      }
 }
 
   
@@ -1644,6 +1682,13 @@ header .banner-social a:last-child{
         width: 35px;
         height: 35px;
     }
+}
+@media screen and (max-width:767px) {
+    
+    .blog-section .slick-prev{
+        left: 45%;
+    }
+   
 }
 
 .services-popup{

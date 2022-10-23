@@ -71,7 +71,7 @@ $(function() {
         dots: false,
         arrows: true,
         infinite: true,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 2000,
         speed: 1000,
         slidesToShow: 2,
@@ -91,6 +91,40 @@ $(function() {
               slidesToShow: 1,
               slidesToScroll: 1,
               infinite: true
+            }
+          },
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              dots:true,
+              arrows:false
+            }
+          }
+          
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
+      });
+    $('#howItSlider').slick({
+        dots: true,
+        arrows: true,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        speed: 1000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              dots:true,
+              arrows:false
             }
           }
           
