@@ -59,7 +59,7 @@ h3{
     cursor: pointer!important;
 }
 .marginH{
-    margin-top: 140px!important;
+    margin-top: 170px!important;
 }
 @media screen and (max-width:1200px) {
     .marginH{
@@ -177,7 +177,7 @@ h3{
 }
 @media screen and (max-width:1200px) {
     .main .banner {
-        height: 80vh;
+        height: auto;
     }
     .banner::before{
         width: 100%;
@@ -218,6 +218,11 @@ header{
     position: absolute;
     top: 0;
 }
+header .hamburger i{
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
 @media screen and (max-width:1200px) {
     .banner .slide-wrapper{
         display: none;
@@ -236,8 +241,20 @@ header{
         display: none!important;
     }
     header .hamburger{
-        display: block;
+        display: block!important;
     }
+}
+@media screen and (max-width:768px) {
+    .our-services-mobile .box-item .item-content{
+        padding: 24px 24px 0px!important;
+    }
+    .our-services-mobile .box-item .item-content p{
+        margin-bottom: 0px!important;
+    }
+    .banner header.sticky{
+        height: 80px!important;
+    }
+    
 }
 @media screen and (max-width:767px) {
     .banner header{
@@ -416,6 +433,7 @@ header .banner-social a:hover  img{
 header .banner-social a:first-child{
     background-color: var(--main-y);
     margin-right: 5px;
+    border: none;
 }
 header .banner-social a:last-child{
     background-color: #fff;
@@ -552,10 +570,10 @@ header .banner-social a:last-child{
 }
 .banner .slick-next{
     transform: rotate(90deg)!important;
-    margin-top: -40px;
+    margin-top: -100px;
 }
 .banner .slick-prev{
-    margin-top: -100px;
+    margin-top: -40px;
     transform: rotate(90deg)!important;
 }
 .banner .slick-next::before{
@@ -593,10 +611,41 @@ header .banner-social a:last-child{
 .go-visit span{
     color: #fff;
 }
+
+
 @media screen and (max-width:1200px) {
+    .banner .slick-next, .banner .slick-prev {
+        writing-mode: vertical-lr;
+        margin-left: 100px;
+        z-index: 40;
+        margin-left: 20px;
+        opacity: 1!important;
+    }
     .banner .slick-dots li.slick-active button:before {
 
         border-radius: 50%;
+    }
+    .banner .slick-dots {
+        bottom: -29px;
+        padding: 6px;
+        background-color: var(--main-b);
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .go-visit{
+        display: none;
+    }
+    
+}
+@media screen and (max-width:767px) {
+    
+    .banner .slick-prev, .banner .slick-next{
+        display: none;
+    }
+    .scroll-down-banner{
+        display: none;
     }
 }
 
@@ -694,6 +743,7 @@ header .banner-social a:last-child{
 .services .slick-next, .services .slick-prev{
     z-index: 50;
     opacity: 1;
+    top: 40%!important;
 }
 .services .slick-next::before, .services .slick-prev::before{
     font-size: 30px;
@@ -718,6 +768,9 @@ header .banner-social a:last-child{
     .services .slick-next{
         right: 33%;
     }
+    .services {
+        padding: 50px 0px;
+    }
 }
 @media screen and (max-width:1000px) {
    
@@ -737,6 +790,13 @@ header .banner-social a:last-child{
         font-size: 15px!important;
         line-height: 25px!important;
     }
+    .marginH{
+        margin: 0px!important;
+    }
+    .services {
+        padding: 0px!important;
+    }
+
 }
 @media screen and (max-width:767px) {
     .services {
@@ -751,6 +811,7 @@ header .banner-social a:last-child{
     .services .slick-prev::before{
         margin-right: -60px;
     }
+    
 }
 
 
@@ -829,6 +890,7 @@ header .banner-social a:last-child{
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 .counter .counter-numbers{
     display: flex;
@@ -838,7 +900,7 @@ header .banner-social a:last-child{
 }
 .counter .counter-numbers .value{
     font-size: 90px;
-    font-weight: bold;
+    font-weight: 600;
     color: #404040;
     position: relative;
     
@@ -976,6 +1038,7 @@ header .banner-social a:last-child{
     position: relative;
     width: 100%;
     padding: 85px 0px;
+    overflow: hidden!important;
 }
 .how-it-works::before{
     content: "";
@@ -1017,7 +1080,7 @@ header .banner-social a:last-child{
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    margin-bottom: 10px;
+
 
 }
 .how-it-works .box:hover{
@@ -1104,9 +1167,7 @@ header .banner-social a:last-child{
     .how-it-works .how-it-image img{
         width: 100%!important;
     }
-    .how-it-works .box{
-        margin: 20px auto;
-    }
+   
     .how-it-works .left-side h3{
         text-align: center;
     }
@@ -1125,9 +1186,7 @@ header .banner-social a:last-child{
     .how-it-works .how-it-image img{
         width: 100%!important;
     }
-    .how-it-works .box{
-        margin: 20px auto;
-    }
+    
     .how-it-works .left-side h3{
         text-align: center;
     }
@@ -1197,6 +1256,7 @@ header .banner-social a:last-child{
     cursor: pointer;
     margin: 0 20px;
 }
+.comment-section .box-item.comment-section .box-item.comment-section .box-item
 .comment-section .author{
     font-weight: 600;
 }
@@ -1297,7 +1357,7 @@ header .banner-social a:last-child{
     font-weight: 300;
     background-color: inherit;
     border: none;
-    padding: 10px;
+    padding: 10px 22px;
     font-size: 18px;
     color: #E5E5E5;
 }
@@ -1381,6 +1441,9 @@ header .banner-social a:last-child{
         font-size: 30px!important;
         margin-bottom: 15px;
     }
+}
+@media screen and (max-width:767px) {
+    #call-now-area{display: none;}
 }
 .blog-section{
     padding: 100px 0px 150px 0px;
@@ -1480,7 +1543,7 @@ header .banner-social a:last-child{
     color: #000;
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:768px) {
     .btn-style-4{
         font-size: 14px;
     }
