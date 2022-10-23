@@ -14,6 +14,9 @@ $(document).ready(function(){
 $('.click-popup').click(function(){
     $('.services-popup').css('display','block');
 });
+$('.online-form').click(function(){
+    $('.services-popup').css('display','block');
+});
 $('.close-popup').click(function(){
     $('.services-popup').css('display','none');
 });
@@ -158,7 +161,9 @@ $(function() {
       $('#ourServicesBoxSlideMobile').slick({
         dots: true,
         infinite: true,
-        speed: 500,
+        arrows:false,
+        speed: 1500,
+        autoplay:true,
         slidesToShow: 2,
         slidesToScroll: 2,
         responsive: [
