@@ -168,9 +168,12 @@ $(document).ready(function(){
 
     OurServicesItems.forEach((et) =>{
         ourServices.append(
-            "<div class='col-md-6 col-lg-4'> <div class='box-item wow fadeInLeft' data-wow-delay='200ms' > <div class='item-img'> <img class='w-100' src='"+ et.image +"' alt='...'> </div><div class='item-content'> <h5>"+ et.title +"</h5> <p>"+ et.content +"</p></div><div class='visible-content'> "+ et.hover +" <br>Onarım Ve Bakımı <a class='btn-style-2' href='"+ et.where +"' tabindex='0'>Detaylı Oku »</a> </div></div></div>"
+            "<div class='col-md-6 col-lg-4'> <div class='box-item mx-auto wow fadeInLeft' data-wow-delay='200ms' > <div class='item-img'> <img class='w-100' src='"+ et.image +"' alt='...'> </div><div class='item-content'> <h5>"+ et.title +"</h5> <p>"+ et.content +"</p></div><div class='visible-content'> "+ et.hover +" <br>Onarım Ve Bakımı <a class='btn-style-2' href='"+ et.where +"' tabindex='0'>Detaylı Oku »</a> </div></div></div>"
             );
     });
+
+    //<a href='#' class='btn-style-3 ' > <span>TÜM HİZMETLERİMİZ</span></i> </a>
+    
     OurServicesItems.forEach((et) =>{
         ourServicesSlide.append(
             "<div class='col-12 col-lg-4'> <div class='box-item wow fadeInLeft' data-wow-delay='200ms' > <div class='item-img'> <img class='w-100' src='"+ et.image +"' alt='...'> </div><div class='item-content'> <h5>"+ et.title +"</h5> <p>"+ et.content +"</p></div><div class='visible-content'> "+ et.hover +" <br>Onarım Ve Bakımı <a class='btn-style-2' href='"+ et.where +"' tabindex='0'>Detaylı Oku »</a> </div></div></div>"
