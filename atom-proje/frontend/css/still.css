@@ -894,6 +894,12 @@ header .banner-social a:last-child{
 .btn-style-3:hover::after{
     width: 90%;
 }
+
+@media screen and (max-width:600px) {
+    .btn-style-3 span{
+        font-size: 14px;
+    }
+}
 /*  ------------ */
 
 
@@ -2509,6 +2515,9 @@ header .banner-social a:last-child{
     .services-detail p{
         margin-bottom: 0;
     }
+    .services-detail h4{
+        font-size: 21px;
+    }
     
 }
 
@@ -2628,6 +2637,7 @@ header .banner-social a:last-child{
 @media screen and (max-width:768px) {
     .call-now{
         margin: 30px 0px;
+        padding: 25px 15px;
     }
 
     .call-now .social{
@@ -2946,6 +2956,12 @@ header .banner-social a:last-child{
         display: none;
     }
 
+}
+@media screen and (max-width:600px){
+    .footer-above h5 {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
 }
 
 
