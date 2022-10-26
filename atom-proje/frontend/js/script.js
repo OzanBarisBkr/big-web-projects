@@ -331,7 +331,12 @@ $(function() {
   });
 
 
-
+  $('.our-services .box-item').mouseenter(function(){
+      $(this).find('.btn-style-3').css('display','none');
+  });
+  $('.our-services .box-item').mouseleave(function(){
+      $(this).find('.btn-style-3').css('display','flex');
+  });
 
 
 
