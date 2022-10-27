@@ -168,7 +168,7 @@ h3{
         max-width: 1160px;
     }
 }
-.main{width:100%; }
+
 .main .banner {
     height: 900px;
     width: 100%;
@@ -244,6 +244,8 @@ header .hamburger i{
     header{
         justify-content: space-between;
         padding: 0 30px;
+
+        box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px, rgb(0 0 0 / 30%) 0px 3px 7px -3px;
     }
     header nav{
         display: none;
@@ -452,6 +454,125 @@ header .banner-social a:first-child{
 header .banner-social a:last-child{
     background-color: #fff;
 }
+
+header .banner-social-m{
+    display: none;
+}
+header .hamburger{
+    display: none;
+}
+header .banner-social-m a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 35px;
+    color: #fff;
+    border: 1px solid #fff;
+    margin-right: 20px;
+}
+header .banner-social-m a:first-child{
+    background-color: var(--main-y);
+    border: none;
+    margin-right: 10px;
+}
+@media screen and (max-width:1200px) {
+    header .banner-social-m{
+        display: flex;
+    }
+    header .hamburger{
+        display: flex;
+    }
+}
+
+.hamburger-opened{
+    display: none;
+    position: fixed;
+    min-width: 100%;
+    height: 100vh;
+    z-index: 199;
+    /* top: -150px; */
+    background-color: var(--main-b);
+    padding-top: 30px;
+}
+.opened-home{
+    top: 80px;
+}
+.hamburger-opened > ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+.hamburger-opened > ul > li{
+    display: block;
+    height: 56px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, .15);
+    font-size: 16px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 80%;
+    margin-bottom: 10px;
+    padding-left: 23px;
+    font-weight: 500;
+    position: relative;
+}
+
+.hamburger-opened > ul > li ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.hamburger-opened > ul li a{
+    font-size: 16px;
+    color: #fff;
+    display: inline-block;
+    position: relative;
+}
+.hamburger-opened > ul li span{
+    font-size: 16px;
+    color: #fff;
+    display: inline-block;
+    position: relative;
+}
+.burger-dropdown {
+    display: none;
+
+    padding-left: 50px;
+    margin-top: 3px;
+    margin-bottom: 13px;
+    list-style: none;
+    font-style: italic;
+}
+.burger-dropdown li{
+    padding: 0px 10px;
+    border-left: solid var(--main-y) 4px;
+}
+.burger-dropdown li:first-child{
+    margin-bottom: 13px;
+}
+.burger-dropdown li a{
+    position: relative;
+    text-decoration: underline;
+    font-size: 16px;
+    letter-spacing: 0px;
+}
+header .fa-xmark{
+    display: none;
+}
+.t-80{
+    display: none;
+    top: 100px!important;
+}
+
+@media screen and (max-width:767px) {
+    .t-80{
+        top: 80px!important;
+    }
+}
+
 
 
 .slide-wrapper{
@@ -826,7 +947,11 @@ header .banner-social a:last-child{
     .services .slick-prev::before{
         margin-right: -60px;
     }
-   
+    .services h3{
+        margin-top: 20px;
+        margin-bottom: 15px;
+        font-size: 25px!important;
+    }
     
 }
 
@@ -1504,7 +1629,32 @@ header .banner-social a:last-child{
 }
 @media screen and (max-width:767px) {
     #call-now-area{display: none;}
+    .call-us-form .input-box{
+        height: 50px;
+    }
+    .call-us-form .textarea{
+        height: 100px;
+    }
+    .call-us{
+        width: 100%;
+        background-color: #284E75;
+        height: auto;
+        padding: 50px 30px;
+    }
+    .call-us-form p{
+        margin-bottom: 30px;
+    }
+    .approve p{
+        text-align: left;
+    }
+    .location-area{
+        margin-bottom: 30px!important;
+    }
+    
 }
+
+
+
 .blog-section{
     padding: 100px 0px 150px 0px;
     position: relative;
@@ -1691,10 +1841,10 @@ header .banner-social a:last-child{
         width: 100%;
     }
     .blog-section .slick-next{
-        left: 55%;
+        left: 52%;
     }
     .blog-section .slick-prev{
-        left: 40%;
+        left: 43%;
     }
     .blog-section .slick-next, .blog-section .slick-prev{
         bottom: -15%!important;
@@ -1706,9 +1856,14 @@ header .banner-social a:last-child{
     }
 }
 @media screen and (max-width:767px) {
-    
+    .blog-section .slick-next, .blog-section .slick-prev{
+        bottom: -11%!important;
+    }
     .blog-section .slick-prev{
         left: 45%;
+    }
+    .blog-section {
+        padding: 50px 10px 80px 10px;
     }
    
 }
@@ -1749,8 +1904,8 @@ header .banner-social a:last-child{
 }
 @media screen and (max-width:767px) {
     .services-popup .close-popup{
-        margin-top: 30px;
-        margin-right: 50px;
+        margin-top: 15px;
+        margin-right: 20px;
     }
 }
  
@@ -1818,7 +1973,17 @@ header .banner-social a:last-child{
     .breadcrumb span:last-child{
         margin-left: 0;
     }
-
+    .breadcrumb span:nth-child(3){
+        margin-left: 0;
+    }
+    .breadcrumb{
+        margin-left: 30px;
+    }
+    .title{
+        margin-top: 30px;
+        margin-bottom: 50px;
+        margin-left: 30px;
+    }
 }
 
 
@@ -1843,10 +2008,19 @@ header .banner-social a:last-child{
     color: #0F0F0F;
 }
 @media screen and (max-width:1000px) {
+    .image-content-section{
+        margin-top: 30px;
+    }
     .image-content-section p{
         font-size: 18px;
         line-height: 30px;
     }
+}
+@media screen and (max-width:767px) {
+    .image-content-section{
+        margin-top: 20px;
+    }
+    
 }
 
 /* image-content-section-2 */
@@ -1999,12 +2173,13 @@ header .banner-social a:last-child{
 @media screen and (max-width:1200px) {
     .our-services-mini{
         padding: 50px 100px;
+        width: 100%;
     }
 }
 @media screen and (max-width:768px) {
     .our-services-mini{
-        width: 100%;
         padding: 30px 15px;
+        margin-top: 30px;
     }
     .our-services-mini h3{
         font-size: 35px;
@@ -2560,7 +2735,7 @@ header .banner-social a:last-child{
         margin-bottom: 0;
     }
     .services-detail h4{
-        font-size: 21px;
+        font-size: 18px;
     }
     
 }
@@ -2838,10 +3013,10 @@ header .banner-social a:last-child{
 }
 @media screen and (max-width:767px) {
     .dual-section{
-        padding: 30px;
+        padding: 15px;
     }
     .dual-section2{
-        padding: 30px;
+        padding: 15px;
     }
     .bg50{
         display: none;
@@ -2855,7 +3030,7 @@ header .banner-social a:last-child{
     }
 
     .dual-section h5 {
-        font-size: 22px!important;
+        font-size: 18px!important;
         margin-bottom: 20px;
     }
     .dual-section2 h5 {
