@@ -53,6 +53,7 @@ h3{
 .bg-1{
     background-color: var(--main-b)!important;
 }
+
 .bg-2{
     background-color: var(--main-b-2)!important;
 }
@@ -241,10 +242,17 @@ header .hamburger i{
     .banner .ourServicesSlide{
         display: block!important;
     }
+    .banner header {
+        background-color: var(--main-b);
+        padding: 0px 100px;
+    }
     header{
         justify-content: space-between;
         padding: 0 30px;
 
+        
+    }
+    .banner header.sticky{
         box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px, rgb(0 0 0 / 30%) 0px 3px 7px -3px;
     }
     header nav{
@@ -563,11 +571,11 @@ header .fa-xmark{
     display: none;
 }
 .t-80{
-    display: none;
+
     top: 100px!important;
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:768px) {
     .t-80{
         top: 80px!important;
     }

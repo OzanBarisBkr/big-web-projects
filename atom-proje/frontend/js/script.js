@@ -348,8 +348,10 @@ $(function() {
     $(this).find('.fa-bars').toggle();
     $(this).find('.fa-xmark').toggle();
     $('.hamburger-opened').toggle('slow');
+   
   });
 
+ 
   
   $('.hamburger-opened .burger-link').each(function(){
     $(this).on('click', function(){
