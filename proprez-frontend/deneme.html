@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .globe{position:absolute;width:600px;top:-60px;pointer-events:all}@media screen and (max-width:1245px){.globe{position:relative;top:0;margin:25px auto 0}}@media (max-width:1349.98px){.globe{width:500px}}@media screen and (max-width:1095px){.globe{width:380px}}@media (max-width:768.98px){.globe{width:450px}}@media (max-width:479.98px){.globe{width:310px}}#hotspot_details{background:none!important}#hotspot_details #details_content{background:hsla(0,0%,100%,.9019607843)!important;color:#3f424b!important;padding:30px!important;box-shadow:0 3px 6px 0 rgba(0,0,0,.2)}#hotspot_details #details_content .h2,#hotspot_details #details_content h2{font-size:13.6px;font-weight:500;color:#2f7ea2}#hotspot_details #details_content p{font-size:11.05px;line-height:19px}#cboxOverlay,.cboxIE{display:none!important}.vitol-at-work{padding:0;position:relative}.video-embed{position:relative;padding-bottom:56.25%;overflow:hidden;max-width:100%;height:auto;clip-path:polygon(0 10%,100% 10%,100% 90%,0 90%);margin:-106px 0}@media (max-width:768.98px){.video-embed{clip-path:unset;margin:unset}}.video-embed embed,.video-embed iframe,.video-embed object{position:absolute;top:0;left:0;width:100%;height:100%}.video iframe{position:absolute;z-index:1;width:100%;height:100%}.action-image{width:938px;margin-bottom:-1px}@media (max-width:1349.98px){.action-image{width:100%}}@media (max-width:768.98px){.action-image{width:auto;height:105px}}@media (max-width:479.98px){.action-image{margin-left:-30px}}.case-studies__heading{font-size:20.4px;font-weight:500}@media (max-width:479.98px){.case-studies__heading{font-size:15.3px}}.case-studies__content{font-size:13.6px}.case-studies{padding-right:320px;margin-left:210px}@media (max-width:1539.98px){.case-studies{padding-right:270px;margin-left:190px}}@media (max-width:1349.98px){.case-studies{padding-right:173px;margin-left:108px}}@media (max-width:768.98px){.case-studies{margin-left:45px;padding-right:33px}}@media (max-width:479.98px){.case-studies{margin-left:7.5px;padding-right:7.5px;margin-top:unset}}.case-studies .slick-dots{position:absolute;top:33%;right:128px;list-style-type:none;margin-top:-63px;padding-left:0}@media (max-width:1539.98px){.case-studies .slick-dots{right:83px}}.case-studies .slick-dots li{background-color:#3f424b;opacity:.45;width:2px;height:37px;margin-bottom:5px}.case-studies .slick-dots li button{display:none}.case-studies .slick-dots .slick-active{opacity:1}.case-studies .slick-arrow{pointer-events:all;position:absolute;background:none;bottom:-30px}.case-studies .slick-arrow:before{background:url(//www.vitol.com/wp-content/themes/rouge-wp-start-theme/css/../assets/images/arrow-left-dark.svg) no-repeat!important;width:8px;height:16px;padding:0}.case-studies .slick-arrow:hover{background:none}.case-studies .slick-prev{left:0!important;width:8px;height:16px;right:unset!important}.case-studies .slick-next{left:35px;width:8px;height:16px;right:unset!important}.vitol-at-work,.vitol-at-work-block{position:relative;padding:0}.vitol-at-work-block .box,.vitol-at-work .box{position:absolute;right:0;top:50%;transform:translateY(-50%);width:49.3%;overflow:hidden}.vitol-at-work-block .box--image,.vitol-at-work .box--image{top:50%;transform:translateY(-50%)}@media (max-width:479.98px){.vitol-at-work-block .box--image,.vitol-at-work .box--image{margin-top:-95px!important;width:100%}}@media (max-width:1539.98px){.vitol-at-work-block .box,.vitol-at-work .box{width:59.3%}}@media (max-width:768.98px){.vitol-at-work-block .box,.vitol-at-work .box{width:79.3%}}@media (max-width:479.98px){.vitol-at-work-block .box,.vitol-at-work .box{position:relative;transform:unset;margin-top:-85px;width:100%}}.vitol-at-work-block .box-content,.vitol-at-work .box-content{background:#fff;padding-bottom:77px}@media (max-width:1349.98px){.vitol-at-work-block .box-content,.vitol-at-work .box-content{padding-bottom:60px;margin-top:-1px}}@media (max-width:768.98px){.vitol-at-work-block .box-content,.vitol-at-work .box-content{padding-bottom:55px}}@media (max-width:479.98px){.vitol-at-work-block .box-content,.vitol-at-work .box-content{margin-top:-10px;padding-top:10px;padding-bottom:0}}.life-at-video__image{height:750px;max-height:750px;background-size:cover;background-position:20%;background-repeat:no-repeat;object-fit:cover}@media (max-width:479.98px){.life-at-video__image{height:450px}}.vitol-at-work--no-title{width:100%}.vitol-at-work--no-title .box{right:unset;left:0}@media (max-width:768.98px){.vitol-at-work--no-title .box{margin-top:0!important;position:relative;transform:unset;width:100%}}.vitol-at-work--no-title .box-content{padding-top:112px;padding-bottom:139px}@media (max-width:768.98px){.vitol-at-work--no-title .box-content{padding-top:30px;padding-bottom:50px}}.vitol-at-work--no-title .case-studies{margin:0;padding:0}.vitol-at-work--no-title .life-at-video__image{background-position:top;height:1000px;max-height:1000px}@media (max-width:768.98px){.vitol-at-work--no-title .life-at-video__image{height:250px;max-height:250px}}.vitol-at-work--no-title .case-studies__tagline{text-transform:uppercase;font-size:12.75px;color:#2f7ea2;margin-bottom:9px}.vitol-at-work--no-title .case-studies__content{font-size:59.5px;font-weight:300;line-height:1.05;padding-bottom:5px}@media only screen and (max-width:1080px){.vitol-at-work--no-title .case-studies__content{font-size:45px}}@media (max-width:479.98px){.vitol-at-work--no-title .case-studies__content{font-size:36px}}.vitol-at-work--no-title .case-studies__slide{width:50%!important;margin-left:180px}@media (max-width:768.98px){.vitol-at-work--no-title .case-studies__slide{margin-left:0;margin-right:0;width:100%!important}}.text-and-media{background:#f2f4f6;background:linear-gradient(0deg,#f2f4f6,#fff 50%,#f2f4f6);padding:0}.text-and-media iframe{width:100%}.text-and-media .container{position:relative;z-index:1}@media (max-width:768.98px){.row-reverse-md{flex-direction:column-reverse}}.text-and-media .text-and-media__wrapper{margin-left:30px;pointer-events:all}@media (max-width:768.98px){.text-and-media .text-and-media__wrapper{margin-left:0;margin-bottom:50px}}.text-and-media .text-and-media__wrapper--left{text-align:right;margin-left:0}.text-and-media__wrapper--home{margin-top:30px;margin-left:0;pointer-events:all}@media (max-width:1349.98px){.text-and-media__wrapper--home{margin-top:0;margin-left:30px}}@media (max-width:768.98px){.text-and-media__wrapper--home{margin-left:0;margin-bottom:50px}}.text-and-media__content p{font-size:13.6px}.text-and-media__content p:first-of-type{color:#2f7ea2;font-size:20.4px;margin-bottom:18px}.text-and-media__title{margin-bottom:28px}.text-and-media__image{width:100%}.text-and-media__image--left{margin-left:30px}.video-duration{font-size:20.4px;font-weight:100;color:#fff;display:inline-flex;align-items:center}.video-duration:before{content:"";background-image:url(//www.vitol.com/wp-content/themes/rouge-wp-start-theme/css/../assets/images/play.svg);width:20px;height:20px;margin-right:5px;background-repeat:no-repeat}.video-description{font-size:20.4px;font-weight:500;color:#fff}.text-and-media__overlay{position:relative;padding:125px 0 150px;z-index:0;pointer-events:none}@media (max-width:1349.98px){.text-and-media__overlay{padding:90px 0}}@media (max-width:768.98px){.text-and-media__overlay{padding:45px 0 0}}@media (max-width:479.98px){.text-and-media__overlay{padding:25px 0 0}}.text-and-media--home .text-and-media__gradient{background:linear-gradient(0deg,hsla(0,0%,100%,0) 85%,#f2f4f6)}.text-and-media__gradient{background:linear-gradient(0deg,#f2f4f6,hsla(0,0%,100%,0) 15%,hsla(0,0%,100%,0) 85%,#f2f4f6);position:absolute;top:0;bottom:0;left:0;right:0}.embed-container{position:relative;padding-bottom:56.25%;overflow:hidden;max-width:100%;height:auto}.embed-container embed,.embed-container iframe,.embed-container object{position:absolute;top:0;left:0;width:100%;height:100%}.video{position:relative;pointer-events:all}.video--left{margin-left:30px}.video-content{position:absolute;bottom:0;top:0;z-index:1;width:100%;padding:20px;padding-bottom:15px;background:linear-gradient(180deg,rgba(63,66,75,0),#3f424b);transition:opacity .2s ease-in;cursor:pointer}.video-content:hover{opacity:.6;transition:opacity .2s ease-in}.video-content:hover .video-duration:before{background-image:url(//www.vitol.com/wp-content/themes/rouge-wp-start-theme/css/../assets/images/play--filled.svg)}.video-content__wrapper-inner{position:absolute;bottom:15px;padding-right:20px}@media (max-width:768.98px){.embed-container,.video,.video-content{margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw)}}.modal.text-and-media-modal .modal-dialog{max-width:90%;max-height:90%}.modal.text-and-media-modal .modal-dialog.modal-dialog-centered{align-items:center;min-height:100px;height:100%;margin-left:auto;margin-right:auto;max-height:100%;margin:0 auto}.modal.text-and-media-modal .modal-dialog .modal-content{background:transparent;max-height:90%}.modal.text-and-media-modal .modal-dialog .modal-content iframe{width:100%;min-height:300px;height:auto;max-height:90%;aspect-ratio:16/9}.our-people__pager{display:grid;text-align:right;position:absolute;top:50%;z-index:1;transform:translateY(-50%)}@media (max-width:768.98px){.our-people__pager{display:none}}.our-people__pager .pager-item{color:#3f424b;font-size:15.3px;text-decoration:none;font-weight:500;margin-bottom:9px;margin-top:9px;cursor:pointer;transition:color .2s ease-in}.our-people__pager .pager-item:hover{color:#2f7ea2;transition:color .2s ease-in}.our-people__pager .active{color:#2f7ea2}@media (max-width:1539.98px){.justify-at-md{justify-content:center}}.our-people{padding-bottom:0;padding-top:20px;position:relative}@media (max-width:768.98px){.our-people{padding-top:90px}}@media (max-width:479.98px){.our-people{padding-top:80px}}.people-carousel .carousel__tagline{font-size:20.4px;font-weight:500;margin-bottom:10px}.people-carousel .carousel__heading{font-size:59.5px;color:#2f7ea2;font-weight:300;line-height:1;margin-bottom:16px}@media (max-width:1349.98px){.people-carousel .carousel__heading{font-size:46.75px}}@media (max-width:479.98px){.people-carousel .carousel__heading{font-size:30.6px}}.people-carousel .carousel__content p{font-size:13.6px}.people-carousel .carousel__link{font-size:15.3px;color:#2f7ea2;text-decoration:none}.people-carousel .carousel__link:hover{color:#ffd564}.people-carousel .carousel__content-wrapper{padding:140px 0}@media (max-width:768.98px){.people-carousel .carousel__content-wrapper{padding-top:0;padding-bottom:60px}}.people-carousel .carousel__image{position:absolute;bottom:0;height:100%}@media (max-width:1539.98px){.people-carousel .carousel__image{height:90%}}@media (max-width:768.98px){.people-carousel .carousel__image{height:auto;width:100%;bottom:0}}@media (max-width:768.98px){.people-carousel .carousel__image-wrapper{height:486px}}@media (max-width:479.98px){.people-carousel .carousel__image-wrapper{height:430px}}@media screen and (max-width:400px){.people-carousel .carousel__image-wrapper{height:340px}}@media screen and (max-width:300px){.people-carousel .carousel__image-wrapper{height:250px}}@media (max-width:768.98px){.people-carousel--careers .carousel__image-wrapper{height:396px}}@media (max-width:479.98px){.people-carousel--careers .carousel__image-wrapper{height:396px}}@media screen and (max-width:400px){.people-carousel--careers .carousel__image-wrapper{height:280px}}.people-carousel .slick-arrow{pointer-events:all;position:absolute;background:none;top:-30px}.people-carousel .slick-arrow:before{background:url(//www.vitol.com/wp-content/themes/rouge-wp-start-theme/css/../assets/images/arrow-left-dark.svg) no-repeat!important;width:8px;height:16px;padding:0}.people-carousel .slick-arrow:hover{background:none}.people-carousel .slick-prev{left:0!important;width:8px;height:16px;right:unset!important}.people-carousel .slick-next{left:35px;width:8px;height:16px;right:unset!important}.thirty-second-focus{padding:0}.thirty-second-focus .modal-content{width:unset}.thirty-second-focus .modal-content img{width:100%}.thirty-second-focus__top{font-size:20.4px;font-weight:500;margin-bottom:15px}.thirty-second-focus__blue{font-size:20.4px;font-weight:500;color:#2f7ea2;margin-bottom:22px;line-height:1.1}.thirty-second-focus__text{font-size:13.6px;margin-bottom:24px}.thirty-second-focus__link{font-size:15.3px;font-weight:500;color:#2f7ea2;text-decoration:none;margin-bottom:15px;display:block}.thirty-second-button{text-align:left}.thirty-second-focus__placeholder-content{position:absolute;left:28%;bottom:23px;max-width:270px;opacity:1;transition:opacity .2s ease-in}.thirty-second-focus__placeholder-content:hover{opacity:.5;transition:opacity .2s ease-in}.thirty-second-focus__caption{color:#2f7ea2;font-size:13.6px;font-weight:500}@media (max-width:479.98px){.thirty-second-focus__caption{display:none}}.thirty-second-focus__duration{color:#2f7ea2;font-size:20.4px;font-weight:500;display:inline-flex;align-items:center}.thirty-second-focus__duration:before{content:"";background-image:url(//www.vitol.com/wp-content/themes/rouge-wp-start-theme/css/../assets/images/play-blue.svg);width:20px;height:20px;margin-right:5px;background-repeat:no-repeat}.thirty-second-focus__image{position:absolute;bottom:0;left:0}@media (max-width:1539.98px){.thirty-second-focus__image{height:100%;max-width:60%;object-fit:cover;object-position:right center}}@media (max-width:1349.98px){.thirty-second-focus__image{max-width:100%;object-position:bottom center}}@media (max-width:768.98px){.thirty-second-focus__image{height:auto;width:100%}}@media (max-width:768.98px){.thirty-second-focus__wrapper{height:75px}}.thirty-second-focus__title{margin-bottom:35px}.thirty-second-focus__content{padding:153px 0 173px}@media (max-width:768.98px){.thirty-second-focus__content{padding-top:60px}}.modal.thirty-second-modal .modal-dialog{max-width:90%;max-height:90%}.modal.thirty-second-modal .modal-dialog.modal-dialog-centered{align-items:center;min-height:100px;height:100%}.modal.thirty-second-modal .modal-dialog .modal-content{background:transparent}.modal.thirty-second-modal .modal-dialog .modal-content iframe{width:100%;min-height:300px;height:auto;max-height:90%;aspect-ratio:16/9}.thirty-second-button__wrapper{text-align:left;background-color:transparent;color:#2f7ea2;border:0;padding:0}.ninety-second-focus{padding:0}.ninety-second-focus.overflow-active{position:relative;margin-top:10rem}.ninety-second-focus.overflow-active:before{content:"";position:absolute;left:0;top:-100px;width:100%;height:100px;background:linear-gradient(180deg,transparent,#fff);pointer-events:none}.ninety-second-focus.overflow-active>.ninety-second-slider{position:absolute;left:0;top:0;width:100%;margin-top:-10rem}.ninety-second-focus:not(.overflow-active){height:auto!important}@media screen and (max-width:1440px){.ninety-second-focus{margin-top:-5rem}}.ninety-second-focus .slick-dots{position:absolute;top:50%;right:125px;list-style-type:none;margin-top:-63px;padding-left:0}@media (max-width:1349.98px){.ninety-second-focus .slick-dots{right:80px}}@media (max-width:768.98px){.ninety-second-focus .slick-dots{right:auto;left:0;top:unset;bottom:6%}}.ninety-second-focus .slick-dots li{background-color:transparent;opacity:.45;width:30px;height:37px;margin-bottom:5px;cursor:pointer}.ninety-second-focus .slick-dots li:before{content:"";height:37px;width:2px;background-color:#3f424b;position:absolute;left:50%;margin-right:1px}.ninety-second-focus .slick-dots li button{display:none}.ninety-second-focus .slick-dots .slick-active{opacity:1}.ninety-second-focus .slick-track{align-items:stretch}.ninety-second-focus .slick-slide{background:linear-gradient(180deg,#f2f4f6,#fff 30%,hsla(0,0%,100%,0) 60%);margin-top:10rem;height:auto}.ninety-second-focus .slick-slide>div{height:100%}@media (max-width:479.98px){.ninety-second-focus .slick-slide{margin-top:45px}}.ninety-second-focus .ninety-second-slide,.ninety-second-focus .ninety-second-slide .container,.ninety-second-focus .ninety-second-slide .container .row,.ninety-second-focus__wrapper{height:100%}@media (max-width:1349.98px){.ninety-second-focus__wrapper{position:relative;height:100%;width:100%}}.ninety-second-focus__blue,.ninety-second-focus__top{font-size:20.4px;font-weight:500}.ninety-second-focus__blue{color:#2f7ea2;margin-bottom:22px}.ninety-second-focus__text{font-size:13.6px;margin-bottom:24px;line-height:25px}.ninety-second-focus__link{font-size:15.3px;font-weight:500;color:#2f7ea2;text-decoration:none}.ninety-second-focus__caption{position:absolute;color:#fff;font-size:20.4px;font-weight:500;left:28%;bottom:23px;max-width:270px}.ninety-second-focus__image{position:absolute;bottom:0;left:0;height:calc(100% + 10rem);pointer-events:none;object-fit:cover;object-position:bottom right;max-width:60%}@media (max-width:1539.98px){.ninety-second-focus__image{height:100%}}@media (max-width:1349.98px){.ninety-second-focus__image{left:auto;right:-150px;max-width:1000px;object-fit:contain}}@media screen and (max-width:960px){.ninety-second-focus__image{right:-225px}}@media (max-width:768.98px){.ninety-second-focus__image{width:unset;height:433px;left:0;right:auto;width:100%;height:auto}}@media (max-width:768.98px){.ninety-second-focus__wrapper{height:253px}}@media (max-width:479.98px){.ninety-second-focus__wrapper{position:unset;height:153px}}.ninety-second-focus__title{margin-bottom:35px}.ninety-second-focus__content{padding:140px 0}@media (max-width:1349.98px){.ninety-second-focus__content{left:50px}}@media (max-width:768.98px){.ninety-second-focus__content{padding-top:60px}}.modal.ninety-second-modal .modal-dialog{max-width:90%;max-height:90%}.modal.ninety-second-modal .modal-dialog.modal-dialog-centered{align-items:stretch}.modal.ninety-second-modal .modal-dialog .modal-content{background:transparent}.modal.ninety-second-modal .modal-dialog .modal-content iframe{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:100%;min-height:300px;height:auto;max-height:90%;aspect-ratio:16/9}.strategy-block{padding-top:0;text-align:right;padding-bottom:25px}.strategy-block--pb{padding-bottom:105px;padding-top:40px}@media (max-width:1349.98px){.strategy-block{text-align:left}}.strategy-block__title{font-size:59.5px;font-weight:300;margin-bottom:29px}.strategy-block__tagline{font-size:20.4px;color:#2f7ea2;font-weight:500;line-height:1.2;margin-bottom:18px}.strategy-block__content{font-size:13.6px}.strategy-block__graphic img{width:100%;margin-left:30px}@media (max-width:1349.98px){.strategy-block__graphic img{margin-left:unset}}.strategy-block__graphic--right{margin-left:0}.strategy-block__graphic--right img{width:100%}.strategy-block__text--right{text-align:left;margin-left:30px}.col-key-block__title{margin-bottom:45px}.col-key-block__intro{margin-bottom:120px}@media (max-width:768.98px){.col-key-block__intro{margin-bottom:30px}}.col-key-block__heading{color:#2f7ea2;font-size:46.75px;font-weight:600;margin-bottom:14px}@media (max-width:768.98px){.col-key-block__heading{font-size:30.6px}}.col-key-block__tagline{font-size:12.75px;text-transform:uppercase;font-weight:700}.col-key-block__content{margin-bottom:60px}@media (max-width:768.98px){.col-key-block__content{margin-bottom:30px}}.small-30-second-focus{position:relative;padding:193px 0;overflow:hidden}@media (max-width:768.98px){.small-30-second-focus{padding:75px 0}}.small-30-second-focus__title{font-size:59.5px;font-weight:300;margin-bottom:35px}@media (max-width:768.98px){.small-30-second-focus__title{font-size:30.6px}}.small-30-second-focus__tagline{font-size:20.4px;font-weight:500}.small-30-second-focus__second-tagline{font-size:20.4px;font-weight:500;color:#2f7ea2;margin-bottom:22px}.small-30-second-focus__link{font-size:15.3px}.small-30-second-focus__content{margin-bottom:15px}.small-30-second-focus_graphic{position:absolute;right:0;top:120px}@media (max-width:1349.98px){.small-30-second-focus_graphic{position:relative;top:40px}}@media (max-width:1349.98px){.small-30-second-focus_graphic img{display:block;width:100%;margin:0 0 0 auto;transform:translateX(37px)}}@media (max-width:768.98px){.small-30-second-focus_graphic img{transform:translateX(110px)}}@media screen and (max-width:650px){.small-30-second-focus_graphic img{transform:translateX(60px)}}@media (max-width:479.98px){.small-30-second-focus_graphic img{transform:translateX(15px)}}.image-with-text{padding:0;position:relative;z-index:4;background-color:#f2f4f6;clip-path:polygon(0 -150px,91.66666667% -150px,91.66666667% 100%,0 100%)}@media (max-width:1349.98px){.image-with-text{clip-path:none}}body.page-template-template-careers .image-with-text:before{content:"";position:absolute;left:0;top:-100px;width:100%;height:100px;background:linear-gradient(0deg,#fff,hsla(0,0%,100%,0) 100%);z-index:0;pointer-events:none}@media screen and (max-width:1440px){body.page-template-template-careers .image-with-text:before{display:none}}.image-with-text__container{position:relative}.image-with-text__container .row{margin-right:0}.image-with-text__heading{font-size:49.3px;font-weight:300;margin-bottom:32px;line-height:1.1}@media (max-width:768.98px){.image-with-text__heading{font-size:30.6px}}.image-with-text__text{margin-bottom:32px}.image-with-text__text--our-people{font-size:49.3px;font-weight:300;line-height:62px;position:absolute;top:25%;color:#fff;width:33.33333333%}@media (max-width:1539.98px){.image-with-text__text--our-people{top:15%;width:43%}}@media (max-width:1349.98px){.image-with-text__text--our-people{top:15%;width:50%}}@media screen and (max-width:1140px){.image-with-text__text--our-people{width:60%}}@media screen and (max-width:1060px){.image-with-text__text--our-people{font-size:39.1px;line-height:52px}}@media screen and (max-width:872px){.image-with-text__text--our-people{width:70%}}@media (max-width:768.98px){.image-with-text__text--our-people{top:50%;transform:translateY(-50%);font-size:29.75px;line-height:42px;margin:0 30px}}@media (max-width:479.98px){.image-with-text__text--our-people{font-size:22.1px;line-height:29px}}@media screen and (max-width:400px){.image-with-text__text--our-people{font-size:17px;line-height:20px}}.image-with-text__cta{font-size:15.3px;font-weight:500}.image-with-text__image{position:absolute;bottom:0;width:70%}@media screen and (max-width:1700px){.image-with-text__image{width:unset}}@media screen and (max-width:1275px){.image-with-text__image{height:595px}}@media screen and (max-width:1135px){.image-with-text__image{height:auto;width:100%;bottom:0;position:absolute}}@media screen and (max-width:1000px){.image-with-text__image{position:relative}}@media (max-width:768.98px){.image-with-text__image{height:auto;width:100%}}.image-with-text__image--our-people{position:relative;height:auto;width:100%}.image-with-text__wrapper{padding:100px 0}@media screen and (max-width:1275px){.image-with-text__wrapper{padding:60px 0}}@media (max-width:768.98px){.image-with-text__wrapper{padding-bottom:0}}.layer-0{position:relative;z-index:0}.layer-1{z-index:1}.vitol-L .stat-block{clip-path:polygon(0 0,91.66666667% 0,91.66666667% 100%,0 100%)}@media (max-width:1349.98px){.vitol-L .stat-block{clip-path:polygon(0 0,100% 0,100% 100%,0 100%)}}.vitol-L.sidemenu-overlay{margin-top:-176px}@media (max-width:768.98px){.vitol-L.sidemenu-overlay{clip-path:polygon(0 0,100% 0,100% 100%,0 100%)}}.stat-block{clip-path:polygon(0 0,100% 0,100% 100%,0 100%);background:linear-gradient(0deg,#f2f4f6,#fff 30%,hsla(0,0%,100%,0) 60%),#fff;position:relative;z-index:-1!important}.stat-block--solutions{padding:0}@media (max-width:768.98px){.stat-block{clip-path:none;margin-top:0}}.three-column-information__title{margin-bottom:3rem}.three-column-information__description{margin-top:1rem}.sidemenu-overlay{clip-path:polygon(0 0,100% 0,100% 100%,0 100%);position:relative;margin-top:-176px;z-index:4}@media (max-width:1819.98px){.sidemenu-overlay{margin-top:-215px}}@media (max-width:768.98px){.sidemenu-overlay{margin-top:0;clip-path:none;padding-bottom:45px}}@media (max-width:768.98px){body.page-template-template-careers .sidemenu-overlay{padding-bottom:0}}@media (max-height:600px),(max-width:1098px){.sidemenu-overlay{margin-top:-14%}}.stat-block__overlay{position:relative;padding:125px 0;z-index:0;pointer-events:none}@media (max-width:768.98px){.stat-block__overlay{padding:90px 0}}@media (max-width:479.98px){.stat-block__overlay{padding:33px 0 43px}}.stat-block__gradient{background:linear-gradient(180deg,#fff,hsla(0,0%,100%,0) 20%);position:absolute;top:0;bottom:0;left:0;right:0;pointer-events:none}section{z-index:6}.stat-block__image{width:100%;margin-bottom:45px}.single-solution .stat-block__figure{font-size:34px;color:#2f7ea2;font-weight:600}.single-solution .stat-block__description{font-size:11.05px;font-weight:700;text-transform:uppercase;margin-bottom:35px}.stat-block__figure{font-size:46.75px;color:#2f7ea2;font-weight:600}.stat-block__figure--small{font-size:21.25px;line-height:1.1;margin-bottom:1rem}@media (max-width:479.98px){.stat-block__figure{font-size:38.25px}.stat-block__figure--small{font-size:21.25px}}@media screen and (max-width:375px){.stat-block__figure{font-size:29.75px}.stat-block__figure--small{font-size:17px}}.stat-block__description{font-size:12.75px;font-weight:700;text-transform:uppercase}.stat-block__description--small{text-transform:none;margin-bottom:3rem;font-weight:500;line-height:1.5}.stat-block__content{font-size:13.6px;margin-top:35px}@media (max-width:768.98px){.stat-block__content{margin-top:0}}@media (max-width:768.98px){.col-reverse-md{flex-direction:column-reverse}}.job-board__image{width:100%;height:100%;object-fit:cover}.job-board__overlay{position:relative;padding:125px 0 0;z-index:0;pointer-events:none}@media (max-width:768.98px){.job-board__overlay{padding:90px 0}}@media (max-width:479.98px){.job-board__overlay{padding:33px 0 43px}}.job-board__overlay .container{position:relative;z-index:1}.job-board__gradient{background:linear-gradient(180deg,#fff,hsla(0,0%,100%,0) 20%);position:absolute;top:0;bottom:0;left:0;right:0;pointer-events:none}.job-board__main-title{font-size:59.5px;font-weight:300;margin-right:30px;white-space:nowrap}@media (max-width:1349.98px){.job-board__main-title{font-size:46.75px;margin-bottom:15px}}@media (max-width:479.98px){.job-board__main-title{font-size:30.6px}}.job-board__title{font-size:20.4px;font-weight:500}@media (max-width:1539.98px){.job-board__title{font-size:17px}}.job-board__title-wrapper{display:inline-flex;align-items:baseline;width:100%;justify-content:space-between;pointer-events:all}@media (max-width:768.98px){.job-board__title-wrapper{display:block}}.job-board__info{line-height:1.5;margin-bottom:25px}.job-board__info,.job-board__tagline{font-size:11.05px}.job-board__department{font-size:11.05px;text-transform:uppercase;color:#2f7ea2;font-weight:700;margin-right:3px}.job-board__date{font-size:11.05px;margin-left:3px}.job-board__filters{width:100%}.job-board__filters--dropdowns label{width:100%!important}.job-board__filters ul{margin-bottom:27px;display:inline-flex;padding:0;align-items:flex-end;width:100%;justify-content:space-between;margin-left:4px}@media (max-width:768.98px){.job-board__filters ul{display:block;margin-bottom:0}}@media (max-width:768.98px){.job-board__filters ul .sf-field-reset{margin-bottom:20px}}.job-board__filters ul .sf-field-search{padding-right:14px}.job-board__filters ul li{margin-right:21px;width:100%}@media (max-width:768.98px){.job-board__filters ul li{margin-bottom:0}}.job-board__filters ul li input{border-radius:3px}.job-board__filters ul li:last-of-type{margin-right:0;min-width:270px;text-align:right;margin-right:2px}.job-board__filters ul li:last-of-type label{min-width:270px}@media (max-width:768.98px){.job-board__filters ul li:last-of-type label{width:100%}}.job-board__filters ul .sf-input-select,.job-board__filters ul input{border:1px solid #6f7380;border-radius:3px}@media (max-width:768.98px){.job-board__filters ul .sf-input-select,.job-board__filters ul input{margin-bottom:12px;width:100%}}.job-board__filters ul .sf-input-select{font-size:13.6px;font-weight:400;font-style:italic;-webkit-appearance:none;-moz-appearance:none;background-image:url(//www.vitol.com/wp-content/themes/rouge-wp-start-theme/css/../assets/images/dropdown.svg);background-repeat:no-repeat;background-position-x:93%;background-position-y:55%}.important-notice{margin-top:75px}.important-notice .h3,.important-notice h3{font-size:20.4px;font-weight:500}.job-board__featured{margin-bottom:15px;padding-left:8px}.job-board__featured .col-6,.job-board__featured .no-padding{padding:0}.job-card{background:linear-gradient(0deg,hsla(0,0%,90%,0),hsla(0,0%,90%,0) 50%,#e6e6e6);position:relative;margin-bottom:30px}.job-card--small{padding:20px;position:relative;min-height:376px}.job-card--image{min-height:203px}.job-board__bottom-content{position:absolute;bottom:15px}.job-board__view-more{position:absolute;bottom:0}.job-image{width:100%;background-position:top}.job-image,.job-image--featured{background-size:cover;background-repeat:no-repeat}.job-image--featured{height:100%}.job-image--small{min-height:173px;max-height:173px}@media (max-width:768.98px){.job-image--small{min-height:239px;max-height:239px}}.job-image--small-home{min-height:162px}.job-full-card-content{padding:49px 58px 49px 31px;background:linear-gradient(270deg,hsla(0,0%,90%,0),hsla(0,0%,90%,0) 50%,#e6e6e6);position:relative;height:100%}@media (max-width:768.98px){.job-full-card-content{padding:20px}}.job-board__tagline{line-height:1.7}.job-board__image--featured,.job-board__image-col{padding:0}.job-board__content-col{padding-left:0}.job-board{padding:0}.job-board__jobs{padding-bottom:125px}@media (max-width:1539.98px){.job-board__jobs{padding-bottom:45px}}.pipe{margin:0 5px}.job-board__video-button{position:absolute;bottom:25px}.job-board__video-button button{font-size:15.3px;color:#2f7ea2;text-decoration:none;font-weight:500;background:none;padding:0}.job-board__video-button button:hover{color:#eb8f00}.job-board__controls{justify-content:center}.pointer-all{pointer-events:all}.header-content{z-index:4;position:relative}@media (max-width:1819.98px){.header-content{padding-top:70px}}@media (max-width:768.98px){.header-content{margin-top:0;clip-path:none}}.header-content--careers{background:#fff;padding-bottom:0;padding:0;z-index:-1}@media (max-width:1819.98px){.header-content--careers{margin-top:-215px}}@media (max-width:479.98px){.header-content--careers{margin-top:0}}@media (max-width:768.98px){.header-content--careers{padding-bottom:45px!important}}.header-content--about{margin-bottom:171px;margin-top:-176px}@media (max-width:1819.98px){.header-content--about{margin-top:-215px}}@media (max-width:768.98px){.header-content--about{margin-bottom:45px;margin-top:0;clip-path:none}}.header-content--our-people{background:#fff;padding-bottom:0;margin-top:-176px}@media (max-width:1819.98px){.header-content--our-people{margin-top:-215px}}@media (max-width:768.98px){.header-content--our-people{margin-top:0;clip-path:none}}.header-content--ethics{margin-top:-176px}@media (max-width:1819.98px){.header-content--ethics{margin-top:-215px}}@media (max-width:768.98px){.header-content--ethics{margin-top:0;clip-path:none}}.header-content--ethics .h3,.header-content--ethics h3{font-size:20.4px;font-weight:500;margin-bottom:20px}.header-content--ethics p{margin-top:0;margin-bottom:30px}.header-content--news{margin-top:-176px;background:#fff;padding-bottom:50px;min-height:400px}@media (max-width:1819.98px){.header-content--news{margin-top:-215px}}@media (max-width:768.98px){.header-content--news{margin-top:0;clip-path:none;padding-bottom:45px}}.header-content--environment{margin-top:-176px}@media (max-width:1819.98px){.header-content--environment{margin-top:-215px}}@media (max-width:768.98px){.header-content--environment{margin-top:0;clip-path:none}}.header-content--environment .header-content__heading .h2,.header-content--environment .header-content__heading h2{font-size:59.5px;font-weight:300;margin-bottom:30px;line-height:1.1}.header-content--environment .header-content__content p{margin-bottom:30px}.header-content--pb{margin-top:-176px}@media (max-width:1819.98px){.header-content--pb{margin-top:-215px}}@media (max-width:768.98px){.header-content--pb{margin-top:0;clip-path:none}}.header-content--pb .header-content__heading .h2,.header-content--pb .header-content__heading h2{font-size:59.5px;font-weight:300;margin-bottom:30px}@media (max-width:1349.98px){.header-content--pb .header-content__heading .h2,.header-content--pb .header-content__heading h2{font-size:46.75px}}@media (max-width:768.98px){.header-content--pb .header-content__heading .h2,.header-content--pb .header-content__heading h2{margin-bottom:20px}}@media (max-width:479.98px){.header-content--pb .header-content__heading .h2,.header-content--pb .header-content__heading h2{font-size:30.6px}}.header-content--pb .header-content__content p{margin-top:20px}.header-content--pb .header-content__content p:first-of-type{margin-top:0}.header-content__heading .h2,.header-content__heading h2{font-size:59.5px;font-weight:300;margin-bottom:45px;line-height:1.1}@media (max-width:1349.98px){.header-content__heading .h2,.header-content__heading h2{font-size:46.75px}}@media (max-width:479.98px){.header-content__heading .h2,.header-content__heading h2{font-size:30.6px}}.header-content__stats{margin-bottom:60px}@media (max-width:768.98px){.header-content__stats{margin-bottom:40px}}.header-content__3-col-block--pb .stat-block__description{margin-bottom:60px}.header-content--pb{margin-bottom:105px}.business-solutions{background:linear-gradient(180deg,#f2f4f6,#fff 30%,hsla(0,0%,100%,0) 60%),#fff;position:relative;min-height:640px;background-repeat:no-repeat;background-size:cover;padding:62.5px 0 80px}@media (max-width:768.98px){.business-solutions{min-height:unset;padding:62.5px 0 15px}}.business-solutions__wrapper{position:relative;height:690px}@media (max-width:768.98px){.business-solutions__wrapper{max-height:379px}}.business-solutions__image{background-size:cover;background-repeat:no-repeat;height:100%}@media (max-width:768.98px){.business-solutions__image{max-height:379px;position:relative}}.business-solutions__title{font-size:59.5px;font-weight:300;margin-top:156px;color:#fff}@media (max-width:1349.98px){.business-solutions__title{font-size:46.75px}}@media (max-width:768.98px){.business-solutions__title{text-align:left;margin-top:70px}}@media (max-width:479.98px){.business-solutions__title{font-size:34px;margin-bottom:28px}}.business-solutions__heading{font-size:20.4px;font-weight:500;margin-bottom:18px;color:#fff}@media (max-width:768.98px){.business-solutions__heading{font-size:15.3px}}.business-solutions__content{color:#fff}@media (max-width:768.98px){.business-solutions__content{font-size:11.9px}}.business-solutions__glass{background:rgba(61,61,61,.35);box-shadow:0 4px 30px rgba(0,0,0,.1);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);padding:55px 148px 55px 6%;width:80%;right:0;top:39%;position:absolute}@media (max-width:768.98px){.business-solutions__glass{width:100%;padding:25px 85px 25px 25px;position:absolute;top:unset;bottom:0}}@media (max-width:479.98px){.business-solutions__glass{padding:35px 50px 25px 25px}}.justify-end{justify-content:flex-end}.business-solution .slick-track{overflow:hidden}.business-solution .slick-arrow{pointer-events:all;position:absolute;background:none;top:50%;bottom:unset}.business-solution .slick-arrow:before{background:url(//www.vitol.com/wp-content/themes/rouge-wp-start-theme/css/../assets/images/arrow-left-white.svg) no-repeat!important;width:8px;height:16px}.business-solution .slick-arrow.slick-prev{left:0;display:none!important}.business-solution .slick-arrow:hover{background:none}.business-solution .slick-arrow.slick-next{right:0;width:8px;height:16px}.contact{padding:110px 0 166px}@media (max-width:1349.98px){.contact{padding:90px 0}}@media (max-width:768.98px){.contact{padding:45px 0 60px}}@media (max-width:479.98px){.contact{padding:33px 0 40px}}.contact-form__title{margin-bottom:52px}.contact-form__title,.office-search__title,.pb-form__header{font-size:59.5px;font-weight:300}@media (max-width:1349.98px){.contact-form__title,.office-search__title,.pb-form__header{font-size:46.75px}}@media (max-width:768.98px){.contact-form__title,.office-search__title,.pb-form__header{margin-bottom:20px}}@media (max-width:479.98px){.contact-form__title,.office-search__title,.pb-form__header{font-size:30.6px}}@media (max-width:768.98px){.office-search__title{margin-top:45px}}.pb-form__header{margin-bottom:30px}.contact-form__intro{margin-bottom:45px}.frm_description p,.pb-form__text p{font-size:13.6px;color:#3f424b!important}@media (max-width:768.98px){.frm_description{margin-top:0}}.contact-form--lang .h3,.contact-form--lang h3{font-size:15.3px;color:#6f7380;font-weight:500}.contact-form--lang input,.contact-form--lang select,.contact-form--lang textarea{border-color:#6f7380!important;border-radius:3px!important;padding:16px 17px!important;height:auto!important}.contact-form--lang input::placeholder,.contact-form--lang select::placeholder,.contact-form--lang textarea::placeholder{font-style:italic;color:#959595}.contact-form--lang select:first{font-style:italic;color:#959595}.contact-form--lang input[type=checkbox]{padding:0!important}.contact-form--lang input[type=radio]{cursor:pointer}.contact-form--lang .frm_success_style,.contact-form--lang .with_frm_style .frm_message{background:none;margin:0;padding:0;border:0;margin-bottom:45px}.contact-form--lang .frm_success_style .h3,.contact-form--lang .frm_success_style h3,.contact-form--lang .with_frm_style .frm_message .h3,.contact-form--lang .with_frm_style .frm_message h3{font-size:15.3px;color:#3f424b}.contact-form--lang .frm_success_style p,.contact-form--lang .with_frm_style .frm_message p{color:#3f424b;font-size:15.3px;margin-top:0}.contact-form--lang .frm_submit{padding-right:1.5rem}.contact-form .h3,.contact-form h3{font-size:15.3px;color:#6f7380;font-weight:500}.contact-form input,.contact-form select,.contact-form textarea{border-color:#6f7380!important;border-radius:3px!important;padding:16px 17px!important;height:auto!important}.contact-form input::placeholder,.contact-form select::placeholder,.contact-form textarea::placeholder{font-style:italic;color:#959595}.contact-form select:first{font-style:italic;color:#959595}.contact-form input[type=checkbox]{padding:0!important}.contact-form input[type=radio]{cursor:pointer}.contact-form .frm_primary_label{display:none!important}.contact-form .frm_success_style,.contact-form .with_frm_style .frm_message{background:none;margin:0;padding:0;border:0;margin-bottom:45px}.contact-form .frm_success_style .h3,.contact-form .frm_success_style h3,.contact-form .with_frm_style .frm_message .h3,.contact-form .with_frm_style .frm_message h3{font-size:15.3px;color:#3f424b}.contact-form .frm_success_style p,.contact-form .with_frm_style .frm_message p{color:#3f424b;font-size:15.3px;margin-top:0}.contact-form .frm_submit{padding-right:1.5rem}.office__title{font-size:15.3px;font-weight:500}.office__contact-info{margin-top:20px;margin-bottom:60px}.office-search{display:flex;margin-bottom:42px;align-items:flex-end}@media (max-width:768.98px){.office-search{margin-bottom:0}}.office-search .searchandfilter ul,.office-search__regions{display:inline-flex;align-items:center}.office-search__regions{margin-bottom:50px;width:100%}@media (max-width:768.98px){.office-search__regions{margin-bottom:0}}.office-search__regions form{width:100%}.office-search__regions form ul{display:inline-flex;align-items:flex-end;padding:0;justify-content:space-between;width:100%;flex-wrap:wrap}.office-search__regions form ul .sf-field-search{border:1px solid #6f7380;border-radius:2px}.office-search__regions form ul .sf-field-search input::placeholder{font-style:italic;font-size:13.6px;font-weight:400}@media (max-width:1539.98px){.office-search__regions form ul .sf-field-search{margin-top:30px}}.office-search__regions .sf-field-taxonomy-location-region ul{padding:0}.office-search__regions .sf-field-taxonomy-location-region ul li{margin-right:60px;transition:color .3s ease-in}.office-search__regions .sf-field-taxonomy-location-region ul li:hover{color:#ffd564;transition:color .3s ease-in}@media (max-width:768.98px){.office-search__regions .sf-field-taxonomy-location-region ul li{margin-right:45px}}.office-search__regions .sf-field-taxonomy-location-region .sf-input-radio{display:none}.office-search__regions .sf-field-taxonomy-location-region .sf-label-radio{padding:0}.office-search__regions .sf-option-active{color:#2f7ea2}.office-search__regions .sf-label-radio{font-size:20.4px;margin-left:0;padding:0;background:none}.office-search__regions .sf-label-radio .active{color:#2f7ea2}fieldset{min-width:0;padding:0;margin:0;border:0}legend{display:block;width:100%;max-width:100%;padding:0;margin-bottom:.5rem;font-size:1.5rem;line-height:inherit;color:inherit;white-space:normal}.frm_screen_reader{display:none}.frm_forms .form-field{position:relative;margin-bottom:1.6rem}.frm_forms .frm_primary_label{position:absolute;top:1.3rem;left:1.4rem;font-style:italic;margin-bottom:0;transition:all .2s linear;color:#dcdfe2}.frm_forms .form-field.vertical_radio [aria-labelledby=field_formselector_label]{text-align:left}.frm_forms .form-field.vertical_radio .frm_radio{display:inline-block;padding-right:30px}.frm_forms .form-field.vertical_radio .frm_radio label{font-size:15.3px;font-weight:500;cursor:pointer;position:relative;color:#dcdfe2}.frm_forms .form-field.vertical_radio input[type=radio]{display:none;font-size:15.3px;position:absolute;width:100%;height:100%}.frm_forms .form-field.vertical_radio .frm_radio.active label{color:#3f424b}.frm_hidden_container .frm_primary_label,.frm_none_container .frm_primary_label{display:none}.contact-form input[type=email],.contact-form input[type=tel],.contact-form input[type=text],.contact-form select,.contact-form textarea,.pb-form__form input[type=email],.pb-form__form input[type=tel],.pb-form__form input[type=text],.pb-form__form select,.pb-form__form textarea{padding:20px 14px 6px}.contact-form .with_frm_style .frm_radio input[type=radio],.pb-form__form .with_frm_style .frm_radio input[type=radio]{background-color:transparent;border:none;box-shadow:none}.contact-form .with_frm_style .frm_radio input[type=radio]:focus,.pb-form__form .with_frm_style .frm_radio input[type=radio]:focus{background:none;border:0;box-shadow:none;color:#3f424b}.contact-form .with_frm_style .frm_radio input[type=radio]:before,.pb-form__form .with_frm_style .frm_radio input[type=radio]:before{content:"";width:12px;height:12px;transform:scale(0);box-shadow:none;display:block}.contact-form .frm_checkbox,.pb-form__form .frm_checkbox{font-style:italic;color:#959595;margin-left:15px}.contact-form .frm_checkbox a,.contact-form .frm_checkbox label,.pb-form__form .frm_checkbox a,.pb-form__form .frm_checkbox label{font-size:10.2px}.contact-form .form-inline,.pb-form__form .form-inline{display:inline-flex;align-items:baseline}.contact-form .frm_button_submit,.pb-form__form .frm_button_submit{background:none!important;padding:0!important;color:#2f7ea2!important;border:0!important;box-shadow:none!important;white-space:nowrap;margin:0!important;transition:color .3s ease-in}.contact-form .frm_button_submit:hover,.pb-form__form .frm_button_submit:hover{color:#ffd564!important;transition:color .3s ease-in}.four-04__title{font-size:59.5px;font-weight:300;color:#3f424b;margin-bottom:30px}.four-04__link{font-size:17px;color:#3f424b;font-weight:500}.testimonial__image{width:100%}.testimonial__quote{font-size:49.3px;font-weight:300;line-height:55px;margin-bottom:30px}@media screen and (max-width:580px){.testimonial__quote{font-size:38.25px;line-height:50px}}@media (max-width:479.98px){.testimonial__quote{font-size:29.75px;line-height:39px}}
+    </style>
+</head>
+<body>
+    
+
+
+    <div class="globe">
+        <div id="globeGl_" class="globeGl"><div class="hotspot_marker"></div><div class="h5g_overlay"><div id="hotspot_details" style="display: none; top: 254.539px; left: 137.006px; transform: perspective(400px) rotateX(90deg);"><div id="details_content">
+
+
+                <span style="font-family: 'Lato';">Region</span>
+                    <h2 style="font-family: 'Lato';">Asia</h2>
+                    <span style="font-family: 'Lato'; font-weight:400;"><p>We serve a range of customers across Asia from our base in Singapore, a key energy trading hub. Our global trading network enables us to source the optimal feedstocks for the region’s refiners, supply industrial companies and ensure a secure supply of product across our portfolio. We are also invested in the Geelong refinery, and the second largest downstream business in Australia with 1,200 + retail sites.</p>
+<p>Vitol Bunkers, our bunkering company, offers a range of low-carbon solutions including ‘available right now’ biofuels for our marine customers looking to lower their emissions and meet their GHG reduction targets.</p>
+                </span></div></div><div class="hotspot_marker hotspot_override hotspotoverride" data-long="21.0074744" data-lat="52.2353814" data-headtxt="" data-clickexternal="" data-hotspotalign="MM" data-hotspoticon="/textures/location.png" data-hotspotclass="hotspotoverride" data-urltarget="_blank" data-url="" data-pos="[object Object]" data-html="
+
+
+                <span style=&quot;font-family: 'Lato';&quot;>Office</span>
+                    <h2 style=&quot;font-family: 'Lato';&quot;>Warsaw</h2>
+                    <span style=&quot;font-family: 'Lato'; font-weight:400;&quot;>								</span>" style="z-index: 500; display: inline; opacity: 3.5067; transform: translate(358.847px, 163.968px);"><img src="/html5GlobeFiles//textures/location.png" alt="icon"></div><div class="hotspot_marker hotspot_override hotspotoverride" data-long="-3.8196197" data-lat="40.4381311" data-headtxt="" data-clickexternal="" data-hotspotalign="MM" data-hotspoticon="/textures/location.png" data-hotspotclass="hotspotoverride" data-urltarget="_blank" data-url="" data-pos="[object Object]" data-html="
+
+
+                <span style=&quot;font-family: 'Lato';&quot;>Office</span>
+                    <h2 style=&quot;font-family: 'Lato';&quot;>Madrid</h2>
+                    <span style=&quot;font-family: 'Lato'; font-weight:400;&quot;>								</span>" style="z-index: 500; display: inline; opacity: 3.90195; transform: translate(277.768px, 228.028px);"><img src="/html5GlobeFiles//textures/location.png" alt="icon"></div><div class="hotspot_marker hotspot_override hotspotoverride" data-long="11.8186881" data-lat="-8.8534033" data-headtxt="" data-clickexternal="" data-hotspotalign="MM" data-hotspoticon="/textures/location.png" data-hotspotclass="hotspotoverride" data-urltarget="_blank" data-url="" data-pos="[object Object]" data-html="
+
+
+                <span style=&quot;font-family: 'Lato';&quot;>Office</span>
+                    <h2 style=&quot;font-family: 'Lato';&quot;>Luanda</h2>
+                    <span style=&quot;font-family: 'Lato'; font-weight:400;&quot;>								</span>" style="z-index: 500; display: inline; opacity: 3.12435; transform: translate(353.685px, 469.79px);"><img src="/html5GlobeFiles//textures/location.png" alt="icon"></div><div class="hotspot_marker hotspot_override hotspotoverride" data-long="-58.381592" data-lat="-34.603722" data-headtxt="" data-clickexternal="" data-hotspotalign="MM" data-hotspoticon="/textures/location.png" data-hotspotclass="hotspotoverride" data-urltarget="_blank" data-url="" data-pos="[object Object]" data-html="
+
+
+                <span style=&quot;font-family: 'Lato';&quot;>Office</span>
+                    <h2 style=&quot;font-family: 'Lato';&quot;>Argentina</h2>
+                    <span style=&quot;font-family: 'Lato'; font-weight:400;&quot;>								</span>" style="z-index: 500; display: inline; opacity: 0.454185; transform: translate(82.7123px, 503.738px);"><img src="/html5GlobeFiles//textures/location.png" alt="icon"></div><div class="hotspot_marker hotspot_override hotspotoverride" data-long="49.1954199" data-lat="40.394475" data-headtxt="" data-clickexternal="" data-hotspotalign="MM" data-hotspoticon="/textures/location.png" data-hotspotclass="hotspotoverride" data-urltarget="_blank" data-url="" data-pos="[object Object]" data-html="
+
+
+                <span style=&quot;font-family: 'Lato';&quot;>Office</span>
+                    <h2 style=&quot;font-family: 'Lato';&quot;>Baku</h2>
+                    <span style=&quot;font-family: 'Lato'; font-weight:400;&quot;>								</span>" style="z-index: 500; display: inline; opacity: 2.97731; transform: translate(465.932px, 191.238px);"><img src="/html5GlobeFiles//textures/location.png" alt="icon"></div><div class="hotspot_marker hotspot_override hotspotoverride" data-long="23.9642695" data-lat="56.9716492" data-headtxt="" data-clickexternal="" data-hotspotalign="MM" data-hotspoticon="/textures/location.png" data-hotspotclass="hotspotoverride" data-urltarget="_blank" data-url="" data-pos="[object Object]" data-html="
+
+
+                <span style=&quot;font-family: 'Lato';&quot;>Office</span>
+                    <h2 style=&quot;font-family: 'Lato';&quot;>Riga</h2>
+                    <span style=&quot;font-family: 'Lato'; font-weight:400;&quot;>								</span>" style="z-index: 500; display: inline; opacity: 3.33689; transform: translate(359.4px, 140.9px);"><img src="/html5GlobeFiles//textures/location.png" alt="icon"></div><div class="hotspot_marker hotspot_override hotspotoverride" data-long="70.8556373" data-lat="51.146287" data-headtxt="" data-clickexternal="" data-hotspotalign="MM" data-hotspoticon="/textures/location.png" data-hotspotclass="hotspotoverride" data-urltarget="_blank" data-url="" data-pos="[object Object]" data-html="
+
+
+                <span style=&quot;font-family: 'Lato';&quot;>Office</span>
+                    <h2 style=&quot;font-family: 'Lato';&quot;>Nur-Sultan</h2>
+                    <span style=&quot;font-family: 'Lato'; font-weight:400;&quot;>								</span>" style="z-index: 500; display: inline; opacity: 2.19291; transform: translate(470.786px, 115.42px);"><img src="/html5GlobeFiles//textures/location.png" alt="icon"></div><div class="hotspot_marker hotspot_override hotspotoverride" data-long="5.360001203096703" data-lat="-4.008207801138425" data-headtxt="" data-clickexternal="" data-hotspotalign="MM" data-hotspoticon="/textures/location.png" data-hotspotclass="hotspotoverride" data-urltarget="_blank" data-url="" data-pos="[object Object]" data-html="
+
+
+                <span style=&quot;font-family: 'Lato';&quot;>Office</span>
+                    <h2 style=&quot;font-family: 'Lato';&quot;>Abidjan</h2>
+                    <span style=&quot;font-family: 'Lato'; font-weight:400;&quot;>								</span>" style="z-index: 500; display: inline; opacity: 3.37442; transform: translate(320.927px, 451.23px);"><img src="/html5GlobeFiles//textures/location.png" alt="icon"></div><div class="hotspot_marker hotspot_override hotspotoverride" data-long="72.716375" data-lat="19.0821775" data-headtxt="" data-clickexternal="" data-hotspotalign="MM" data-hotspoticon="/textures/location.png" data-hotspotclass="hotspotoverride" data-urltarget="_blank" data-url="" data-pos="[object Object]" data-html="
+
+
+                <span style=&quot;font-family: 'Lato';&quot;>Office</span>
+                    <h2 style=&quot;font-family: 'Lato';&quot;>Mumbai</h2>
+                    <span style=&quot;font-family: 'Lato'; font-weight:400;&quot;>								</span>" style="z-index: 500; display: inline; opacity: 1.60728; transform: translate(563.705px, 245.618px);"><img src="/html5GlobeFiles//textures/location.png" alt="icon"></div><div class="hotspot_marker hotspot_override hotspotoverride" data-long="-0.2623041" data-lat="5.5912029" data-headtxt="" data-clickexternal="" data-hotspotalign="MM" data-hotspoticon="/textures/location.png" data-hotspotclass="hotspotoverride" data-urltarget="_blank" data-url="" data-pos="[object Object]" data-html="
+
+
+                <span style=&quot;font-family: 'Lato';&quot;>Office</span>
+                    <h2 style=&quot;font-family: 'Lato';&quot;>Accra</h2>
+                    <span style=&quot;font-family: 'Lato'; font-weight:400;&quot;>								</span>" style="z-index: 500; display: inline; opacity: 3.6966; transform: translate(291.604px, 407.225px);"><img src="/html5GlobeFiles//textures/location.png" alt="icon"></div><div class="hotspot_marker hotspot_override hotspotoverride" data-long="8.3159244" data-lat="53.5569528" data-headtxt="" data-clickexternal="" data-hotspotalign="MM" data-hotspoticon="/textures/location.png" data-hotspotclass="hotspotoverride" data-urltarget="_blank" data-url="" data-pos="[object Object]" data-html="
+
+
+                <span style=&quot;font-family: 'Lato';&quot;>Office</span>
+                    <h2 style=&quot;font-family: 'Lato';&quot;>Hamburg</h2>
+                    <span style=&quot;font-family: 'Lato'; font-weight:400;&quot;>								</span>" style="z-index: 500; display: inline; opacity: 3.58955; transform: translate(318.757px, 162.551px);"><img src="/html5GlobeFiles//textures/location.png" alt="icon"></div><div class="hotspot_marker hotspot_override hotspotoverride" data-long="-74.2729675" data-lat="4.6482783" data-headtxt="" data-clickexternal="" data-hotspotalign="MM" data-hotspoticon="/textures/location.png" data-hotspotclass="hotspotoverride" data-urltarget="_blank" data-url="" data-pos="[object Object]" data-html="
+
+
+                <span style=&quot;font-family: 'Lato';&quot;>Office</span>
+                    <h2 style=&quot;font-family: 'Lato';&quot;>Bogota</h2>
+                    <span style=&quot;font-family: 'Lato'; font-weight:400;&quot;>								</span>" style="z-index: 500; display: inline; opacity: 1.10628; transform: translate(5.17278px, 309.18px);"><img src="/html5GlobeFiles//textures/location.png" alt="icon"></div><div class="hotspot_marker hotspot_override hotspotoverride" data-long="115.0783457" data-lat="39.9384151" data-headtxt="" data-clickexternal="" data-hotspotalign="MM" data-hotspoticon="/textures/location.png" data-hotspotclass="hotspotoverride" data-urltarget="_blank" data-url="" data-pos="[object Object]" data-html="
+
+
+                <span style=&quot;font-family: 'Lato';&quot;>Office</span>
+                    <h2 style=&quot;font-family: 'Lato';&quot;>Beijing</h2>
+                    <span style=&quot;font-family: 'Lato'; font-weight:400;&quot;>								</span>" style="z-index: 500; display: inline; opacity: 0.0622549; transform: translate(501.346px, 76.6976px);"><img src="/html5GlobeFiles//textures/location.png" alt="icon"></div><div class="hotspot_marker hotspot_override hotspotoverride" data-long="-136.1098334" data-lat="54.0341522" data-headtxt="" data-clickexternal="" data-hotspotalign="MM" data-hotspoticon="/textures/location.png" data-hotspotclass="hotspotoverride" data-urltarget="_blank" data-url="" data-pos="[object Object]" data-html="
+
+
+                <span style=&quot;font-family: 'Lato';&quot;>Office</span>
+                    <h2 style=&quot;font-family: 'Lato';&quot;>Calgary</h2>
+                    <span style=&quot;font-family: 'Lato'; font-weight:400;&quot;>								</span>" style="z-index: 500; display: inline; opacity: 0.0302044; transform: translate(170.863px, 18.4971px);"><img src="/html5GlobeFiles//textures/location.png" alt="icon"></div><div class="hotspot_marker hotspot_override hotspotoverride" data-long="-43.7756354" data-lat="-22.9137907" data-headtxt="" data-clickexternal="" data-hotspotalign="MM" data-hotspoticon="/textures/location.png" data-hotspotclass="hotspotoverride" data-urltarget="_blank" data-url="" data-pos="[object Object]" data-html="
+
+
+                <span style=&quot;font-family: 'Lato';&quot;>Office</span>
+                    <h2 style=&quot;font-family: 'Lato';&quot;>Rio de Janeiro</h2>
+                    <span style=&quot;font-family: 'Lato'; font-weight:400;&quot;>								</span>" style="z-index: 500; display: inline; opacity: 1.6147; transform: translate(101.807px, 489.452px);"><img src="/html5GlobeFiles//textures/location.png" alt="icon"></div><div class="hotspot_marker hotspot_override hotspotoverride" data-long="-64.8668322" data-lat="32.2951059" data-headtxt="" data-clickexternal="" data-hotspotalign="MM" data-hotspoticon="/textures/location.png" data-hotspotclass="hotspotoverride" data-urltarget="_blank" data-url="" data-pos="[object Object]" data-html="
+
+
+                <span style=&quot;font-family: 'Lato';&quot;>Office</span>
+                    <h2 style=&quot;font-family: 'Lato';&quot;>Hamilton</h2>
+                    <span style=&quot;font-family: 'Lato'; font-weight:400;&quot;>								</span>" style="z-index: 500; display: inline; opacity: 2.27325; transform: translate(63.4067px, 201.755px);"><img src="/html5GlobeFiles//textures/location.png" alt="icon"></div><div class="hotspot_marker hotspot_override hotspotoverride" data-long="49.3398244" data-lat="25.9356055" data-headtxt="" data-clickexternal="" data-hotspotalign="MM" data-hotspoticon="/textures/location.png" data-hotspotclass="hotspotoverride" data-urltarget="_blank" data-url="" data-pos="[object Object]" data-html="
+
+
+                <span style=&quot;font-family: 'Lato';&quot;>Office</span>
+                    <h2 style=&quot;font-family: 'Lato';&quot;>Bahrain</h2>
+                    <span style=&quot;font-family: 'Lato'; font-weight:400;&quot;>								</span>" style="z-index: 500; display: inline; opacity: 2.89222; transform: translate(497.639px, 259.469px);"><img src="/html5GlobeFiles//textures/location.png" alt="icon"></div><div class="hotspot_marker hotspot_override hotspotoverride" data-long="-1.4199683" data-lat="51.5285262" data-headtxt="" data-clickexternal="" data-hotspotalign="MM" data-hotspoticon="/textures/location.png" data-hotspotclass="hotspotoverride" data-urltarget="_blank" data-url="" data-pos="[object Object]" data-html="
+
+
+                <span style=&quot;font-family: 'Lato';&quot;>Office</span>
+                    <h2 style=&quot;font-family: 'Lato';&quot;>London</h2>
+                    <span style=&quot;font-family: 'Lato'; font-weight:400;&quot;>								</span>" style="z-index: 500; display: inline; opacity: 3.66953; transform: translate(288.357px, 173.071px);"><img src="/html5GlobeFiles//textures/location.png" alt="icon"></div><div class="hotspot_marker hotspot_override hotspotoverride" data-long="6.0534699" data-lat="49.6075757" data-headtxt="" data-clickexternal="" data-hotspotalign="MM" data-hotspoticon="/textures/location.png" data-hotspotclass="hotspotoverride" data-urltarget="_blank" data-url="" data-pos="[object Object]" data-html="
+
+
+                <span style=&quot;font-family: 'Lato';&quot;>Office</span>
+                    <h2 style=&quot;font-family: 'Lato';&quot;>Luxembourg</h2>
+                    <span style=&quot;font-family: 'Lato'; font-weight:400;&quot;>								</span>" style="z-index: 500; display: inline; opacity: 3.70879; transform: translate(313.483px, 181.881px);"><img src="/html5GlobeFiles//textures/location.png" alt="icon"></div><div class="hotspot_marker hotspot_override hotspotoverride" data-long="102.9494902" data-lat="2.0491758" data-headtxt="" data-clickexternal="" data-hotspotalign="MM" data-hotspoticon="/textures/location.png" data-hotspotclass="hotspotoverride" data-urltarget="_blank" data-url="" data-pos="[object Object]" data-html="
+
+
+                <span style=&quot;font-family: 'Lato';&quot;>Office</span>
+                    <h2 style=&quot;font-family: 'Lato';&quot;>Johor Darul</h2>
+                    <span style=&quot;font-family: 'Lato'; font-weight:400;&quot;>								</span>" style="z-index: 501; display: none; opacity: -0.722281; transform: translate(585.19px, 251.429px);"><img src="/html5GlobeFiles//textures/location.png" alt="icon"></div><div class="hotspot_marker hotspot_override hotspotoverride" data-long="-99.4739736" data-lat="19.3904353" data-headtxt="" data-clickexternal="" data-hotspotalign="MM" data-hotspoticon="/textures/location.png" data-hotspotclass="hotspotoverride" data-urltarget="_blank" data-url="" data-pos="[object Object]" data-html="
+
+
+                <span style=&quot;font-family: 'Lato';&quot;>Office</span>
+                    <h2 style=&quot;font-family: 'Lato';&quot;>Mexico City</h2>
+                    <span style=&quot;font-family: 'Lato'; font-weight:400;&quot;>								</span>" style="z-index: 500; display: inline; opacity: 0.0772104; transform: translate(13.8808px, 182.685px);"><img src="/html5GlobeFiles//textures/location.png" alt="icon"></div><div class="hotspot_marker hotspot_override hotspotoverride" data-long="3.1724662" data-lat="51.9279573" data-headtxt="" data-clickexternal="" data-hotspotalign="MM" data-hotspoticon="/textures/location.png" data-hotspotclass="hotspotoverride" data-urltarget="_blank" data-url="" data-pos="[object Object]" data-html="
+
+
+                <span style=&quot;font-family: 'Lato';&quot;>Office</span>
+                    <h2 style=&quot;font-family: 'Lato';&quot;>Rotterdam</h2>
+                    <span style=&quot;font-family: 'Lato'; font-weight:400;&quot;>								</span>" style="z-index: 500; display: inline; opacity: 3.6557; transform: translate(303.22px, 171.049px);"><img src="/html5GlobeFiles//textures/location.png" alt="icon"></div><div class="hotspot_marker hotspot_override hotspotoverride" data-long="7.3672935" data-lat="9.0242468" data-headtxt="" data-clickexternal="" data-hotspotalign="MM" data-hotspoticon="/textures/location.png" data-hotspotclass="hotspotoverride" data-urltarget="_blank" data-url="" data-pos="[object Object]" data-html="
+
+
+                <span style=&quot;font-family: 'Lato';&quot;>Office</span>
+                    <h2 style=&quot;font-family: 'Lato';&quot;>Abuja</h2>
+                    <span style=&quot;font-family: 'Lato'; font-weight:400;&quot;>								</span>" style="z-index: 500; display: inline; opacity: 3.75288; transform: translate(330.964px, 389.272px);"><img src="/html5GlobeFiles//textures/location.png" alt="icon"></div><div class="hotspot_marker hotspot_override hotspotoverride" data-long="36.0670258" data-lat="55.5802571" data-headtxt="" data-clickexternal="" data-hotspotalign="MM" data-hotspoticon="/textures/location.png" data-hotspotclass="hotspotoverride" data-urltarget="_blank" data-url="" data-pos="[object Object]" data-html="
+
+
+                <span style=&quot;font-family: 'Lato';&quot;>Office</span>
+                    <h2 style=&quot;font-family: 'Lato';&quot;>Moscow</h2>
+                    <span style=&quot;font-family: 'Lato'; font-weight:400;&quot;>								</span>" style="z-index: 500; display: inline; opacity: 3.16627; transform: translate(392.821px, 138.659px);"><img src="/html5GlobeFiles//textures/location.png" alt="icon"></div><div class="hotspot_marker hotspot_override hotspotoverride" data-long="103.8198" data-lat="1.3521" data-headtxt="" data-clickexternal="" data-hotspotalign="MM" data-hotspoticon="/textures/location.png" data-hotspotclass="hotspotoverride" data-urltarget="_blank" data-url="" data-pos="[object Object]" data-html="
+
+
+                <span style=&quot;font-family: 'Lato';&quot;>Office</span>
+                    <h2 style=&quot;font-family: 'Lato';&quot;>Singapore</h2>
+                    <span style=&quot;font-family: 'Lato'; font-weight:400;&quot;>								</span>" style="z-index: 501; display: none; opacity: -0.797603; transform: translate(584.241px, 252.551px);"><img src="/html5GlobeFiles//textures/location.png" alt="icon"></div><div class="hotspot_marker hotspot_override hotspotoverride" data-long="17.3360327" data-lat="-33.9137734" data-headtxt="" data-clickexternal="" data-hotspotalign="MM" data-hotspoticon="/textures/location.png" data-hotspotclass="hotspotoverride" data-urltarget="_blank" data-url="" data-pos="[object Object]" data-html="
+
+
+                <span style=&quot;font-family: 'Lato';&quot;>Office</span>
+                    <h2 style=&quot;font-family: 'Lato';&quot;>Cape Town</h2>
+                    <span style=&quot;font-family: 'Lato'; font-weight:400;&quot;>								</span>" style="z-index: 500; display: inline; opacity: 1.7462; transform: translate(367.162px, 552.037px);"><img src="/html5GlobeFiles//textures/location.png" alt="icon"></div><div class="hotspot_marker hotspot_override hotspotoverride" data-long="5.9781571" data-lat="46.2048226" data-headtxt="" data-clickexternal="" data-hotspotalign="MM" data-hotspoticon="/textures/location.png" data-hotspotclass="hotspotoverride" data-urltarget="_blank" data-url="" data-pos="[object Object]" data-html="
+
+
+                <span style=&quot;font-family: 'Lato';&quot;>Office</span>
+                    <h2 style=&quot;font-family: 'Lato';&quot;>Geneva</h2>
+                    <span style=&quot;font-family: 'Lato'; font-weight:400;&quot;>								</span>" style="z-index: 500; display: inline; opacity: 3.78884; transform: translate(314.604px, 198.618px);"><img src="/html5GlobeFiles//textures/location.png" alt="icon"></div><div class="hotspot_marker hotspot_override hotspotoverride" data-long="27.6930674" data-lat="41.00485" data-headtxt="" data-clickexternal="" data-hotspotalign="MM" data-hotspoticon="/textures/location.png" data-hotspotclass="hotspotoverride" data-urltarget="_blank" data-url="" data-pos="[object Object]" data-html="
+
+
+                <span style=&quot;font-family: 'Lato';&quot;>Office</span>
+                    <h2 style=&quot;font-family: 'Lato';&quot;>Istanbul</h2>
+                    <span style=&quot;font-family: 'Lato'; font-weight:400;&quot;>								</span>" style="z-index: 500; display: inline; opacity: 3.59428; transform: translate(398.195px, 213.172px);"><img src="/html5GlobeFiles//textures/location.png" alt="icon"></div><div class="hotspot_marker hotspot_override hotspotoverride" data-long="53.9083612" data-lat="25.0756569" data-headtxt="" data-clickexternal="" data-hotspotalign="MM" data-hotspoticon="/textures/location.png" data-hotspotclass="hotspotoverride" data-urltarget="_blank" data-url="" data-pos="[object Object]" data-html="
+
+
+                <span style=&quot;font-family: 'Lato';&quot;>Office</span>
+                    <h2 style=&quot;font-family: 'Lato';&quot;>Dubai</h2>
+                    <span style=&quot;font-family: 'Lato'; font-weight:400;&quot;>								</span>" style="z-index: 500; display: inline; opacity: 2.68182; transform: translate(512.559px, 255.658px);"><img src="/html5GlobeFiles//textures/location.png" alt="icon"></div><div class="hotspot_marker hotspot_override hotspotoverride" data-long="29.2142894" data-lat="50.4015698" data-headtxt="" data-clickexternal="" data-hotspotalign="MM" data-hotspoticon="/textures/location.png" data-hotspotclass="hotspotoverride" data-urltarget="_blank" data-url="" data-pos="[object Object]" data-html="
+
+
+                <span style=&quot;font-family: 'Lato';&quot;>Office</span>
+                    <h2 style=&quot;font-family: 'Lato';&quot;>Kyiv</h2>
+                    <span style=&quot;font-family: 'Lato'; font-weight:400;&quot;>								</span>" style="z-index: 500; display: inline; opacity: 3.41476; transform: translate(386.314px, 167.091px);"><img src="/html5GlobeFiles//textures/location.png" alt="icon"></div><div class="hotspot_marker hotspot_override hotspotoverride" data-long="-95.369804" data-lat="29.760427" data-headtxt="" data-clickexternal="" data-hotspotalign="MM" data-hotspoticon="/textures/location.png" data-hotspotclass="hotspotoverride" data-urltarget="_blank" data-url="" data-pos="[object Object]" data-html="
+
+
+                <span style=&quot;font-family: 'Lato';&quot;>Office</span>
+                    <h2 style=&quot;font-family: 'Lato';&quot;>Houston</h2>
+                    <span style=&quot;font-family: 'Lato'; font-weight:400;&quot;>								</span>" style="z-index: 500; display: inline; opacity: 0.64794; transform: translate(33.7127px, 149.628px);"><img src="/html5GlobeFiles//textures/location.png" alt="icon"></div><div class="hotspot_marker hotspot_override hotspotoverride" data-long="3.1191476" data-lat="6.5480282" data-headtxt="" data-clickexternal="" data-hotspotalign="MM" data-hotspoticon="/textures/location.png" data-hotspotclass="hotspotoverride" data-urltarget="_blank" data-url="" data-pos="[object Object]" data-html="
+
+
+                <span style=&quot;font-family: 'Lato';&quot;>Office</span>
+                    <h2 style=&quot;font-family: 'Lato';&quot;>Lagos</h2>
+                    <span style=&quot;font-family: 'Lato'; font-weight:400;&quot;>								</span>" style="z-index: 500; display: inline; opacity: 3.71649; transform: translate(309.189px, 402.374px);"><img src="/html5GlobeFiles//textures/location.png" alt="icon"></div><div class="hotspot_marker hotspot_override hotspotoverride" data-long="56.1620115" data-lat="25.1436295" data-headtxt="" data-clickexternal="" data-hotspotalign="MM" data-hotspoticon="/textures/location.png" data-hotspotclass="hotspotoverride" data-urltarget="_blank" data-url="" data-pos="[object Object]" data-html="
+
+
+                <span style=&quot;font-family: 'Lato';&quot;>Office</span>
+                    <h2 style=&quot;font-family: 'Lato';&quot;>Fujairah</h2>
+                    <span style=&quot;font-family: 'Lato'; font-weight:400;&quot;>								</span>" style="z-index: 500; display: inline; opacity: 2.57981; transform: translate(518.559px, 251.213px);"><img src="/html5GlobeFiles//textures/location.png" alt="icon"></div><div class="hotspot_marker hotspot_override hotspotoverride" data-long="57.50102415208376" data-lat="-20.161642879768277" data-headtxt="" data-clickexternal="" data-hotspotalign="MM" data-hotspoticon="/textures/location.png" data-hotspotclass="hotspotoverride" data-urltarget="_blank" data-url="" data-pos="[object Object]" data-html="
+
+
+                <span style=&quot;font-family: 'Lato';&quot;>Office</span>
+                    <h2 style=&quot;font-family: 'Lato';&quot;>Port Louis</h2>
+                    <span style=&quot;font-family: 'Lato'; font-weight:400;&quot;>								</span>" style="z-index: 500; display: inline; opacity: 1.13204; transform: translate(530.502px, 454.955px);"><img src="/html5GlobeFiles//textures/location.png" alt="icon"></div><div class="hotspot_marker hotspot_override hotspotoverride" data-long="-74.3093218" data-lat="40.6970193" data-headtxt="" data-clickexternal="" data-hotspotalign="MM" data-hotspoticon="/textures/location.png" data-hotspotclass="hotspotoverride" data-urltarget="_blank" data-url="" data-pos="[object Object]" data-html="
+
+
+                <span style=&quot;font-family: 'Lato';&quot;>Office</span>
+                    <h2 style=&quot;font-family: 'Lato';&quot;>New York</h2>
+                    <span style=&quot;font-family: 'Lato'; font-weight:400;&quot;>								</span>" style="z-index: 500; display: inline; opacity: 1.95151; transform: translate(74.0194px, 148.84px);"><img src="/html5GlobeFiles//textures/location.png" alt="icon"></div><div class="hotspot_marker hotspot_override hotspotoverride" data-long="74.3248" data-lat="41.3543" data-headtxt="" data-clickexternal="" data-hotspotalign="MM" data-hotspoticon="/textures/region.png" data-hotspotclass="hotspotoverride" data-urltarget="_blank" data-url="" data-pos="[object Object]" data-html="
+
+
+                <span style=&quot;font-family: 'Lato';&quot;>Region</span>
+                    <h2 style=&quot;font-family: 'Lato';&quot;>Asia</h2>
+                    <span style=&quot;font-family: 'Lato'; font-weight:400;&quot;><p>We serve a range of customers across Asia from our base in Singapore, a key energy trading hub. Our global trading network enables us to source the optimal feedstocks for the region’s refiners, supply industrial companies and ensure a secure supply of product across our portfolio. We are also invested in the Geelong refinery, and the second largest downstream business in Australia with 1,200 + retail sites.</p>
+<p>Vitol Bunkers, our bunkering company, offers a range of low-carbon solutions including ‘available right now’ biofuels for our marine customers looking to lower their emissions and meet their GHG reduction targets.</p>
+                </span>" style="z-index: 500; display: inline; opacity: 1.96042; transform: translate(476.31px, 113.253px);"><img src="/html5GlobeFiles//textures/region.png" alt="icon"></div><div class="hotspot_marker hotspot_override hotspotoverride" data-long="-106.0691" data-lat="28.6330" data-headtxt="" data-clickexternal="" data-hotspotalign="MM" data-hotspoticon="/textures/region.png" data-hotspotclass="hotspotoverride" data-urltarget="_blank" data-url="" data-pos="[object Object]" data-html="
+
+
+                <span style=&quot;font-family: 'Lato';&quot;>Region</span>
+                    <h2 style=&quot;font-family: 'Lato';&quot;>Americas</h2>
+                    <span style=&quot;font-family: 'Lato'; font-weight:400;&quot;><p>From our office in Houston, Vitol continues to build a long-standing presence across the Americas. We are a major participant in several key markets including upstream and crude trading, as well as power and gas. In the US, we have a growing portfolio of renewables in solar and wind, optimising our assets by integrating them into our existing trading capacity.</p>
+<p>Alongside a diverse product portfolio, a network of logistical infrastructure stretching through the Caribbean and into Latin America means we are well-placed to offer our customers optionality and ensure a secure supply of product.</p>
+                </span>" style="z-index: 500; display: inline; opacity: 0.0448687; transform: translate(6.48287px, 98.344px);"><img src="/html5GlobeFiles//textures/region.png" alt="icon"></div><div class="hotspot_marker hotspot_override hotspotoverride" data-long="23.1843" data-lat="20.2523" data-headtxt="" data-clickexternal="" data-hotspotalign="MM" data-hotspoticon="/textures/region.png" data-hotspotclass="hotspotoverride" data-urltarget="_blank" data-url="" data-pos="[object Object]" data-html="
+
+
+                <span style=&quot;font-family: 'Lato';&quot;>Region</span>
+                    <h2 style=&quot;font-family: 'Lato';&quot;>EMEA</h2>
+                    <span style=&quot;font-family: 'Lato'; font-weight:400;&quot;><p>A trusted partner across EMEA with long-standing relationships with both customers and suppliers. In Africa we are investing in infrastructure across midstream and downstream with a network of 2,400 petrol stations and over 1.6 m m3 of storage in 23 countries. In Europe, we are invested in 3 refineries and have a diverse portfolio of storage assets. We supply Europe’s power sector with power, LNG and gas, and have a broadening portfolio of renewable energy projects includes hydrogen and gas-for-transport projects.</p>
+                </span>" style="z-index: 500; display: inline; opacity: 3.69619; transform: translate(370.28px, 289.64px);"><img src="/html5GlobeFiles//textures/region.png" alt="icon"></div></div><canvas width="600" height="600" style="height: 100%; width: 100%; top: 0px; bottom: 0px; position: absolute;"></canvas></div>
+        
+                                    
+                
+                <div class="hotspot h5g_hidden" data-lat="52.2353814" data-long="21.0074744" data-url="" data-urltarget="_blank" data-hotspotclass="hotspotoverride" data-hotspoticon="/textures/location.png" data-hotspotalign="MM" data-clickexternal="" data-headtxt="">
+
+
+                <span style="font-family: 'Lato';">Office</span>
+                    <h2 style="font-family: 'Lato';">Warsaw</h2>
+                    <span style="font-family: 'Lato'; font-weight:400;">								</span></div>
+            
+                
+                <div class="hotspot h5g_hidden" data-lat="40.4381311" data-long="-3.8196197" data-url="" data-urltarget="_blank" data-hotspotclass="hotspotoverride" data-hotspoticon="/textures/location.png" data-hotspotalign="MM" data-clickexternal="" data-headtxt="">
+
+
+                <span style="font-family: 'Lato';">Office</span>
+                    <h2 style="font-family: 'Lato';">Madrid</h2>
+                    <span style="font-family: 'Lato'; font-weight:400;">								</span></div>
+            
+                
+                <div class="hotspot h5g_hidden" data-lat="-8.8534033" data-long="11.8186881" data-url="" data-urltarget="_blank" data-hotspotclass="hotspotoverride" data-hotspoticon="/textures/location.png" data-hotspotalign="MM" data-clickexternal="" data-headtxt="">
+
+
+                <span style="font-family: 'Lato';">Office</span>
+                    <h2 style="font-family: 'Lato';">Luanda</h2>
+                    <span style="font-family: 'Lato'; font-weight:400;">								</span></div>
+            
+                
+                <div class="hotspot h5g_hidden" data-lat="-34.603722" data-long="-58.381592" data-url="" data-urltarget="_blank" data-hotspotclass="hotspotoverride" data-hotspoticon="/textures/location.png" data-hotspotalign="MM" data-clickexternal="" data-headtxt="">
+
+
+                <span style="font-family: 'Lato';">Office</span>
+                    <h2 style="font-family: 'Lato';">Argentina</h2>
+                    <span style="font-family: 'Lato'; font-weight:400;">								</span></div>
+            
+                
+                <div class="hotspot h5g_hidden" data-lat="40.394475" data-long="49.1954199" data-url="" data-urltarget="_blank" data-hotspotclass="hotspotoverride" data-hotspoticon="/textures/location.png" data-hotspotalign="MM" data-clickexternal="" data-headtxt="">
+
+
+                <span style="font-family: 'Lato';">Office</span>
+                    <h2 style="font-family: 'Lato';">Baku</h2>
+                    <span style="font-family: 'Lato'; font-weight:400;">								</span></div>
+            
+                
+                <div class="hotspot h5g_hidden" data-lat="56.9716492" data-long="23.9642695" data-url="" data-urltarget="_blank" data-hotspotclass="hotspotoverride" data-hotspoticon="/textures/location.png" data-hotspotalign="MM" data-clickexternal="" data-headtxt="">
+
+
+                <span style="font-family: 'Lato';">Office</span>
+                    <h2 style="font-family: 'Lato';">Riga</h2>
+                    <span style="font-family: 'Lato'; font-weight:400;">								</span></div>
+            
+                
+                <div class="hotspot h5g_hidden" data-lat="51.146287" data-long="70.8556373" data-url="" data-urltarget="_blank" data-hotspotclass="hotspotoverride" data-hotspoticon="/textures/location.png" data-hotspotalign="MM" data-clickexternal="" data-headtxt="">
+
+
+                <span style="font-family: 'Lato';">Office</span>
+                    <h2 style="font-family: 'Lato';">Nur-Sultan</h2>
+                    <span style="font-family: 'Lato'; font-weight:400;">								</span></div>
+            
+                
+                <div class="hotspot h5g_hidden" data-lat="-4.008207801138425" data-long="5.360001203096703" data-url="" data-urltarget="_blank" data-hotspotclass="hotspotoverride" data-hotspoticon="/textures/location.png" data-hotspotalign="MM" data-clickexternal="" data-headtxt="">
+
+
+                <span style="font-family: 'Lato';">Office</span>
+                    <h2 style="font-family: 'Lato';">Abidjan</h2>
+                    <span style="font-family: 'Lato'; font-weight:400;">								</span></div>
+            
+                
+                <div class="hotspot h5g_hidden" data-lat="19.0821775" data-long="72.716375" data-url="" data-urltarget="_blank" data-hotspotclass="hotspotoverride" data-hotspoticon="/textures/location.png" data-hotspotalign="MM" data-clickexternal="" data-headtxt="">
+
+
+                <span style="font-family: 'Lato';">Office</span>
+                    <h2 style="font-family: 'Lato';">Mumbai</h2>
+                    <span style="font-family: 'Lato'; font-weight:400;">								</span></div>
+            
+                
+                <div class="hotspot h5g_hidden" data-lat="5.5912029" data-long="-0.2623041" data-url="" data-urltarget="_blank" data-hotspotclass="hotspotoverride" data-hotspoticon="/textures/location.png" data-hotspotalign="MM" data-clickexternal="" data-headtxt="">
+
+
+                <span style="font-family: 'Lato';">Office</span>
+                    <h2 style="font-family: 'Lato';">Accra</h2>
+                    <span style="font-family: 'Lato'; font-weight:400;">								</span></div>
+            
+                
+                <div class="hotspot h5g_hidden" data-lat="53.5569528" data-long="8.3159244" data-url="" data-urltarget="_blank" data-hotspotclass="hotspotoverride" data-hotspoticon="/textures/location.png" data-hotspotalign="MM" data-clickexternal="" data-headtxt="">
+
+
+                <span style="font-family: 'Lato';">Office</span>
+                    <h2 style="font-family: 'Lato';">Hamburg</h2>
+                    <span style="font-family: 'Lato'; font-weight:400;">								</span></div>
+            
+                
+                <div class="hotspot h5g_hidden" data-lat="4.6482783" data-long="-74.2729675" data-url="" data-urltarget="_blank" data-hotspotclass="hotspotoverride" data-hotspoticon="/textures/location.png" data-hotspotalign="MM" data-clickexternal="" data-headtxt="">
+
+
+                <span style="font-family: 'Lato';">Office</span>
+                    <h2 style="font-family: 'Lato';">Bogota</h2>
+                    <span style="font-family: 'Lato'; font-weight:400;">								</span></div>
+            
+                
+                <div class="hotspot h5g_hidden" data-lat="39.9384151" data-long="115.0783457" data-url="" data-urltarget="_blank" data-hotspotclass="hotspotoverride" data-hotspoticon="/textures/location.png" data-hotspotalign="MM" data-clickexternal="" data-headtxt="">
+
+
+                <span style="font-family: 'Lato';">Office</span>
+                    <h2 style="font-family: 'Lato';">Beijing</h2>
+                    <span style="font-family: 'Lato'; font-weight:400;">								</span></div>
+            
+                
+                <div class="hotspot h5g_hidden" data-lat="54.0341522" data-long="-136.1098334" data-url="" data-urltarget="_blank" data-hotspotclass="hotspotoverride" data-hotspoticon="/textures/location.png" data-hotspotalign="MM" data-clickexternal="" data-headtxt="">
+
+
+                <span style="font-family: 'Lato';">Office</span>
+                    <h2 style="font-family: 'Lato';">Calgary</h2>
+                    <span style="font-family: 'Lato'; font-weight:400;">								</span></div>
+            
+                
+                <div class="hotspot h5g_hidden" data-lat="-22.9137907" data-long="-43.7756354" data-url="" data-urltarget="_blank" data-hotspotclass="hotspotoverride" data-hotspoticon="/textures/location.png" data-hotspotalign="MM" data-clickexternal="" data-headtxt="">
+
+
+                <span style="font-family: 'Lato';">Office</span>
+                    <h2 style="font-family: 'Lato';">Rio de Janeiro</h2>
+                    <span style="font-family: 'Lato'; font-weight:400;">								</span></div>
+            
+                
+                <div class="hotspot h5g_hidden" data-lat="32.2951059" data-long="-64.8668322" data-url="" data-urltarget="_blank" data-hotspotclass="hotspotoverride" data-hotspoticon="/textures/location.png" data-hotspotalign="MM" data-clickexternal="" data-headtxt="">
+
+
+                <span style="font-family: 'Lato';">Office</span>
+                    <h2 style="font-family: 'Lato';">Hamilton</h2>
+                    <span style="font-family: 'Lato'; font-weight:400;">								</span></div>
+            
+                
+                <div class="hotspot h5g_hidden" data-lat="25.9356055" data-long="49.3398244" data-url="" data-urltarget="_blank" data-hotspotclass="hotspotoverride" data-hotspoticon="/textures/location.png" data-hotspotalign="MM" data-clickexternal="" data-headtxt="">
+
+
+                <span style="font-family: 'Lato';">Office</span>
+                    <h2 style="font-family: 'Lato';">Bahrain</h2>
+                    <span style="font-family: 'Lato'; font-weight:400;">								</span></div>
+            
+                
+                <div class="hotspot h5g_hidden" data-lat="51.5285262" data-long="-1.4199683" data-url="" data-urltarget="_blank" data-hotspotclass="hotspotoverride" data-hotspoticon="/textures/location.png" data-hotspotalign="MM" data-clickexternal="" data-headtxt="">
+
+
+                <span style="font-family: 'Lato';">Office</span>
+                    <h2 style="font-family: 'Lato';">London</h2>
+                    <span style="font-family: 'Lato'; font-weight:400;">								</span></div>
+            
+                
+                <div class="hotspot h5g_hidden" data-lat="49.6075757" data-long="6.0534699" data-url="" data-urltarget="_blank" data-hotspotclass="hotspotoverride" data-hotspoticon="/textures/location.png" data-hotspotalign="MM" data-clickexternal="" data-headtxt="">
+
+
+                <span style="font-family: 'Lato';">Office</span>
+                    <h2 style="font-family: 'Lato';">Luxembourg</h2>
+                    <span style="font-family: 'Lato'; font-weight:400;">								</span></div>
+            
+                
+                <div class="hotspot h5g_hidden" data-lat="2.0491758" data-long="102.9494902" data-url="" data-urltarget="_blank" data-hotspotclass="hotspotoverride" data-hotspoticon="/textures/location.png" data-hotspotalign="MM" data-clickexternal="" data-headtxt="">
+
+
+                <span style="font-family: 'Lato';">Office</span>
+                    <h2 style="font-family: 'Lato';">Johor Darul</h2>
+                    <span style="font-family: 'Lato'; font-weight:400;">								</span></div>
+            
+                
+                <div class="hotspot h5g_hidden" data-lat="19.3904353" data-long="-99.4739736" data-url="" data-urltarget="_blank" data-hotspotclass="hotspotoverride" data-hotspoticon="/textures/location.png" data-hotspotalign="MM" data-clickexternal="" data-headtxt="">
+
+
+                <span style="font-family: 'Lato';">Office</span>
+                    <h2 style="font-family: 'Lato';">Mexico City</h2>
+                    <span style="font-family: 'Lato'; font-weight:400;">								</span></div>
+            
+                
+                <div class="hotspot h5g_hidden" data-lat="51.9279573" data-long="3.1724662" data-url="" data-urltarget="_blank" data-hotspotclass="hotspotoverride" data-hotspoticon="/textures/location.png" data-hotspotalign="MM" data-clickexternal="" data-headtxt="">
+
+
+                <span style="font-family: 'Lato';">Office</span>
+                    <h2 style="font-family: 'Lato';">Rotterdam</h2>
+                    <span style="font-family: 'Lato'; font-weight:400;">								</span></div>
+            
+                
+                <div class="hotspot h5g_hidden" data-lat="9.0242468" data-long="7.3672935" data-url="" data-urltarget="_blank" data-hotspotclass="hotspotoverride" data-hotspoticon="/textures/location.png" data-hotspotalign="MM" data-clickexternal="" data-headtxt="">
+
+
+                <span style="font-family: 'Lato';">Office</span>
+                    <h2 style="font-family: 'Lato';">Abuja</h2>
+                    <span style="font-family: 'Lato'; font-weight:400;">								</span></div>
+            
+                
+                <div class="hotspot h5g_hidden" data-lat="55.5802571" data-long="36.0670258" data-url="" data-urltarget="_blank" data-hotspotclass="hotspotoverride" data-hotspoticon="/textures/location.png" data-hotspotalign="MM" data-clickexternal="" data-headtxt="">
+
+
+                <span style="font-family: 'Lato';">Office</span>
+                    <h2 style="font-family: 'Lato';">Moscow</h2>
+                    <span style="font-family: 'Lato'; font-weight:400;">								</span></div>
+            
+                
+                <div class="hotspot h5g_hidden" data-lat="1.3521" data-long="103.8198" data-url="" data-urltarget="_blank" data-hotspotclass="hotspotoverride" data-hotspoticon="/textures/location.png" data-hotspotalign="MM" data-clickexternal="" data-headtxt="">
+
+
+                <span style="font-family: 'Lato';">Office</span>
+                    <h2 style="font-family: 'Lato';">Singapore</h2>
+                    <span style="font-family: 'Lato'; font-weight:400;">								</span></div>
+            
+                
+                <div class="hotspot h5g_hidden" data-lat="-33.9137734" data-long="17.3360327" data-url="" data-urltarget="_blank" data-hotspotclass="hotspotoverride" data-hotspoticon="/textures/location.png" data-hotspotalign="MM" data-clickexternal="" data-headtxt="">
+
+
+                <span style="font-family: 'Lato';">Office</span>
+                    <h2 style="font-family: 'Lato';">Cape Town</h2>
+                    <span style="font-family: 'Lato'; font-weight:400;">								</span></div>
+            
+                
+                <div class="hotspot h5g_hidden" data-lat="46.2048226" data-long="5.9781571" data-url="" data-urltarget="_blank" data-hotspotclass="hotspotoverride" data-hotspoticon="/textures/location.png" data-hotspotalign="MM" data-clickexternal="" data-headtxt="">
+
+
+                <span style="font-family: 'Lato';">Office</span>
+                    <h2 style="font-family: 'Lato';">Geneva</h2>
+                    <span style="font-family: 'Lato'; font-weight:400;">								</span></div>
+            
+                
+                <div class="hotspot h5g_hidden" data-lat="41.00485" data-long="27.6930674" data-url="" data-urltarget="_blank" data-hotspotclass="hotspotoverride" data-hotspoticon="/textures/location.png" data-hotspotalign="MM" data-clickexternal="" data-headtxt="">
+
+
+                <span style="font-family: 'Lato';">Office</span>
+                    <h2 style="font-family: 'Lato';">Istanbul</h2>
+                    <span style="font-family: 'Lato'; font-weight:400;">								</span></div>
+            
+                
+                <div class="hotspot h5g_hidden" data-lat="25.0756569" data-long="53.9083612" data-url="" data-urltarget="_blank" data-hotspotclass="hotspotoverride" data-hotspoticon="/textures/location.png" data-hotspotalign="MM" data-clickexternal="" data-headtxt="">
+
+
+                <span style="font-family: 'Lato';">Office</span>
+                    <h2 style="font-family: 'Lato';">Dubai</h2>
+                    <span style="font-family: 'Lato'; font-weight:400;">								</span></div>
+            
+                
+                <div class="hotspot h5g_hidden" data-lat="50.4015698" data-long="29.2142894" data-url="" data-urltarget="_blank" data-hotspotclass="hotspotoverride" data-hotspoticon="/textures/location.png" data-hotspotalign="MM" data-clickexternal="" data-headtxt="">
+
+
+                <span style="font-family: 'Lato';">Office</span>
+                    <h2 style="font-family: 'Lato';">Kyiv</h2>
+                    <span style="font-family: 'Lato'; font-weight:400;">								</span></div>
+            
+                
+                <div class="hotspot h5g_hidden" data-lat="29.760427" data-long="-95.369804" data-url="" data-urltarget="_blank" data-hotspotclass="hotspotoverride" data-hotspoticon="/textures/location.png" data-hotspotalign="MM" data-clickexternal="" data-headtxt="">
+
+
+                <span style="font-family: 'Lato';">Office</span>
+                    <h2 style="font-family: 'Lato';">Houston</h2>
+                    <span style="font-family: 'Lato'; font-weight:400;">								</span></div>
+            
+                
+                <div class="hotspot h5g_hidden" data-lat="6.5480282" data-long="3.1191476" data-url="" data-urltarget="_blank" data-hotspotclass="hotspotoverride" data-hotspoticon="/textures/location.png" data-hotspotalign="MM" data-clickexternal="" data-headtxt="">
+
+
+                <span style="font-family: 'Lato';">Office</span>
+                    <h2 style="font-family: 'Lato';">Lagos</h2>
+                    <span style="font-family: 'Lato'; font-weight:400;">								</span></div>
+            
+                
+                <div class="hotspot h5g_hidden" data-lat="25.1436295" data-long="56.1620115" data-url="" data-urltarget="_blank" data-hotspotclass="hotspotoverride" data-hotspoticon="/textures/location.png" data-hotspotalign="MM" data-clickexternal="" data-headtxt="">
+
+
+                <span style="font-family: 'Lato';">Office</span>
+                    <h2 style="font-family: 'Lato';">Fujairah</h2>
+                    <span style="font-family: 'Lato'; font-weight:400;">								</span></div>
+            
+                
+                <div class="hotspot h5g_hidden" data-lat="-20.161642879768277" data-long="57.50102415208376" data-url="" data-urltarget="_blank" data-hotspotclass="hotspotoverride" data-hotspoticon="/textures/location.png" data-hotspotalign="MM" data-clickexternal="" data-headtxt="">
+
+
+                <span style="font-family: 'Lato';">Office</span>
+                    <h2 style="font-family: 'Lato';">Port Louis</h2>
+                    <span style="font-family: 'Lato'; font-weight:400;">								</span></div>
+            
+                
+                <div class="hotspot h5g_hidden" data-lat="40.6970193" data-long="-74.3093218" data-url="" data-urltarget="_blank" data-hotspotclass="hotspotoverride" data-hotspoticon="/textures/location.png" data-hotspotalign="MM" data-clickexternal="" data-headtxt="">
+
+
+                <span style="font-family: 'Lato';">Office</span>
+                    <h2 style="font-family: 'Lato';">New York</h2>
+                    <span style="font-family: 'Lato'; font-weight:400;">								</span></div>
+            
+                
+                <div class="hotspot h5g_hidden" data-lat="41.3543" data-long="74.3248" data-url="" data-urltarget="_blank" data-hotspotclass="hotspotoverride" data-hotspoticon="/textures/region.png" data-hotspotalign="MM" data-clickexternal="" data-headtxt="">
+
+
+                <span style="font-family: 'Lato';">Region</span>
+                    <h2 style="font-family: 'Lato';">Asia</h2>
+                    <span style="font-family: 'Lato'; font-weight:400;"><p>We serve a range of customers across Asia from our base in Singapore, a key energy trading hub. Our global trading network enables us to source the optimal feedstocks for the region’s refiners, supply industrial companies and ensure a secure supply of product across our portfolio. We are also invested in the Geelong refinery, and the second largest downstream business in Australia with 1,200 + retail sites.</p>
+<p>Vitol Bunkers, our bunkering company, offers a range of low-carbon solutions including ‘available right now’ biofuels for our marine customers looking to lower their emissions and meet their GHG reduction targets.</p>
+                </span></div>
+            
+                
+                <div class="hotspot h5g_hidden" data-lat="28.6330" data-long="-106.0691" data-url="" data-urltarget="_blank" data-hotspotclass="hotspotoverride" data-hotspoticon="/textures/region.png" data-hotspotalign="MM" data-clickexternal="" data-headtxt="">
+
+
+                <span style="font-family: 'Lato';">Region</span>
+                    <h2 style="font-family: 'Lato';">Americas</h2>
+                    <span style="font-family: 'Lato'; font-weight:400;"><p>From our office in Houston, Vitol continues to build a long-standing presence across the Americas. We are a major participant in several key markets including upstream and crude trading, as well as power and gas. In the US, we have a growing portfolio of renewables in solar and wind, optimising our assets by integrating them into our existing trading capacity.</p>
+<p>Alongside a diverse product portfolio, a network of logistical infrastructure stretching through the Caribbean and into Latin America means we are well-placed to offer our customers optionality and ensure a secure supply of product.</p>
+                </span></div>
+            
+                
+                <div class="hotspot h5g_hidden" data-lat="20.2523" data-long="23.1843" data-url="" data-urltarget="_blank" data-hotspotclass="hotspotoverride" data-hotspoticon="/textures/region.png" data-hotspotalign="MM" data-clickexternal="" data-headtxt="">
+
+
+                <span style="font-family: 'Lato';">Region</span>
+                    <h2 style="font-family: 'Lato';">EMEA</h2>
+                    <span style="font-family: 'Lato'; font-weight:400;"><p>A trusted partner across EMEA with long-standing relationships with both customers and suppliers. In Africa we are investing in infrastructure across midstream and downstream with a network of 2,400 petrol stations and over 1.6 m m3 of storage in 23 countries. In Europe, we are invested in 3 refineries and have a diverse portfolio of storage assets. We supply Europe’s power sector with power, LNG and gas, and have a broadening portfolio of renewable energy projects includes hydrogen and gas-for-transport projects.</p>
+                </span></div>
+                                                        </div>
+
+
+
+                                                        <script src="//unpkg.com/globe.gl"></script>
+</body>
+</html>

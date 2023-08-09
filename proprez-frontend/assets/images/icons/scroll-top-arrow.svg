@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9.5" height="95.227" viewBox="0 0 9.5 95.227">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1" y1="0.928" x2="0.5" y2="0.244" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f5a100"/>
+      <stop offset="1" stop-color="#f5a100" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="Rectangle_171" x="0" y="0" width="9.5" height="95.227" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feFlood flood-color="#f6c644" flood-opacity="0.8"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_502" data-name="Group 502" transform="translate(-72.75 -670.75)">
+    <g transform="matrix(1, 0, 0, 1, 72.75, 670.75)" filter="url(#Rectangle_171)">
+      <rect id="Rectangle_171-2" data-name="Rectangle 171" width="0.5" height="86.227" rx="0.25" transform="translate(5 90.73) rotate(180)" fill="url(#linear-gradient)"/>
+    </g>
+    <g id="Group_208" data-name="Group 208" transform="translate(339 1678.75) rotate(180)">
+      <line id="Line_120" data-name="Line 120" x2="4" y2="4" transform="translate(257.5 999.5)" fill="none" stroke="#f5a100" stroke-linecap="round" stroke-width="0.5"/>
+      <line id="Line_121" data-name="Line 121" x1="4" y2="4" transform="translate(261.5 999.5)" fill="none" stroke="#f5a100" stroke-linecap="round" stroke-width="0.5"/>
+    </g>
+  </g>
+</svg>
